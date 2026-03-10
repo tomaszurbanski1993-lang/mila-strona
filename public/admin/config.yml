@@ -1,0 +1,35 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: public/images/uploads
+public_folder: /images/uploads
+
+collections:
+  - name: blog
+    label: Blog
+    folder: src/content/blog
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: Tytul, name: title, widget: string }
+      - { label: Opis, name: description, widget: text }
+      - { label: Data, name: date, widget: datetime }
+      - { label: Obraz, name: image, widget: image, required: false }
+      - { label: Tagi, name: tags, widget: list, required: false }
+      - { label: Wersja robocza, name: draft, widget: boolean, default: false, required: false }
+      - { label: Tresc, name: body, widget: markdown }
+
+  - name: news
+    label: Aktualnosci
+    folder: src/content/news
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: Tytul, name: title, widget: string }
+      - { label: Opis, name: description, widget: text }
+      - { label: Data, name: date, widget: datetime }
+      - { label: Obraz, name: image, widget: image, required: false }
+      - { label: Tagi, name: tags, widget: list, required: false }
+      - { label: Wersja robocza, name: draft, widget: boolean, default: false, required: false }
+      - { label: Tresc, name: body, widget: markdown }

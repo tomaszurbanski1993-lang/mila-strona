@@ -1,0 +1,36 @@
+---
+import { getCollection } from "astro:content";
+
+const entries = await getCollection("blog", ({ data }) => data.draft !== true);
+const posts = entries.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+---
+
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Blog</title>
+  </head>
+  <body>
+    <main>
+      <h1>Blog</h1>
+      {
+        posts.length === 0 ? (
+          <p>Brak wpisow.</p>
+        ) : (
+          <ul>
+            {posts.map((post) => (
+              <li>
+                <a href={`/blog/${post.slug}/`}>{post.data.title}</a>
+                <p>{post.data.description}</p>
+                <time datetime={post.data.date.toISOString()}>
+                  {post.data.date.toLocaleDateString("pl-PL")}
+                </time>
+              </li>
+            ))}
+          </ul>
+        )
+      }
+    </main>
+  </body>
+</html>
