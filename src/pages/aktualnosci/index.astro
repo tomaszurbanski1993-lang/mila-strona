@@ -1,36 +1,34 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection, type CollectionEntry } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import "../../styles/blog.css";
 
 const entries = await getCollection("news", ({ data }) => data.draft !== true);
-const items = entries.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+const items: CollectionEntry<"news">[] = entries.sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime()
+);
+const toSlug = (id: string): string => id.replace(/\.[^.]+$/, "");
 ---
 
-<html lang="pl">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Aktualnosci</title>
-  </head>
-  <body>
-    <main>
-      <h1>Aktualnosci</h1>
-      {
-        items.length === 0 ? (
-          <p>Brak aktualnosci.</p>
-        ) : (
-          <ul>
-            {items.map((item) => (
-              <li>
-                <a href={`/aktualnosci/${item.slug}/`}>{item.data.title}</a>
-                <p>{item.data.description}</p>
-                <time datetime={item.data.date.toISOString()}>
-                  {item.data.date.toLocaleDateString("pl-PL")}
-                </time>
-              </li>
-            ))}
-          </ul>
-        )
-      }
-    </main>
-  </body>
-</html>
+<BaseLayout title="Aktualności" activePath="/aktualnosci">
+  <main class="blog-list">
+    <h1>Aktualnosci</h1>
+    {
+      items.length === 0 ? (
+        <p class="blog-empty">Brak aktualnosci.</p>
+      ) : (
+        <ul>
+          {items.map((item) => (
+            <li>
+              <a href={`/aktualnosci/${toSlug(item.id)}/`}>{item.data.title}</a>
+              <p>{item.data.description}</p>
+              <time datetime={item.data.date.toISOString()}>
+                {item.data.date.toLocaleDateString("pl-PL")}
+              </time>
+            </li>
+          ))}
+        </ul>
+      )
+    }
+  </main>
+</BaseLayout>
