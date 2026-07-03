@@ -1,800 +1,143 @@
 ---
-const navItems = [
-  { label: "Start", href: "/" },
-  { label: "Aktualności", href: "/aktualnosci" },
-  { label: "O nas", href: "/o-nas" },
-  { label: "Logopeda", href: "/logopedia" },
-  { label: "Pediatra", href: "/pediatria" },
-  { label: "Blog", href: "/blog" },
-  { label: "Kontakt", href: "/kontakt" },
-];
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { services } from "../data/services";
+import "../styles/start.css";
 
-const services = [
-  {
-    title: "Logopeda",
-    description:
-      "Diagnoza, terapia mowy i spokojne prowadzenie dziecka oraz rodzica przez kolejne etapy rozwoju komunikacji.",
-    href: "/logopedia",
-    icon: "🗣️",
-  },
-  {
-    title: "Pediatra",
-    description:
-      "Opieka pediatryczna w przyjaznym gabinecie — z czasem na rozmowę, pytania i uważność na dziecko.",
-    href: "/pediatria",
-    icon: "🩺",
-  },
-  {
-    title: "Wsparcie rodziców",
-    description:
-      "Praktyczne wskazówki, spokojne tłumaczenie zaleceń i atmosfera, w której rodzic nie czuje się oceniany.",
-    href: "/o-nas",
-    icon: "💬",
-  },
-];
+const pageTitle = "Dzieciaki na Miłej — Logopeda i Pediatra Warka";
+const pageDescription =
+  "Specjalistyczne gabinety logopedyczny i pediatryczny Anny i Pawła Strusów w Warce, ul. Miła 12.";
 ---
 
-<html lang="pl">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Dzieciaki na Miłej — Logopeda i Pediatra Warka</title>
-    <meta
-      name="description"
-      content="Specjalistyczne gabinety logopedyczny i pediatryczny Anny i Pawła Strusów w Warce, ul. Miła 12."
-    />
-  </head>
+<BaseLayout title={pageTitle} description={pageDescription} activePath="/">
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-bg-shape hero-bg-shape-one"></div>
+      <div class="hero-bg-shape hero-bg-shape-two"></div>
 
-  <body>
-    <header class="site-header">
-      <a class="logo" href="/" aria-label="Dzieciaki na Miłej — strona główna">
-        <img src="/images/legacy/logo-dnm.png" alt="Dzieciaki na Miłej" />
-      </a>
+      <div class="hero-content">
+        <p class="eyebrow">Logopeda i pediatra w Warce</p>
 
-      <nav class="main-nav" aria-label="Główna nawigacja">
+        <h1 id="hero-title">
+          Dzieciaki na Miłej — spokojne miejsce dla dzieci i rodziców
+        </h1>
+
+        <p class="hero-lead">
+          Specjalistyczne gabinety Anny i Pawła Strusów przy ul. Miłej 12.
+          Łączymy profesjonalną opiekę, jasną komunikację i atmosferę,
+          w której młody pacjent może poczuć się bezpiecznie.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="/kontakt">Skontaktuj się</a>
+          <a class="button button-secondary" href="/o-nas">Poznaj nas</a>
+        </div>
+
+        <div class="trust-strip" aria-label="Najważniejsze informacje">
+          <span>Logopedia</span>
+          <span>Pediatria</span>
+          <span>Warka, ul. Miła 12</span>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Anna i Paweł Strus">
+        <div class="photo-card photo-card-main">
+          <img
+            src="/images/legacy/specjalisci-home.png"
+            alt="Anna i Paweł Strus — specjaliści Dzieciaki na Miłej"
+          />
+        </div>
+
+        <div class="floating-note note-blue">
+          <span>👋</span>
+          <strong>Witamy na Miłej</strong>
+        </div>
+
+        <div class="floating-note note-pink">
+          <span>🙂</span>
+          <strong>Bez pośpiechu</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro reveal" aria-labelledby="intro-title">
+      <div>
+        <p class="eyebrow">Dla młodych pacjentów i ich rodziców</p>
+        <h2 id="intro-title">Gabinet, który ma być mniej „lekarski”, a bardziej ludzki</h2>
+      </div>
+
+      <p>
+        Nowa strona powinna zachować ciepły, rodzinny charakter poprzedniej:
+        uśmiech, lekkość, jasne kolory i zdjęcia specjalistów. Zmieniamy jednak
+        układ na bardziej nowoczesny: większy oddech, proste sekcje, wyraźne
+        ścieżki dla rodzica i czytelne CTA.
+      </p>
+    </section>
+
+    <section class="welcome-scroll" aria-labelledby="welcome-title">
+      <div class="welcome-sticky reveal">
+        <p class="eyebrow">Przewiń dalej</p>
+        <h2 id="welcome-title">Najpierw poznajesz duet, potem zapraszamy dalej</h2>
+        <p>
+          Ten blok odtwarza ideę ze starej strony: specjaliści są obecni
+          wizualnie, a przy scrollowaniu pojawia się gest zaproszenia — jakby
+          mówili: „chodźcie, pokażemy Wam, jak możemy pomóc”.
+        </p>
+        <a class="button button-primary" href="/logopedia">Zobacz ofertę</a>
+      </div>
+
+      <div class="welcome-people">
+        <article class="person-card reveal">
+          <img
+            src="/images/legacy/anna-home.png"
+            alt="Anna Strus zapraszająca gestem"
+          />
+          <div>
+            <h3>Anna Strus</h3>
+            <p>Logopeda</p>
+          </div>
+        </article>
+
+        <article class="person-card reveal delay">
+          <img
+            src="/images/legacy/pawel-home.png"
+            alt="Paweł Strus — pediatra"
+          />
+          <div>
+            <h3>Paweł Strus</h3>
+            <p>Pediatra</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="services" aria-labelledby="services-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Co znajdziesz na stronie</p>
+        <h2 id="services-title">Szybka ścieżka dla rodzica</h2>
+      </div>
+
+      <div class="service-grid">
         {
-          navItems.map((item) => (
-            <a href={item.href} class={item.href === "/" ? "active" : ""}>
-              {item.label}
+          services.map((service) => (
+            <a class="service-card reveal" href={service.href}>
+              <span class="service-icon">{service.icon}</span>
+              <h3>{service.title}</h3>
+              <p>{service.description}</p>
+              <span class="service-link">Przejdź dalej →</span>
             </a>
           ))
         }
-      </nav>
-
-      <a class="header-cta" href="/kontakt">Umów wizytę</a>
-    </header>
-
-    <main>
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-bg-shape hero-bg-shape-one"></div>
-        <div class="hero-bg-shape hero-bg-shape-two"></div>
-
-        <div class="hero-content">
-          <p class="eyebrow">Logopeda i pediatra w Warce</p>
-
-          <h1 id="hero-title">
-            Dzieciaki na Miłej — spokojne miejsce dla dzieci i rodziców
-          </h1>
-
-          <p class="hero-lead">
-            Specjalistyczne gabinety Anny i Pawła Strusów przy ul. Miłej 12.
-            Łączymy profesjonalną opiekę, jasną komunikację i atmosferę,
-            w której młody pacjent może poczuć się bezpiecznie.
-          </p>
-
-          <div class="hero-actions">
-            <a class="button button-primary" href="/kontakt">Skontaktuj się</a>
-            <a class="button button-secondary" href="/o-nas">Poznaj nas</a>
-          </div>
-
-          <div class="trust-strip" aria-label="Najważniejsze informacje">
-            <span>Logopedia</span>
-            <span>Pediatria</span>
-            <span>Warka, ul. Miła 12</span>
-          </div>
-        </div>
-
-        <div class="hero-visual" aria-label="Anna i Paweł Strus">
-          <div class="photo-card photo-card-main">
-            <img
-              src="/images/legacy/specjalisci-home.png"
-              alt="Anna i Paweł Strus — specjaliści Dzieciaki na Miłej"
-            />
-          </div>
-
-          <div class="floating-note note-blue">
-            <span>👋</span>
-            <strong>Witamy na Miłej</strong>
-          </div>
-
-          <div class="floating-note note-pink">
-            <span>🙂</span>
-            <strong>Bez pośpiechu</strong>
-          </div>
-        </div>
-      </section>
-
-      <section class="intro reveal" aria-labelledby="intro-title">
-        <div>
-          <p class="eyebrow">Dla młodych pacjentów i ich rodziców</p>
-          <h2 id="intro-title">Gabinet, który ma być mniej „lekarski”, a bardziej ludzki</h2>
-        </div>
-
-        <p>
-          Nowa strona powinna zachować ciepły, rodzinny charakter poprzedniej:
-          uśmiech, lekkość, jasne kolory i zdjęcia specjalistów. Zmieniamy jednak
-          układ na bardziej nowoczesny: większy oddech, proste sekcje, wyraźne
-          ścieżki dla rodzica i czytelne CTA.
-        </p>
-      </section>
-
-      <section class="welcome-scroll" aria-labelledby="welcome-title">
-        <div class="welcome-sticky reveal">
-          <p class="eyebrow">Przewiń dalej</p>
-          <h2 id="welcome-title">Najpierw poznajesz duet, potem zapraszamy dalej</h2>
-          <p>
-            Ten blok odtwarza ideę ze starej strony: specjaliści są obecni
-            wizualnie, a przy scrollowaniu pojawia się gest zaproszenia — jakby
-            mówili: „chodźcie, pokażemy Wam, jak możemy pomóc”.
-          </p>
-          <a class="button button-primary" href="/logopedia">Zobacz ofertę</a>
-        </div>
-
-        <div class="welcome-people">
-          <article class="person-card reveal">
-            <img
-              src="/images/legacy/anna-home.png"
-              alt="Anna Strus zapraszająca gestem"
-            />
-            <div>
-              <h3>Anna Strus</h3>
-              <p>Logopeda</p>
-            </div>
-          </article>
-
-          <article class="person-card reveal delay">
-            <img
-              src="/images/legacy/pawel-home.png"
-              alt="Paweł Strus — pediatra"
-            />
-            <div>
-              <h3>Paweł Strus</h3>
-              <p>Pediatra</p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="services" aria-labelledby="services-title">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Co znajdziesz na stronie</p>
-          <h2 id="services-title">Szybka ścieżka dla rodzica</h2>
-        </div>
-
-        <div class="service-grid">
-          {
-            services.map((service) => (
-              <a class="service-card reveal" href={service.href}>
-                <span class="service-icon">{service.icon}</span>
-                <h3>{service.title}</h3>
-                <p>{service.description}</p>
-                <span class="service-link">Przejdź dalej →</span>
-              </a>
-            ))
-          }
-        </div>
-      </section>
-
-      <section class="contact-band reveal" aria-labelledby="contact-title">
-        <div>
-          <p class="eyebrow">Kontakt</p>
-          <h2 id="contact-title">Dzieciaki na Miłej</h2>
-          <p>ul. Miła 12, Warka</p>
-        </div>
-
-        <a class="button button-light" href="/kontakt">Dane kontaktowe</a>
-      </section>
-    </main>
-
-    <script>
-      const revealElements = document.querySelectorAll(".reveal");
-
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("is-visible");
-            }
-          });
-        },
-        { threshold: 0.16 }
-      );
-
-      revealElements.forEach((element) => observer.observe(element));
-    </script>
-  </body>
-</html>
-
-<style>
-  :root {
-    --color-blue: #44a7e3;
-    --color-blue-dark: #1c81be;
-    --color-pink: #ec1e5e;
-    --color-pink-dark: #af0f40;
-    --color-cream: #fffaf7;
-    --color-soft-blue: #eaf7ff;
-    --color-soft-pink: #fff0f5;
-    --color-text: #263238;
-    --color-muted: #6b7a86;
-    --color-line: #d9ecf7;
-    --shadow-soft: 0 24px 70px rgba(28, 129, 190, 0.14);
-    --radius-xl: 32px;
-    --radius-lg: 24px;
-    --max-width: 1180px;
-  }
-
-  * {
-    box-sizing: border-box;
-  }
-
-  html {
-    scroll-behavior: smooth;
-  }
-
-  body {
-    margin: 0;
-    font-family:
-      Barlow,
-      system-ui,
-      -apple-system,
-      BlinkMacSystemFont,
-      "Segoe UI",
-      sans-serif;
-    color: var(--color-text);
-    background:
-      radial-gradient(circle at 15% 10%, rgba(68, 167, 227, 0.12), transparent 34%),
-      radial-gradient(circle at 88% 5%, rgba(236, 30, 94, 0.1), transparent 30%),
-      var(--color-cream);
-  }
-
-  img {
-    display: block;
-    max-width: 100%;
-  }
-
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  .site-header {
-    position: sticky;
-    top: 0;
-    z-index: 30;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 28px;
-    padding: 18px clamp(18px, 4vw, 56px);
-    background: rgba(255, 250, 247, 0.86);
-    backdrop-filter: blur(18px);
-    border-bottom: 1px solid rgba(68, 167, 227, 0.14);
-  }
-
-  .logo img {
-    width: 136px;
-    height: auto;
-  }
-
-  .main-nav {
-    display: flex;
-    align-items: center;
-    gap: clamp(12px, 2vw, 24px);
-    font-family:
-      Montserrat,
-      Barlow,
-      system-ui,
-      sans-serif;
-    font-size: 0.78rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    color: var(--color-blue-dark);
-  }
-
-  .main-nav a {
-    position: relative;
-    padding: 10px 0;
-  }
-
-  .main-nav a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 3px;
-    width: 0;
-    height: 3px;
-    border-radius: 999px;
-    background: var(--color-blue);
-    transition: width 180ms ease;
-  }
-
-  .main-nav a:hover::after,
-  .main-nav a.active::after {
-    width: 100%;
-  }
-
-  .header-cta {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 42px;
-    padding: 0 18px;
-    border-radius: 999px;
-    background: var(--color-pink);
-    color: #fff;
-    font-weight: 800;
-    box-shadow: 0 14px 34px rgba(236, 30, 94, 0.22);
-  }
-
-  .hero {
-    position: relative;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: minmax(0, 1.02fr) minmax(360px, 0.98fr);
-    align-items: center;
-    gap: clamp(28px, 5vw, 72px);
-    max-width: var(--max-width);
-    min-height: calc(100svh - 82px);
-    margin: 0 auto;
-    padding: clamp(48px, 7vw, 96px) clamp(18px, 4vw, 36px);
-  }
-
-  .hero-bg-shape {
-    position: absolute;
-    z-index: -1;
-    border-radius: 999px;
-    filter: blur(2px);
-  }
-
-  .hero-bg-shape-one {
-    width: 340px;
-    height: 340px;
-    left: -120px;
-    top: 10%;
-    background: rgba(68, 167, 227, 0.12);
-  }
-
-  .hero-bg-shape-two {
-    width: 280px;
-    height: 280px;
-    right: -90px;
-    bottom: 12%;
-    background: rgba(236, 30, 94, 0.1);
-  }
-
-  .eyebrow {
-    margin: 0 0 14px;
-    color: var(--color-pink);
-    font-family:
-      Montserrat,
-      Barlow,
-      system-ui,
-      sans-serif;
-    font-size: 0.78rem;
-    font-weight: 900;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-  }
-
-  h1,
-  h2,
-  h3 {
-    font-family:
-      Montserrat,
-      Barlow,
-      system-ui,
-      sans-serif;
-    line-height: 1.05;
-    margin: 0;
-  }
-
-  h1 {
-    max-width: 760px;
-    font-size: clamp(2.6rem, 6vw, 5.5rem);
-    letter-spacing: -0.07em;
-  }
-
-  h2 {
-    font-size: clamp(2rem, 4vw, 3.6rem);
-    letter-spacing: -0.055em;
-  }
-
-  h3 {
-    font-size: 1.25rem;
-    letter-spacing: -0.03em;
-  }
-
-  .hero-lead {
-    max-width: 650px;
-    margin: 24px 0 0;
-    color: var(--color-muted);
-    font-size: clamp(1.08rem, 1.7vw, 1.28rem);
-    line-height: 1.65;
-  }
-
-  .hero-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 14px;
-    margin-top: 34px;
-  }
-
-  .button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 52px;
-    padding: 0 24px;
-    border-radius: 999px;
-    font-weight: 900;
-    transition:
-      transform 180ms ease,
-      box-shadow 180ms ease,
-      background 180ms ease;
-  }
-
-  .button:hover {
-    transform: translateY(-2px);
-  }
-
-  .button-primary {
-    background: var(--color-blue);
-    color: #fff;
-    box-shadow: 0 18px 42px rgba(68, 167, 227, 0.28);
-  }
-
-  .button-primary:hover {
-    background: var(--color-blue-dark);
-  }
-
-  .button-secondary {
-    background: #fff;
-    color: var(--color-blue-dark);
-    border: 1px solid var(--color-line);
-  }
-
-  .button-light {
-    background: #fff;
-    color: var(--color-pink);
-  }
-
-  .trust-strip {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 30px;
-  }
-
-  .trust-strip span {
-    padding: 10px 14px;
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.78);
-    color: var(--color-blue-dark);
-    border: 1px solid rgba(68, 167, 227, 0.2);
-    font-weight: 800;
-  }
-
-  .hero-visual {
-    position: relative;
-  }
-
-  .photo-card {
-    overflow: hidden;
-    background: #fff;
-    box-shadow: var(--shadow-soft);
-  }
-
-  .photo-card-main {
-    border-radius: 38% 62% 48% 52% / 54% 44% 56% 46%;
-    padding: clamp(12px, 2vw, 20px);
-  }
-
-  .photo-card-main img {
-    width: 100%;
-    min-height: 520px;
-    object-fit: contain;
-    object-position: center bottom;
-    border-radius: 32px;
-    background:
-      linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(234, 247, 255, 0.65));
-  }
-
-  .floating-note {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 13px 16px;
-    border-radius: 20px;
-    background: #fff;
-    box-shadow: 0 18px 44px rgba(38, 50, 56, 0.12);
-    font-weight: 900;
-  }
-
-  .floating-note span {
-    font-size: 1.25rem;
-  }
-
-  .note-blue {
-    left: -18px;
-    bottom: 18%;
-    color: var(--color-blue-dark);
-  }
-
-  .note-pink {
-    right: -12px;
-    top: 16%;
-    color: var(--color-pink);
-  }
-
-  .intro,
-  .services,
-  .welcome-scroll,
-  .contact-band {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: clamp(60px, 8vw, 112px) clamp(18px, 4vw, 36px);
-  }
-
-  .intro {
-    display: grid;
-    grid-template-columns: 0.9fr 1.1fr;
-    gap: clamp(28px, 6vw, 80px);
-    align-items: end;
-  }
-
-  .intro p:last-child {
-    margin: 0;
-    color: var(--color-muted);
-    font-size: 1.22rem;
-    line-height: 1.72;
-  }
-
-  .welcome-scroll {
-    display: grid;
-    grid-template-columns: 0.86fr 1.14fr;
-    gap: clamp(28px, 6vw, 80px);
-    align-items: start;
-  }
-
-  .welcome-sticky {
-    position: sticky;
-    top: 124px;
-    padding: clamp(26px, 4vw, 44px);
-    border-radius: var(--radius-xl);
-    background: linear-gradient(145deg, #ffffff, var(--color-soft-blue));
-    box-shadow: var(--shadow-soft);
-  }
-
-  .welcome-sticky p {
-    color: var(--color-muted);
-    font-size: 1.1rem;
-    line-height: 1.65;
-  }
-
-  .welcome-people {
-    display: grid;
-    gap: 28px;
-  }
-
-  .person-card {
-    overflow: hidden;
-    min-height: 520px;
-    border-radius: var(--radius-xl);
-    background: #fff;
-    box-shadow: var(--shadow-soft);
-  }
-
-  .person-card img {
-    width: 100%;
-    height: 440px;
-    object-fit: contain;
-    object-position: center bottom;
-    background:
-      radial-gradient(circle at 20% 15%, rgba(68, 167, 227, 0.16), transparent 35%),
-      linear-gradient(180deg, #fff, #f8fdff);
-  }
-
-  .person-card div {
-    padding: 24px;
-  }
-
-  .person-card p {
-    margin: 8px 0 0;
-    color: var(--color-muted);
-    font-weight: 700;
-  }
-
-  .section-heading {
-    max-width: 720px;
-    margin-bottom: 32px;
-  }
-
-  .service-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
-  }
-
-  .service-card {
-    min-height: 310px;
-    padding: 28px;
-    border-radius: var(--radius-lg);
-    background: rgba(255, 255, 255, 0.82);
-    border: 1px solid rgba(68, 167, 227, 0.16);
-    box-shadow: 0 20px 54px rgba(38, 50, 56, 0.07);
-    transition:
-      transform 180ms ease,
-      border-color 180ms ease,
-      background 180ms ease;
-  }
-
-  .service-card:hover {
-    transform: translateY(-5px);
-    border-color: rgba(68, 167, 227, 0.44);
-    background: #fff;
-  }
-
-  .service-icon {
-    display: grid;
-    place-items: center;
-    width: 58px;
-    height: 58px;
-    margin-bottom: 24px;
-    border-radius: 18px;
-    background: var(--color-soft-blue);
-    font-size: 1.75rem;
-  }
-
-  .service-card p {
-    color: var(--color-muted);
-    line-height: 1.62;
-  }
-
-  .service-link {
-    display: inline-block;
-    margin-top: 16px;
-    color: var(--color-blue-dark);
-    font-weight: 900;
-  }
-
-  .contact-band {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 24px;
-    margin-bottom: 56px;
-    border-radius: var(--radius-xl);
-    background:
-      radial-gradient(circle at 12% 20%, rgba(255, 255, 255, 0.28), transparent 30%),
-      linear-gradient(135deg, var(--color-blue), var(--color-pink));
-    color: #fff;
-  }
-
-  .contact-band .eyebrow,
-  .contact-band p {
-    color: #fff;
-  }
-
-  .contact-band p {
-    margin: 14px 0 0;
-    font-size: 1.2rem;
-    font-weight: 700;
-  }
-
-  .reveal {
-    opacity: 0;
-    transform: translateY(24px);
-    transition:
-      opacity 600ms ease,
-      transform 600ms ease;
-  }
-
-  .reveal.is-visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  .reveal.delay {
-    transition-delay: 140ms;
-  }
-
-  @media (max-width: 980px) {
-    .site-header {
-      align-items: flex-start;
-      flex-direction: column;
-    }
-
-    .main-nav {
-      width: 100%;
-      overflow-x: auto;
-      padding-bottom: 4px;
-    }
-
-    .header-cta {
-      display: none;
-    }
-
-    .hero,
-    .intro,
-    .welcome-scroll {
-      grid-template-columns: 1fr;
-    }
-
-    .hero {
-      min-height: auto;
-    }
-
-    .photo-card-main img {
-      min-height: 420px;
-    }
-
-    .welcome-sticky {
-      position: relative;
-      top: auto;
-    }
-
-    .service-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  @media (max-width: 620px) {
-    .site-header {
-      padding: 14px 18px;
-    }
-
-    .logo img {
-      width: 118px;
-    }
-
-    .hero,
-    .intro,
-    .services,
-    .welcome-scroll,
-    .contact-band {
-      padding-left: 18px;
-      padding-right: 18px;
-    }
-
-    .hero-actions,
-    .contact-band {
-      align-items: stretch;
-      flex-direction: column;
-    }
-
-    .button {
-      width: 100%;
-    }
-
-    .photo-card-main {
-      border-radius: 28px;
-    }
-
-    .photo-card-main img,
-    .person-card img {
-      min-height: auto;
-      height: auto;
-    }
-
-    .floating-note {
-      position: static;
-      margin-top: 12px;
-    }
-
-    .person-card {
-      min-height: auto;
-    }
-  }
-</style>
+      </div>
+    </section>
+
+    <section class="contact-band reveal" aria-labelledby="contact-title">
+      <div>
+        <p class="eyebrow">Kontakt</p>
+        <h2 id="contact-title">Dzieciaki na Miłej</h2>
+        <p>ul. Miła 12, Warka</p>
+      </div>
+
+      <a class="button button-light" href="/kontakt">Dane kontaktowe</a>
+    </section>
+  </main>
+</BaseLayout>
