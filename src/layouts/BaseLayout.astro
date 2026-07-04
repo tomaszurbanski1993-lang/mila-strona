@@ -17,14 +17,15 @@ const { title, description, activePath = Astro.url.pathname } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <script is:inline src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script is:inline>
-      // Widget Identity (obsługa invite tokenów + przekierowanie po logowaniu)
-      // jest potrzebny tylko na produkcji, gdzie Decap używa git-gateway.
-      // Na localhost Decap łączy się z lokalnym proxy i nie wymaga logowania.
       const isProduction =
         location.hostname !== "localhost" && location.hostname !== "127.0.0.1";
       if (isProduction && window.netlifyIdentity) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
+        window.netlifyIdentity.on("init", (user) => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
         });
       }
     </script>
