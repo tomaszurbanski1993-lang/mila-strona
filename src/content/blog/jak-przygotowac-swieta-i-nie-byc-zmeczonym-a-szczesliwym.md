@@ -21,10 +21,10 @@ W tym roku w kalendarzu są nie tylko przygotowania ale także przyjemności zwi
 
 Dobry plan to podstawa!
 
-![20241129_162724](/public/images/legacy/20241129_162724-1200x1601.jpg)
+![20241129_162724](/public/images/legacy/20241129_162724.jpg)
 
-![20241208_091011](/public/images/legacy/20241208_091011-1200x571.jpg)
+![20241208_091011](/public/images/legacy/20241208_091011.jpg)
 
-![20241129_163836](/public/images/legacy/20241129_163836-1200x937.jpg)
+![20241129_163836](/public/images/legacy/20241129_163836.jpg)
 
-![20241216_201925](/public/images/legacy/20241216_201925-1200x676.jpg)
+![20241216_201925](/public/images/legacy/20241216_201925.jpg)

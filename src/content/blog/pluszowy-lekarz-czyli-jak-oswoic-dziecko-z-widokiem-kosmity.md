@@ -15,6 +15,6 @@ My też ich nie lubimy, ale musimy ich używać, aby chronić Was i siebie przed
 
 [
 
-![](/public/images/legacy/Pluszowy-lekarz-1200x1698.jpg)
+![](/public/images/legacy/Pluszowy-lekarz.jpg)
 
 ](http://logopedawarka.pl/pluszowy-lekarz/)

@@ -8,11 +8,11 @@ draft: false
 
 [
 
-![](/public/images/legacy/20211013_145259-320x427.jpg)
+![](/public/images/legacy/20211013_145259.jpg)
 
 ](http://logopedawarka.pl/20211013_145259/)[
 
-![](/public/images/legacy/Elektrostymulacja-zdjęcie-320x427.jpg)
+![](/public/images/legacy/Elektrostymulacja-zdjęcie.jpg)
 
 ](http://logopedawarka.pl/elektrostymulacja-zdjecie/)
 

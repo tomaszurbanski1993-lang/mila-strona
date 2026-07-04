@@ -136,7 +136,7 @@ Po przeczytaniu powyższych punktów już wiemy, że to nieprawda. Astra został
 
 [
 
-![](/public/images/legacy/image-320x81.png)
+![](/public/images/legacy/image.png)
 
 ](http://logopedawarka.pl/image/)
 

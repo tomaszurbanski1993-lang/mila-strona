@@ -92,6 +92,6 @@ Przeciwskazaniami do korzystania z zabiegów elektrostymulacyjnych są:
 
 [
 
-![](/public/images/legacy/Elektrody-320x213.jpg)
+![](/public/images/legacy/Elektrody.jpg)
 
 ](http://logopedawarka.pl/elektrody/)

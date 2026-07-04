@@ -33,46 +33,46 @@ P.S. Na zdjęciach możecie zobaczyć jak wyglądało to wydarzenie.
 
 [
 
-![](/public/images/legacy/DSC_0165-320x481.jpg)
+![](/public/images/legacy/DSC_0165.jpg)
 
 ](https://logopedawarka.pl/dsc_0165/)[
 
-![](/public/images/legacy/DSC_0158-1-320x213.jpg)
+![](/public/images/legacy/DSC_0158-1.jpg)
 
 ](https://logopedawarka.pl/dsc_0158-2/)[
 
-![](/public/images/legacy/DSC_0193-320x213.jpg)
+![](/public/images/legacy/DSC_0193.jpg)
 
 ](https://logopedawarka.pl/dsc_0193/)[
 
-![](/public/images/legacy/DSC_0146-320x481.jpg)
+![](/public/images/legacy/DSC_0146.jpg)
 
 ](https://logopedawarka.pl/dsc_0146/)[
 
-![](/public/images/legacy/DSC_0145-320x481.jpg)
+![](/public/images/legacy/DSC_0145.jpg)
 
 ](https://logopedawarka.pl/dsc_0145/)[
 
-![](/public/images/legacy/DSC_0139-320x481.jpg)
+![](/public/images/legacy/DSC_0139.jpg)
 
 ](https://logopedawarka.pl/dsc_0139/)[
 
-![](/public/images/legacy/DSC_0137-320x481.jpg)
+![](/public/images/legacy/DSC_0137.jpg)
 
 ](https://logopedawarka.pl/dsc_0137/)[
 
-![](/public/images/legacy/DSC_0133-320x481.jpg)
+![](/public/images/legacy/DSC_0133.jpg)
 
 ](https://logopedawarka.pl/dsc_0133/)[
 
-![](/public/images/legacy/DSC_0127-320x481.jpg)
+![](/public/images/legacy/DSC_0127.jpg)
 
 ](https://logopedawarka.pl/dsc_0127/)[
 
-![](/public/images/legacy/DSC_0123-320x481.jpg)
+![](/public/images/legacy/DSC_0123.jpg)
 
 ](https://logopedawarka.pl/dsc_0123/)[
 
-![](/public/images/legacy/DSC_0122-320x213.jpg)
+![](/public/images/legacy/DSC_0122.jpg)
 
 ](https://logopedawarka.pl/dsc_0122/)
