@@ -34,7 +34,11 @@ body {
     sans-serif;
   color: var(--color-text);
   background:
-    radial-gradient(circle at 15% 10%, rgba(68, 167, 227, 0.12), transparent 34%),
+    radial-gradient(
+      circle at 15% 10%,
+      rgba(68, 167, 227, 0.12),
+      transparent 34%
+    ),
     radial-gradient(circle at 88% 5%, rgba(236, 30, 94, 0.1), transparent 30%),
     var(--color-cream);
 }
@@ -72,11 +76,7 @@ a {
   display: flex;
   align-items: center;
   gap: clamp(12px, 2vw, 24px);
-  font-family:
-    Montserrat,
-    Barlow,
-    system-ui,
-    sans-serif;
+  font-family: Montserrat, Barlow, system-ui, sans-serif;
   font-size: 0.78rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -122,11 +122,7 @@ a {
 .eyebrow {
   margin: 0 0 14px;
   color: var(--color-pink);
-  font-family:
-    Montserrat,
-    Barlow,
-    system-ui,
-    sans-serif;
+  font-family: Montserrat, Barlow, system-ui, sans-serif;
   font-size: 0.78rem;
   font-weight: 900;
   letter-spacing: 0.12em;
@@ -136,11 +132,7 @@ a {
 h1,
 h2,
 h3 {
-  font-family:
-    Montserrat,
-    Barlow,
-    system-ui,
-    sans-serif;
+  font-family: Montserrat, Barlow, system-ui, sans-serif;
   line-height: 1.05;
   margin: 0;
 }
@@ -149,6 +141,7 @@ h1 {
   max-width: 760px;
   font-size: clamp(2.6rem, 6vw, 5.5rem);
   letter-spacing: -0.07em;
+  margin-bottom: 11px;
 }
 
 h2 {

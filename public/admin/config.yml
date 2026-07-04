@@ -1,4 +1,4 @@
-local_backend: true
+local_backend: false
 
 backend:
   name: git-gateway
@@ -19,7 +19,13 @@ collections:
       - { label: Data, name: date, widget: datetime }
       - { label: Obraz, name: image, widget: image, required: false }
       - { label: Tagi, name: tags, widget: list, required: false }
-      - { label: Wersja robocza, name: draft, widget: boolean, default: false, required: false }
+      - {
+          label: Wersja robocza,
+          name: draft,
+          widget: boolean,
+          default: false,
+          required: false,
+        }
       - { label: Tresc, name: body, widget: markdown }
 
   - name: news
@@ -32,5 +38,11 @@ collections:
       - { label: Opis, name: description, widget: text }
       - { label: Data, name: date, widget: datetime }
       - { label: Tagi, name: tags, widget: list, required: false }
-      - { label: Wersja robocza, name: draft, widget: boolean, default: false, required: false }
+      - {
+          label: Wersja robocza,
+          name: draft,
+          widget: boolean,
+          default: false,
+          required: false,
+        }
       - { label: Tresc, name: body, widget: markdown }
