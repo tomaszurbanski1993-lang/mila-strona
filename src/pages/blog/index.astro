@@ -22,6 +22,9 @@ const toSlug = (id: string): string => id.replace(/\.[^.]+$/, "");
           {posts.map((post) => (
             <li>
               <a href={`/blog/${toSlug(post.id)}/`}>{post.data.title}</a>
+              {post.data.image && (
+                <img src={post.data.image} alt={post.data.title} class="blog-thumb" />
+              )}
               <p>{post.data.description}</p>
               <time datetime={post.data.date.toISOString()}>
                 {post.data.date.toLocaleDateString("pl-PL")}
