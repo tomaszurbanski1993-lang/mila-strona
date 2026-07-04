@@ -54,11 +54,13 @@ npm run dev
 
 Domyślnie serwer startuje pod adresem [http://localhost:4321/](https://www.google.com/search?q=http://localhost:4321/) (**Astro v5**). W trakcie pracy zmiany w plikach są odświeżane na żywo (**HMR** — _Hot Module Replacement_).
 
-Aby uruchomić stronę **razem z panelem CMS** (Decap CMS, patrz sekcja poniżej):
+Aby uruchomić stronę **wraz z panelem CMS** (Decap CMS) w trybie lokalnym — posty zapisują się na dysk, bez logowania i bez wpływu na produkcję:
 
 ```bash
 npm run dev:cms
 ```
+
+Uruchamia jednocześnie **Astro** (`http://localhost:4321/`) oraz **decap-server** (lokalne proxy Git na porcie 8081). Panel CMS jest pod `http://localhost:4321/admin/` (szczegóły w sekcji „Zarządzanie treścią"). Zwykły `npm run dev` odpala samo Astro — panel `/admin/` wtedy przełączy się na backend produkcyjny (`git-gateway` + Netlify Identity).
 
 **Przydatne flagi:**
 
@@ -117,12 +119,11 @@ Weryfikuje typy TypeScript w plikach `.astro` i `.ts` (wymaga paczki `@astrojs/c
 
 ```bash
 npm install          # Jednorazowo (lub po zmianie zależności)
-npm run dev          # Praca developerska na localhoście
-npm run dev:cms      # Praca developerska + panel CMS pod /admin/
+npm run dev:cms      # Praca na localhoście + panel CMS w trybie lokalnym (zapis na dysk, bez logowania)
+npm run dev          # Tylko Astro (panel /admin/ przełączy się na backend produkcyjny — ostrożnie)
 npx astro check      # Opcjonalnie przed commitem — weryfikacja typów
 npm run build        # Build produkcyjny do katalogu dist/
 npm run preview      # Podgląd zbudowanej wersji przed wdrożeniem
-
 ```
 
 ---
@@ -143,48 +144,87 @@ Strona korzysta z **Decap CMS** (dawniej Netlify CMS) — headless CMS, który p
 
 ```text
 public/admin/
-├── config.yml          # konfiguracja kolekcji i backendu CMS
-└── (index.html usunięty — panel jest w src/pages/admin/index.astro)
+└── config.yml          # konfiguracja kolekcji i backendu CMS (local_backend: true)
 
 src/pages/admin/
-└── index.astro         # panel CMS (ładowany pod /admin/)
+└── index.astro         # panel CMS (ładowany pod /admin/) + inicjalizacja Netlify Identity (tylko produkcja)
+
+src/data/
+└── url.ts              # currentDomain — domena produkcyjna używana przez Identity widget
+
+src/layouts/
+└── BaseLayout.astro    # globalny skrypt Netlify Identity (obsługa invite token + redirect po logowaniu, tylko produkcja)
 ```
 
 ### Kolekcje treści
 
-| Kolekcja | Folder | Obrazki | Opis |
-|---|---|---|---|
-| **Blog** | `src/content/blog/` | Tak | Wpisy blogowe z okładką i miniaturą |
-| **Aktualności** | `src/content/news/` | Nie | Krótkie komunikaty, tylko tekst |
+| Kolekcja        | Folder              | Obrazki | Opis                                |
+| --------------- | ------------------- | ------- | ----------------------------------- |
+| **Blog**        | `src/content/blog/` | Tak     | Wpisy blogowe z okładką i miniaturą |
+| **Aktualności** | `src/content/news/` | Nie     | Krótkie komunikaty, tylko tekst     |
 
 Obie kolekcje mają wspólny schemat: tytuł, opis, data, tagi, flaga wersji roboczej (`draft`) i treść Markdown. Blog dodatkowo ma pole obrazka.
 
-### Tryb lokalny (programowanie)
+### Backend i autoryzacja — jak to działa
+
+W `public/admin/config.yml` ustawione jest:
+
+```yaml
+local_backend: true
+
+backend:
+  name: git-gateway
+  branch: main
+```
+
+Decap CMS **sam rozróżnia localhost od produkcji** (wynika z `detectProxyServer` w `decap-cms-core/src/actions/config.ts`):
+
+1. **localhost** (`location.hostname` ∈ `["localhost", "127.0.0.1"]`) — Decap pyta `http://localhost:8081/api/v1` (czyli `decap-server`).
+   - Jeśli `decap-server` odpowiada → backend zamienia się na **`proxy`**: zapis wyłącznie na dysk, **bez logowania**, **bez commitów do Git**, **bez dotykania produkcji**. Idealne do tworzenia i testowania postów lokalnie.
+   - Jeśli `decap-server` nie działa → proxy nie wykryte → Decap zostaje przy `git-gateway` (patrz produkcja poniżej), czyli logowanie Netlify Identity i commity do `main`.
+2. **produkcja** (hostname `siup.me`, nie w `allowed_hosts`) — detekcja proxy jest pomijana → Decap używa **`git-gateway`** z autoryzacją przez **Netlify Identity** (email + hasło, tylko zaproszeni użytkownicy). Zmiany commitują się do gałęzi `main` i wyzwalają deploy.
+
+Przełącznikiem trybu jest więc **uruchomienie `decap-server`**, a nie ręczna edycja `config.yml`. `local_backend: true` jest bezpieczne na produkcji, bo detekcja proxy działa tylko na localhost.
+
+Widget **Netlify Identity** jest inicjalizowany **tylko na produkcji** (warunek `location.hostname !== "localhost" && !== "127.0.0.1"` w `src/pages/admin/index.astro` i `src/layouts/BaseLayout.astro`), z `APIUrl` wskazującym na domenę produkcyjną:
+
+```js
+const identityApiUrl = `https://${currentDomain}/.netlify/identity`;
+// currentDomain = "siup.me" (src/data/url.ts)
+window.netlifyIdentity.init({ APIUrl: identityApiUrl });
+```
+
+Dzięki temu tryb lokalny jest w pełni offline (nie odpytuje produkcyjnego API Identity), a tryb produkcyjny loguje się przez usługę Identity na `siup.me`.
+
+### Praca z panelem — dwa tryby
+
+#### 🧪 Tryb lokalny (posty tylko u Ciebie na dysku)
 
 ```bash
 npm run dev:cms
 ```
 
-Odpala jednocześnie:
-- **Astro** na `http://localhost:4321/`
-- **decap-server** (lokalny proxy Git) na porcie 8081
+Odpala **Astro** (`http://localhost:4321/`) **oraz `decap-server`** (proxy na porcie 8081). Panel: `http://localhost:4321/admin/` → **Login** wchodzi od razu, bez hasła. Zmiany zapisują się do plików Markdown w `src/content/...` na dysku i **nie trafiają do Git ani na produkcję**. Możesz je później normalnie zcommitować ręcznie, gdy zechcesz.
 
-Panel CMS: `http://localhost:4321/admin/`
+> Jeśli wolisz pracować bez CMS, uruchom zwykły `npm run dev` — panel `/admin/` wtedy nie znajdzie proxy i przełączy się na `git-gateway` (czyli logowanie Identity + commity do `main`), co równoznaczne jest z pracą na produkcji. Używaj tego świadomie.
 
-W trybie lokalnym **nie ma logowania** — klikasz „Login" i od razu wchodzisz do edytora. Zmiany zapisują się bezpośrednio do plików na dysku (nie do repo Git ani na produkcję). Służy to wyłącznie do testowania panelu.
+#### 🚀 Tryb produkcyjny (Netlify)
 
-> Aktywne dzięki `local_backend: true` w `public/admin/config.yml`. Gdy CMS wykryje działanie na localhost, automatycznie łączy się z `decap-server` zamiast z Netlify.
+Na wdrożonej stronie panel jest pod `https://siup.me/admin/`. Logowanie przez **Netlify Identity** — tylko osoby zaproszone przez admina w dashboardzie Netlify (Identity → Invite users). Zmiany commitują się do gałęzi `main` przez `git-gateway` i automatycznie wyzwalają deploy (`netlify.toml`: `npm run build` → publikacja `dist/`).
 
-### Tryb produkcyjny (Netlify)
+### 🔒 Bezpieczeństwo panelu na produkcji
 
-Na wdrożonej stronie panel jest pod `https://<domena>/admin/`. Logowanie odbywa się przez **Netlify Identity** (email + hasło). Tylko osoby zaproszone przez admina w dashboardzie Netlify (Identity → Invite users) mogą się zalogować. Zmiany są commitowane do repo Git przez `git-gateway`.
+- **Netlify Identity → Registration: „Invite only”** (w dashboardzie Netlify) — nikt nie może założyć konta samodzielnie; dostęp mają tylko zaproszeni użytkownicy.
+- **git-gateway** wymaga ważnego tokena Identity do wykonywania commitów — bez zalogowania nie da się zapisać żadnych zmian.
+- **Widget Identity** ładuje się i inicjalizuje tylko na produkcji; na localhost panel nie kontaktuje się z usługą Identity.
+- **Opcjonalne usztywnienie:** w Netlify można dodatkowo ograniczyć dostęp do ścieżki `/admin/` (np. Site access → Role-based redirects / password protection), aby nie wyświetlać nawet strony panelu niezalogowanym. Sam HTML panelu jest statyczny, ale bez zalogowania przez Identity nie pozwala na żadne akcje.
+- **`currentDomain`** (`src/data/url.ts`) wskazuje `siup.me` — przy zmianie domeny produkcyjnej zaktualizuj tę wartość, aby logowanie Identity wskazywało na właściwą domenę.
 
 ### Konfiguracja plików
 
 - **`netlify.toml`** — konfiguracja deployu na Netlify (`[build]`: komenda budowania `npm run build`, katalog publikacji `dist/`).
 - **`astro.config.mjs`** — konfiguracja Astro (obecnie domyślna, bez dodatkowych integracji).
-- **`public/admin/config.yml`** — konfiguracja Decap CMS: backend, ścieżki mediów, definicje kolekcji i pól formularza.
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- **`public/admin/config.yml`** — konfiguracja Decap CMS: `local_backend: true` (auto-detekcja localhost), backend `git-gateway` na gałęzi `main`, ścieżki mediów (`public/images/uploads` → `/images/uploads`), definicje kolekcji i pól formularza.
+- **`src/data/url.ts`** — `currentDomain` ("siup.me") używany do budowy `APIUrl` dla Netlify Identity w panelu CMS. Przy zmianie domeny produkcyjnej zaktualizuj tę wartość.
+- **`src/layouts/BaseLayout.astro`** — globalny skrypt `netlify-identity-widget` (obsługa invite tokenów na każdej stronie + redirect do `/admin/` po logowaniu), aktywny **tylko na produkcji**.
+- **`src/pages/admin/index.astro`** — panel Decap CMS + inicjalizacja widgetu Identity z `APIUrl = https://siup.me/.netlify/identity`, aktywna **tylko na produkcji**.

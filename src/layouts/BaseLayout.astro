@@ -17,9 +17,15 @@ const { title, description, activePath = Astro.url.pathname } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <script is:inline src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script is:inline>
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
+      const isProduction =
+        location.hostname !== "localhost" && location.hostname !== "127.0.0.1";
+      if (isProduction && window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user) => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
         });
       }
     </script>
