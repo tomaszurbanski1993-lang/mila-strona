@@ -1,0 +1,55 @@
+{
+  "title": "Start",
+  "subtitle": "Specjalistyczne Gabinety Lekarskie Anna i Paweł Strus",
+  "description": "Gabinety specjalistyczne – pediatryczny i logopedyczny przy ul. Miłej 12 w Warce.",
+  "images": [
+    {
+      "src": "/public/images/legacy/logo-dnm-nazwa-500-320x37.png",
+      "alt": ""
+    },
+    {
+      "src": "/public/images/legacy/anna-home.png",
+      "alt": ""
+    },
+    {
+      "src": "/public/images/legacy/pawel-home.png",
+      "alt": ""
+    },
+    {
+      "src": "/public/images/legacy/zyczenia04.png",
+      "alt": ""
+    },
+    {
+      "src": "/public/images/legacy/zyczeniamob.png",
+      "alt": ""
+    },
+    {
+      "src": "/public/images/legacy/prezentymob.png",
+      "alt": ""
+    },
+    {
+      "src": "/public/images/legacy/20241221_065644.jpg",
+      "alt": ""
+    },
+    {
+      "src": "/public/images/legacy/20241129_080012.jpg",
+      "alt": ""
+    },
+    {
+      "src": "/public/images/legacy/DSC_0128.jpg",
+      "alt": ""
+    }
+  ],
+  "sections": [
+    {
+      "title": "Logopeda",
+      "description": "Diagnoza i terapia mowy, elektrostymulacja, kinesiotaping, metoda Neuroflow ATS",
+      "link": "/logopedia"
+    },
+    {
+      "title": "Pediatra",
+      "description": "Opieka pediatryczna w przyjaznym gabinecie",
+      "link": "/pediatria"
+    }
+  ]
+}
