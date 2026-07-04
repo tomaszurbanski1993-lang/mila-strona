@@ -69,3 +69,17 @@ time {
   margin: 1.6em 0;
   border-radius: var(--radius-lg);
 }
+
+.blog-post .blog-cover {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+}
+
+.blog-list .blog-thumb {
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  margin: 14px 0;
+  border-radius: var(--radius-lg);
+}

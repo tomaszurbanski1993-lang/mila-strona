@@ -27,6 +27,9 @@ const { Content } = await render(entry);
       <time datetime={entry.data.date.toISOString()}>
         {entry.data.date.toLocaleDateString("pl-PL")}
       </time>
+      {entry.data.image && (
+        <img src={entry.data.image} alt={entry.data.title} class="blog-cover" />
+      )}
       <Content />
     </article>
   </main>
