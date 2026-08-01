@@ -36,5 +36,8 @@ vite.config.ts.timestamp-*
 # Kilo local plans
 .kilo/plans/
 
+# Local implementation plans
+/plans/
+
 # Local Netlify folder
 .netlify

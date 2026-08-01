@@ -1,34 +1,56 @@
 ---
 import "../styles/global.css";
 import { navItems } from "../data/navigation";
+import { currentDomain } from "../data/url";
 
 interface Props {
   title: string;
   description?: string;
   activePath?: string;
+  handleIdentityCallback?: boolean;
 }
 
-const { title, description, activePath = Astro.url.pathname } = Astro.props;
+const {
+  title,
+  description,
+  activePath = Astro.url.pathname,
+  handleIdentityCallback = false,
+} = Astro.props;
+const identityApiUrl = `https://${currentDomain}/.netlify/identity`;
 ---
 
 <html lang="pl">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <script is:inline src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script is:inline>
-      const isProduction =
-        location.hostname !== "localhost" && location.hostname !== "127.0.0.1";
-      if (isProduction && window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", (user) => {
-          if (!user) {
-            window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin/";
-            });
+    {
+      handleIdentityCallback && (
+        <script is:inline define:vars={{ identityApiUrl }}>
+          const identityCallbackToken =
+            /(?:^#|[&#])(invite_token|confirmation_token|recovery_token|email_change_token)=/;
+          const isProduction =
+            location.hostname !== "localhost" && location.hostname !== "127.0.0.1";
+
+          if (isProduction && identityCallbackToken.test(location.hash)) {
+            const widgetScript = document.createElement("script");
+            widgetScript.src =
+              "https://identity.netlify.com/v1/netlify-identity-widget.js";
+            widgetScript.onload = () => {
+              if (!window.netlifyIdentity) return;
+
+              const redirectToAdmin = () => location.replace("/admin/");
+
+              window.netlifyIdentity.on("init", (user) => {
+                if (user) redirectToAdmin();
+              });
+              window.netlifyIdentity.on("login", redirectToAdmin);
+              window.netlifyIdentity.init({ APIUrl: identityApiUrl });
+            };
+            document.head.append(widgetScript);
           }
-        });
-      }
-    </script>
+        </script>
+      )
+    }
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
   </head>

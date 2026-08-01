@@ -8,7 +8,12 @@ const pageDescription =
   "Specjalistyczne gabinety logopedyczny i pediatryczny Anny i Pawła Strusów w Warce, ul. Miła 12.";
 ---
 
-<BaseLayout title={pageTitle} description={pageDescription} activePath="/">
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  activePath="/"
+  handleIdentityCallback={true}
+>
   <main>
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-bg-shape hero-bg-shape-one"></div>

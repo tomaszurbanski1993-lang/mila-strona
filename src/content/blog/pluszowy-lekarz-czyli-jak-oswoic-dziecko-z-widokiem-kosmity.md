@@ -1,5 +1,5 @@
 ---
-title: "Pluszowy lekarz, czyli jak oswoić dziecko z widokiem "kosmity""
+title: "Pluszowy lekarz, czyli jak oswoić dziecko z widokiem \"kosmity\""
 description: "Kochane Dzieciaki, Drodzy Rodzice, jeśli mieliście okazję (lub konieczność) korzystać w ostatnim czasie z pomocy służby zdrowia, zapewne zauważyliście, że…"
 date: "2020-05-14"
 tags: ["Blog"]
