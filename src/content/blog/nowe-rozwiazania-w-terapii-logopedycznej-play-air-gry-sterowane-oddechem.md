@@ -2,9 +2,10 @@
 title: "Nowe Rozwiązania w Terapii Logopedycznej: Play.air – Gry Sterowane Oddechem"
 description: "W świecie logopedii zaczynają pojawiać się innowacje, które nie tylko ułatwiają, ale i ubarwiają proces terapeutyczny. Ostatnio mieliśmy przyjemność testować…"
 date: "2024-02-25"
+author: anna
 tags: ["Blog"]
 draft: false
-image: "/public/images/legacy/DSC_0128.jpg"
+image: "/images/legacy/DSC_0128.jpg"
 ---
 
 W świecie logopedii zaczynają pojawiać się innowacje, które nie tylko ułatwiają, ale i ubarwiają proces terapeutyczny. Ostatnio mieliśmy przyjemność testować jedną z takich nowości – rozwiązanie [play.air](https://www.play-air.com/) To intrygujący sposób na połączenie zabawy z efektywnym treningiem oddechu.
@@ -33,46 +34,46 @@ P.S. Na zdjęciach możecie zobaczyć jak wyglądało to wydarzenie.
 
 [
 
-![](/public/images/legacy/DSC_0165.jpg)
+![](/images/legacy/DSC_0165.jpg)
 
 ](https://logopedawarka.pl/dsc_0165/)[
 
-![](/public/images/legacy/DSC_0158-1.jpg)
+![](/images/legacy/DSC_0158-1.jpg)
 
 ](https://logopedawarka.pl/dsc_0158-2/)[
 
-![](/public/images/legacy/DSC_0193.jpg)
+![](/images/legacy/DSC_0193.jpg)
 
 ](https://logopedawarka.pl/dsc_0193/)[
 
-![](/public/images/legacy/DSC_0146.jpg)
+![](/images/legacy/DSC_0146.jpg)
 
 ](https://logopedawarka.pl/dsc_0146/)[
 
-![](/public/images/legacy/DSC_0145.jpg)
+![](/images/legacy/DSC_0145.jpg)
 
 ](https://logopedawarka.pl/dsc_0145/)[
 
-![](/public/images/legacy/DSC_0139.jpg)
+![](/images/legacy/DSC_0139.jpg)
 
 ](https://logopedawarka.pl/dsc_0139/)[
 
-![](/public/images/legacy/DSC_0137.jpg)
+![](/images/legacy/DSC_0137.jpg)
 
 ](https://logopedawarka.pl/dsc_0137/)[
 
-![](/public/images/legacy/DSC_0133.jpg)
+![](/images/legacy/DSC_0133.jpg)
 
 ](https://logopedawarka.pl/dsc_0133/)[
 
-![](/public/images/legacy/DSC_0127.jpg)
+![](/images/legacy/DSC_0127.jpg)
 
 ](https://logopedawarka.pl/dsc_0127/)[
 
-![](/public/images/legacy/DSC_0123.jpg)
+![](/images/legacy/DSC_0123.jpg)
 
 ](https://logopedawarka.pl/dsc_0123/)[
 
-![](/public/images/legacy/DSC_0122.jpg)
+![](/images/legacy/DSC_0122.jpg)
 
 ](https://logopedawarka.pl/dsc_0122/)

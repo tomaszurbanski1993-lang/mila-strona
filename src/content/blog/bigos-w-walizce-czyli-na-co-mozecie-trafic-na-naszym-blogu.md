@@ -2,6 +2,7 @@
 title: "Bigos w walizce, czyli na co możecie trafić na naszym blogu"
 description: "Jak już wcześniej pisaliśmy, chcemy by nasz blog był odzwierciedleniem naszych zainteresowań i fascynacji – głównie pozazawodowych. By pokazywał co nam “w…"
 date: "2018-11-05"
+author: pawel
 tags: ["Blog"]
 draft: false
 ---

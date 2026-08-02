@@ -2,9 +2,10 @@
 title: "Wirusy, wirusy…"
 description: "Trudno nie zauważyć, że infekcje wirusowe z grypą na czele stały się dominującym tematem zarówno w mediach, jak i w rozmowach prywatnych. Dorzucę i ja swoje…"
 date: "2023-01-12"
+author: pawel
 tags: ["Blog"]
 draft: false
-image: "/public/images/legacy/wirusy.jpg"
+image: "/images/legacy/wirusy.jpg"
 ---
 
 Trudno nie zauważyć, że infekcje wirusowe z grypą na czele stały się dominującym tematem zarówno w mediach, jak i w rozmowach prywatnych. Dorzucę i ja swoje trzy grosze prezentując część wywiadu, jakiego udzieliłem kilka dni temu dziennikarce Polskiej Agencji Prasowej.

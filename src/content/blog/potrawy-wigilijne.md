@@ -2,6 +2,7 @@
 title: "Potrawy wigilijne"
 description: "Zgodnie z obietnicą z wczorajszego wpisu przedstawiam kilka przepisów na potrawy wigilijne. Wszystkie (oprócz piernika staropolskiego, który będzie w tym roku…"
 date: "2018-12-17"
+author: anna
 tags: ["Blog"]
 draft: false
 ---

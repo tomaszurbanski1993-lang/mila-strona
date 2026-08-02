@@ -2,9 +2,10 @@
 title: "O seplenieniu międzyzębowym – cz. II"
 description: "Zapraszam do lektury drugiej części artykułu poświęconego seplenieniu międzyzębowemu. Zgodnie z zapowiedzią zajmiemy się w niej diagnostyką różnicową oraz…"
 date: "2021-01-30"
+author: anna
 tags: ["Blog"]
 draft: false
-image: "/public/images/legacy/Seplenienie-międzyzębowe3.png"
+image: "/images/legacy/Seplenienie-międzyzębowe3.png"
 ---
 
 *Zapraszam do lektury drugiej części artykułu poświęconego seplenieniu międzyzębowemu. Zgodnie z zapowiedzią zajmiemy się w niej diagnostyką różnicową oraz terapią tej wady. *

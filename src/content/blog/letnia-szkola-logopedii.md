@@ -2,9 +2,10 @@
 title: "LETNIA SZKOŁA LOGOPEDII"
 description: "Już w najbliższy poniedziałek rusza LETNIA SZKOŁA LOGOPEDII!!! Ostatnie dni wypełnione były przygotowaniami, które wymusiła na nas wszystkich sytuacja epidemicz"
 date: "2020-06-14"
+author: anna
 tags: ["Blog"]
 draft: false
-image: "/public/images/legacy/funky-kids.jpg"
+image: "/images/legacy/funky-kids.jpg"
 ---
 
 Już w najbliższy poniedziałek rusza LETNIASZKOŁALOGOPEDII!!!
@@ -24,28 +25,28 @@ Przy okazji przypominam zasady, którymi będziemy się kierowali dla naszego ws
 
 CZEKAM NA WAS, KOCHANI!
 
-![LSL1](/public/images/legacy/LSL1.jpg)
+![LSL1](/images/legacy/LSL1.jpg)
 
-![LSL2](/public/images/legacy/LSL2.jpg)
+![LSL2](/images/legacy/LSL2.jpg)
 
-![LSL4](/public/images/legacy/LSL4.jpg)
+![LSL4](/images/legacy/LSL4.jpg)
 
-![LSL5](/public/images/legacy/LSL5.jpg)
+![LSL5](/images/legacy/LSL5.jpg)
 
-![LSL3](/public/images/legacy/LSL3-1.jpg)
+![LSL3](/images/legacy/LSL3-1.jpg)
 
-![LSL11](/public/images/legacy/LSL11.jpg)
+![LSL11](/images/legacy/LSL11.jpg)
 
-![LSL6](/public/images/legacy/LSL6.jpg)
+![LSL6](/images/legacy/LSL6.jpg)
 
-![LSL7](/public/images/legacy/LSL7.jpg)
+![LSL7](/images/legacy/LSL7.jpg)
 
-![LSL8](/public/images/legacy/LSL8.jpg)
+![LSL8](/images/legacy/LSL8.jpg)
 
-![LSL9](/public/images/legacy/LSL9.jpg)
+![LSL9](/images/legacy/LSL9.jpg)
 
-![LSL10](/public/images/legacy/LSL10-1.jpg)
+![LSL10](/images/legacy/LSL10-1.jpg)
 
-![LSL12](/public/images/legacy/LSL12.jpg)
+![LSL12](/images/legacy/LSL12.jpg)
 
-![LSL13](/public/images/legacy/LSL13.jpg)
+![LSL13](/images/legacy/LSL13.jpg)

@@ -2,6 +2,7 @@
 title: "Tablica – poczekajka, czyli koniec z nudą"
 description: "Koniec z nudą w oczekiwaniu na wizytę! Na naszych małych (i dużych) pacjentów czeka w poczekalni TABLICA – POCZEKAJKA. Jest na niej kilka wesołych obrazków i…"
 date: "2023-10-12"
+author: anna
 tags: ["Aktualności"]
 draft: false
 ---

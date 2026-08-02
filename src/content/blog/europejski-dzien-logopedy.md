@@ -2,9 +2,10 @@
 title: "Europejski Dzień Logopedy"
 description: "6 marca obchodzimy Europejski Dzień Logopedy. Z tej okazji wszystkim Logopedom życzę aby – jak pisze Chase Jarvis – „podążali za swoim twórczym powołaniem”,…"
 date: "2021-03-07"
+author: anna
 tags: ["Blog"]
 draft: false
-image: "/public/images/legacy/20944983.jpg"
+image: "/images/legacy/20944983.jpg"
 ---
 
 6 marca obchodzimy Europejski Dzień Logopedy. Z tej okazji wszystkim Logopedom życzę aby – jak pisze Chase Jarvis – „podążali za swoim twórczym powołaniem”, aby życie zawodowe dawało satysfakcję i poczucie spełnienia. Owocnych terapii, wytrwałości w podejmowaniu nowych wyzwań logopedycznych, zdrowia i głowy pełnej niekończących się twórczych pomysłów!
@@ -44,7 +45,7 @@ ZACZYNAMY!!!!
 
 [
 
-![](/public/images/legacy/Język-supeł.jpg)
+![](/images/legacy/Język-supeł.jpg)
 
 ](http://logopedawarka.pl/jezyk-supel/)
 
@@ -54,6 +55,6 @@ Wyrażenia i zdania na fiszkach wypowiadaj na początku powoli, bardzo dokładni
 
 [
 
-![](/public/images/legacy/Łamańce-językowe.jpg)
+![](/images/legacy/Łamańce-językowe.jpg)
 
 ](http://logopedawarka.pl/lamance-jezykowe/)

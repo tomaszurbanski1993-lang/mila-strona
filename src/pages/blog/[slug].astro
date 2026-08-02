@@ -1,7 +1,9 @@
 ---
 import { getCollection, render, type CollectionEntry } from "astro:content";
 import type { GetStaticPaths } from "astro";
+import PublicImage from "../../components/PublicImage.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import { authors } from "../../data/authors";
 import "../../styles/blog.css";
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -27,8 +29,9 @@ const { Content } = await render(entry);
       <time datetime={entry.data.date.toISOString()}>
         {entry.data.date.toLocaleDateString("pl-PL")}
       </time>
+      {entry.data.author && <p class="entry-author">Autor: {authors[entry.data.author].name}</p>}
       {entry.data.image && (
-        <img src={entry.data.image} alt={entry.data.title} class="blog-cover" />
+        <PublicImage src={entry.data.image} alt={entry.data.title} class="blog-cover" />
       )}
       <Content />
     </article>

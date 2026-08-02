@@ -2,6 +2,7 @@
 title: "Wpływ literatury na rozwój mowy dziecka cz. II"
 description: "Czas czytania dostosujmy do możliwości koncentracji dzieci."
 date: "2019-03-31"
+author: anna
 tags: ["Blog"]
 draft: false
 ---

@@ -2,9 +2,10 @@
 title: "WIELKANOC INNA NIŻ WSZYSTKIE"
 description: "Świątecznym (choć niezbyt regularnym 😉 ) zwyczajem Dzieciaków Na Miłej jest dzielenie się z Wami jakimś przepisem. Wszyscy wiemy, że zarówno tegoroczna…"
 date: "2020-04-11"
+author: anna-i-pawel
 tags: ["Blog"]
 draft: false
-image: "/public/images/legacy/Wieniec-wielkanocny.jpg"
+image: "/images/legacy/Wieniec-wielkanocny.jpg"
 ---
 
 Świątecznym (choć niezbyt regularnym 😉 ) zwyczajem Dzieciaków Na Miłej jest dzielenie się z Wami jakimś przepisem. Wszyscy wiemy, że zarówno tegoroczna Wielkanoc, jak i cały ten czas jest inny niż zwykle, wyjątkowy z powodu koszmaru epidemii. Dlatego także dzisiejsza receptura będzie niezwykła. Chcemy bowiem przekazać Wam:
@@ -43,6 +44,6 @@ Musimy je tylko dostosować do istniejących warunków i ograniczeń. Przygotujm
 
 ### ALLELUJA!!!
 
-![](/public/images/legacy/460px-Bouts_Resurrection.jpg "Zmartwychwstanie (obraz Dirka Boutsa)")
+![](/images/legacy/460px-Bouts_Resurrection.jpg "Zmartwychwstanie (obraz Dirka Boutsa)")
 
 **Zmartwychwstanie – obraz Dirka Boutsa (ok. 1455)**

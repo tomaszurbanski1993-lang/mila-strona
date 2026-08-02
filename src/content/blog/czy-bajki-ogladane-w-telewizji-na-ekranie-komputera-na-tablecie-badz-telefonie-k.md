@@ -2,9 +2,10 @@
 title: "Czy bajki oglądane w telewizji, na ekranie komputera, na tablecie bądź telefonie komórkowym mogą mieć pozytywny wpływ na rozwój mowy dziecka?"
 description: "Wielokrotnie podkreślamy znaczenie czytania dziecku lub przez dziecko na rozwój wielorakich umiejętności w tym także kształtowania mowy. Pandemia, którą…"
 date: "2020-05-14"
+author: anna
 tags: ["Blog"]
 draft: false
-image: "/public/images/legacy/l-n-czkaKs2PgXA-unsplash.jpg"
+image: "/images/legacy/l-n-czkaKs2PgXA-unsplash.jpg"
 ---
 
 Wielokrotnie podkreślamy znaczenie czytania dziecku lub przez dziecko na rozwój wielorakich umiejętności w tym także kształtowania mowy. Pandemia, którą przeżywamy zmieniła w naszym życiu bardzo wiele, także sposoby nauki i pozyskiwania wiedzy. Jak nigdy wcześniej nauczyliśmy się korzystać ze środków przekazu na odległość, poznaliśmy możliwości nauki on-line oraz wykorzystujemy nasze komputery i komórki intensywniej niż wcześniej. Nasuwa się więc pytanie czy taka forma przekazu może być efektywna także w rozwijaniu mowy u najmłodszych. Wiemy przecież, że zbyt długie korzystanie z nich przez dzieci źle wpływa na nastrój, jest przyczyną zaburzeń snu, wpływa negatywnie na koncentrację uwagi oraz wyrabia u dziecka model biernego odbiorcy słowa.more

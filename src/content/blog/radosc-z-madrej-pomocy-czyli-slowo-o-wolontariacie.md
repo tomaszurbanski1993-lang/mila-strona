@@ -2,6 +2,7 @@
 title: "Radość z mądrej pomocy, czyli słowo o wolontariacie"
 description: "Dzięki uprzejmości Krystiana, ucznia VIII klasy Szkoły Podstawowej nr 2 w Warce, udostępniam Wam, Drodzy Czytelnicy, treść wywiadu, jakiego udzieliłam dzieląc…"
 date: "2018-11-08"
+author: anna
 tags: ["Blog"]
 draft: false
 ---

@@ -60,7 +60,9 @@ Aby uruchomić stronę **wraz z panelem CMS** (Decap CMS) w trybie lokalnym — 
 npm run dev:cms
 ```
 
-Uruchamia jednocześnie **Astro** (`http://localhost:4321/`) oraz **decap-server** (lokalne proxy Git na porcie 8081). Panel CMS jest pod `http://localhost:4321/admin/` (szczegóły w sekcji „Zarządzanie treścią"). Zwykły `npm run dev` odpala samo Astro — panel `/admin/` wtedy przełączy się na backend produkcyjny (`git-gateway` + Netlify Identity).
+Uruchamia jednocześnie **Astro** (`http://localhost:4321/`) oraz **decap-server** (lokalne proxy Git na porcie 8081). Panel CMS jest pod `http://localhost:4321/admin/` (szczegóły w sekcji „Zarządzanie treścią").
+
+> **Ważne:** `npm run dev` wyświetla stronę na podstawie lokalnych plików, więc wpisy będą widoczne na `/blog/` i `/aktualnosci/`. Nie uruchamia jednak lokalnego backendu CMS: po wejściu na `/admin/` panel odczyta gałąź produkcyjną `main`, a nie pliki z bieżącej gałęzi roboczej. Aby w panelu zobaczyć i edytować lokalne wpisy, zawsze używaj `npm run dev:cms`.
 
 **Przydatne flagi:**
 
@@ -150,6 +152,7 @@ src/pages/admin/
 └── index.astro         # panel CMS (ładowany pod /admin/) + inicjalizacja Netlify Identity (tylko produkcja)
 
 src/data/
+├── authors.ts          # publiczne identyfikatory i nazwy autorów
 └── url.ts              # currentDomain — domena produkcyjna używana przez Identity widget
 
 src/layouts/
@@ -163,7 +166,21 @@ src/layouts/
 | **Blog**        | `src/content/blog/` | Tak     | Wpisy blogowe z okładką i miniaturą |
 | **Aktualności** | `src/content/news/` | Nie     | Krótkie komunikaty, tylko tekst     |
 
-Obie kolekcje mają wspólny schemat: tytuł, opis, data, tagi, flaga wersji roboczej (`draft`) i treść Markdown. Blog dodatkowo ma pole obrazka.
+Obie kolekcje mają wspólny schemat: tytuł, opis, data, autor, tagi, flaga wersji roboczej (`draft`) i treść Markdown. Blog dodatkowo ma pole obrazka.
+
+### Autorzy wpisów
+
+W front matter zapisywany jest wyłącznie publiczny identyfikator `author`.
+Aktualne wartości to `anna`, `pawel`, `anna-i-pawel` i `admin`; ich nazwy
+wyświetlane na stronie są zdefiniowane w `src/data/authors.ts`. Decap CMS
+udostępnia wyłącznie tę kontrolowaną listę.
+
+Przy zapisie pustego pola CMS odczytuje `user_metadata.author_id` zalogowanego
+konta Netlify Identity. Przed wdrożeniem należy ustawić tę metadaną na jednym z
+powyższych identyfikatorów dla każdego konta redakcyjnego. Brak poprawnej
+metadanej pozostawia pole puste do świadomego wyboru w formularzu, a ręczny
+wybór autora ma pierwszeństwo. Mapowania kont Identity nie są umieszczane w
+kodzie, front matter ani w HTML, dzięki czemu adresy e-mail nie są publikowane.
 
 ### Backend i autoryzacja — jak to działa
 

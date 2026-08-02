@@ -2,9 +2,10 @@
 title: "To był bal…"
 description: "Dzieciaki na Miłej miały przyjemność uczestniczyć w niecodziennym wydarzeniu. Bal Charytatywny, który miał miejsce w Hotelu Karo w Radomiu został zorganizowany…"
 date: "2020-02-03"
+author: anna-i-pawel
 tags: ["Blog"]
 draft: false
-image: "/public/images/legacy/Bal-Charytatywny.jpg"
+image: "/images/legacy/Bal-Charytatywny.jpg"
 ---
 
 Dzieciaki na Miłej miały przyjemność uczestniczyć w niecodziennym wydarzeniu. Bal Charytatywny, który miał miejsce w [Hotelu Karo](https://www.facebook.com/HotelKaro/?__tn__=K-R&eid=ARDJDdjLKo1zMRlvdtO6D20-cJ-P0bYzEHC-p-W0NhIG5xqtp9OrA0emd_Bs4Ush_Z_S1q6Rb6HKL15z&fref=mentions) w Radomiu został zorganizowany przez [Fundację Lepsza Jakość Życia](https://www.facebook.com/FundacjaLepszaJakoscZycia/?__tn__=K-R&eid=ARDfkggivARNUPM2F1LIVTIALmlOSvQAR5O7sFxqEK1Fr0rvRBfGZDWoNoTDR56kUS0dCSMJQYevksQ7&fref=mentions), [Radomską Grupę Mediową](https://www.facebook.com/radom.media/), Urząd Marszałkowski Województwa Mazowieckiego oraz [Mazowiecki Szpital Specjalistyczny](https://www.facebook.com/Mazowiecki-Szpital-Specjalistyczny-w-Radomiu-1865583457090125/?__tn__=K-R&eid=ARCpRelrYpfgnG756Vt45unqjyBMgQNA6Bw4SfPJXQBd-g5Kv3rRpkAWOseqHsKNftUDEhorvbIOnViw&fref=mentions) w Radomiu. Ten ostatni był także beneficjentem tego wielkiego przedsięwzięcia, bowiem całość środków zebranych w czasie balu zostanie przeznaczone na potrzeby trzech oddziałów zajmujących się leczeniem dzieci – Oddziału Pediatrycznego, Oddziału Neonatologicznego i Oddziału Chirurgii Dziecięcej.

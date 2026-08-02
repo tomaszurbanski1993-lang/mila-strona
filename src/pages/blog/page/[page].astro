@@ -1,0 +1,44 @@
+---
+import { getCollection } from "astro:content";
+import type { GetStaticPaths } from "astro";
+import BlogPage from "../../../components/BlogPage.astro";
+import {
+  getBlogPageUrl,
+  paginateBlogPosts,
+  type BlogPage as BlogPageData,
+} from "../../../data/blog-pagination";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import "../../../styles/blog.css";
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const entries = await getCollection("blog", ({ data }) => data.draft !== true);
+
+  return paginateBlogPosts(entries)
+    .filter((page) => page.currentPage > 1)
+    .map((page) => ({
+      params: { page: String(page.currentPage) },
+      props: { page },
+    }));
+};
+
+interface Props {
+  page: BlogPageData;
+}
+
+const { page } = Astro.props;
+const previousPage = getBlogPageUrl(page.currentPage - 1);
+const nextPage =
+  page.currentPage < page.totalPages
+    ? getBlogPageUrl(page.currentPage + 1)
+    : undefined;
+---
+
+<BaseLayout
+  title={`Blog — strona ${page.currentPage}`}
+  description={`Archiwum wpisów na blogu Dzieciaków na Miłej — strona ${page.currentPage}.`}
+  activePath="/blog"
+  previousPage={previousPage}
+  nextPage={nextPage}
+>
+  <BlogPage page={page} />
+</BaseLayout>

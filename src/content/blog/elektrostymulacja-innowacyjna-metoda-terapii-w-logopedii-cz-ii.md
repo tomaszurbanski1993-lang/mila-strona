@@ -2,6 +2,7 @@
 title: "Elektrostymulacja  – innowacyjna metoda terapii w logopedii – cz. II"
 description: "Zgodnie z zapowiedzią z pierwszej części dziś odpowiadam na najczęstsze pytania dotyczące elektrostymulacji."
 date: "2021-11-23"
+author: anna
 tags: ["Blog"]
 draft: false
 ---
@@ -92,6 +93,6 @@ Przeciwskazaniami do korzystania z zabiegów elektrostymulacyjnych są:
 
 [
 
-![](/public/images/legacy/Elektrody.jpg)
+![](/images/legacy/Elektrody.jpg)
 
 ](http://logopedawarka.pl/elektrody/)

@@ -1,0 +1,92 @@
+---
+import type { BlogPage as BlogPageData } from "../data/blog-pagination";
+import { getBlogPageUrl } from "../data/blog-pagination";
+import { authors } from "../data/authors";
+import PublicImage from "./PublicImage.astro";
+
+interface Props {
+  page: BlogPageData;
+}
+
+const { page } = Astro.props;
+const previousPageUrl =
+  page.currentPage > 1 ? getBlogPageUrl(page.currentPage - 1) : undefined;
+const nextPageUrl =
+  page.currentPage < page.totalPages
+    ? getBlogPageUrl(page.currentPage + 1)
+    : undefined;
+const pageNumbers = Array.from({ length: page.totalPages }, (_, index) => index + 1);
+const toSlug = (id: string): string => id.replace(/\.[^.]+$/, "");
+---
+
+<main class="blog-list">
+  <h1>Blog</h1>
+  {
+    page.posts.length === 0 ? (
+      <p class="blog-empty">Brak wpisów.</p>
+    ) : (
+      <>
+        <p class="blog-page-status">Strona {page.currentPage} z {page.totalPages}</p>
+        <ul>
+          {page.posts.map((post) => (
+            <li>
+              <article>
+                <h2>
+                  <a href={`/blog/${toSlug(post.id)}/`}>{post.data.title}</a>
+                </h2>
+                {post.data.image && (
+                  <PublicImage
+                    src={post.data.image}
+                    alt={post.data.title}
+                    class="blog-thumb"
+                    loading="lazy"
+                  />
+                )}
+                <p>{post.data.description}</p>
+                <time datetime={post.data.date.toISOString()}>
+                  {post.data.date.toLocaleDateString("pl-PL")}
+                </time>
+                {post.data.author && (
+                  <p class="entry-author">Autor: {authors[post.data.author].name}</p>
+                )}
+              </article>
+            </li>
+          ))}
+        </ul>
+      </>
+    )
+  }
+  {
+    page.totalPages > 1 && (
+      <nav class="blog-pagination" aria-label="Paginacja bloga">
+        <ul>
+          <li>
+            {previousPageUrl ? (
+              <a href={previousPageUrl} rel="prev">Poprzednia</a>
+            ) : (
+              <span aria-hidden="true">Poprzednia</span>
+            )}
+          </li>
+          {pageNumbers.map((pageNumber) => (
+            <li>
+              <a
+                href={getBlogPageUrl(pageNumber)}
+                aria-label={`Strona ${pageNumber}`}
+                aria-current={pageNumber === page.currentPage ? "page" : undefined}
+              >
+                {pageNumber}
+              </a>
+            </li>
+          ))}
+          <li>
+            {nextPageUrl ? (
+              <a href={nextPageUrl} rel="next">Następna</a>
+            ) : (
+              <span aria-hidden="true">Następna</span>
+            )}
+          </li>
+        </ul>
+      </nav>
+    )
+  }
+</main>

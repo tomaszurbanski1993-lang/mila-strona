@@ -2,9 +2,10 @@
 title: "O seplenieniu międzyzębowym – cz. I"
 description: "Drodzy Rodzice, Szanowni Państwo! Tym razem chcę zainteresować Państwa jedną z częstszych wad wymowy rozpoznawanych u dzieci w wieku przedszkolnym –…"
 date: "2021-01-23"
+author: anna
 tags: ["Blog"]
 draft: false
-image: "/public/images/legacy/Seplenienie-międzyzębowe.jpg"
+image: "/images/legacy/Seplenienie-międzyzębowe.jpg"
 ---
 
 *Drodzy Rodzice, Szanowni Państwo!*

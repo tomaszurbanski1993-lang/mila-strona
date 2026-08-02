@@ -2,6 +2,7 @@
 title: "Wpływ literatury na rozwój mowy dziecka cz. I"
 description: "Rozwój mowy dziecka to skomplikowany i złożony proces, na który ma wpływ wiele czynników. Wszystkie dzieci przechodzą te same fazy rozwoju w identycznej…"
 date: "2019-03-13"
+author: anna
 tags: ["Blog"]
 draft: false
 ---

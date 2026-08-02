@@ -2,9 +2,10 @@
 title: "Fonoholizm i siecioholizm – nowe zagrożenia"
 description: "Na naszym BLOGU nowość – film będący skrótem prezentacji przygotowanej przez ANNĘ jako materiał na szkolenie dla nauczycieli. Dotyczy uzależnienia dzieci i…"
 date: "2023-01-15"
+author: anna-i-pawel
 tags: ["Blog"]
 draft: false
-image: "/public/images/legacy/fonoholizm-750x423.jpeg"
+image: "/images/legacy/fonoholizm-750x423.jpeg"
 ---
 
 Na naszym [BLOGU](http://logopedawarka.pl/blog/) nowość – film będący skrótem prezentacji przygotowanej przez [ANNĘ](http://logopedawarka.pl/logopeda/) jako materiał na szkolenie dla nauczycieli. Dotyczy uzależnienia dzieci i młodzieży od smartfonów i od dostępu do internetu. Jest to bardzo ważny i aktualny problem, z którym muszą zmierzyć się współcześni Rodzice i Wychowawcy.

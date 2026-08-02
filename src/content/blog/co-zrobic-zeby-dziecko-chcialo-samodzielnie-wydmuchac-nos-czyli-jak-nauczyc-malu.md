@@ -2,9 +2,10 @@
 title: "Co zrobić żeby dziecko chciało samodzielnie wydmuchać nos, czyli jak nauczyć malucha smarkać"
 description: "”(…) myślałam, że dzieci smarkają same z siebie (…)” Wypowiedź matki 4-latka Prawidłowe wydmuchiwanie nosa ma wpływ nie tylko na nasze zdrowie ale również na…"
 date: "2022-09-04"
+author: anna
 tags: ["Blog"]
 draft: false
-image: "/public/images/legacy/Dmuchanie-przez-nos.jpg"
+image: "/images/legacy/Dmuchanie-przez-nos.jpg"
 ---
 
 *”(…) myślałam, że dzieci smarkają same z siebie (…)”*

@@ -2,9 +2,10 @@
 title: "Życzenia bożonarodzeniowe"
 description: "Święta Bożego Narodzenia to najpiękniejsze i najbardziej radosne święta z bogatą tradycją i pięknymi kolędami. Cieszmy się tym niezwykłym czasem i przeżyjmy…"
 date: "2024-12-20"
+author: pawel
 tags: ["Blog", "Strona główna"]
 draft: false
-image: "/public/images/legacy/20241221_065644.jpg"
+image: "/images/legacy/20241221_065644.jpg"
 ---
 
 Święta Bożego Narodzenia to najpiękniejsze i najbardziej radosne święta z bogatą tradycją

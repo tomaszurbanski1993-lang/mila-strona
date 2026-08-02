@@ -2,6 +2,7 @@
 title: "Wine & Friends, czyli Toskania w Warce"
 description: "W ostatnią sobotę, 17 listopada wraz z naszymi dobrymi przyjaciółmi uczestniczyliśmy w przeuroczym wydarzeniu. Na zaproszenie Hotelu Sielanka nad Pilicą…"
 date: "2018-11-21"
+author: anna-i-pawel
 tags: ["Blog"]
 draft: false
 ---

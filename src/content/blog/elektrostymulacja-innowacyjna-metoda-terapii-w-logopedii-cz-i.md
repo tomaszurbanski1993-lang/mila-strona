@@ -2,17 +2,18 @@
 title: "Elektrostymulacja  – innowacyjna metoda terapii w logopedii – cz. I"
 description: "Elektrostymulacja w logopedii Elektrostymulacja jest innowacyjną, nowoczesną metodą w terapii logopedycznej. Stymulacja nerwowo-mięśniowa od dawna znalazła…"
 date: "2021-11-13"
+author: anna
 tags: ["Blog"]
 draft: false
 ---
 
 [
 
-![](/public/images/legacy/20211013_145259.jpg)
+![](/images/legacy/20211013_145259.jpg)
 
 ](http://logopedawarka.pl/20211013_145259/)[
 
-![](/public/images/legacy/Elektrostymulacja-zdjęcie.jpg)
+![](/images/legacy/Elektrostymulacja-zdjęcie.jpg)
 
 ](http://logopedawarka.pl/elektrostymulacja-zdjecie/)
 

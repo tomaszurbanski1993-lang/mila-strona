@@ -28,7 +28,12 @@
   box-shadow: 0 20px 54px rgba(38, 50, 56, 0.07);
 }
 
-.blog-list a {
+.blog-list li h2 {
+  margin: 0;
+  line-height: 1.25;
+}
+
+.blog-list li h2 a {
   color: var(--color-blue-dark);
   font-weight: 900;
   font-size: 1.3rem;
@@ -48,9 +53,65 @@ time {
   font-size: 0.9rem;
 }
 
+.blog-list .entry-author,
+.blog-post .entry-author {
+  margin: 8px 0 0;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.blog-post article > .entry-author {
+  margin: 6px 0 0;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
 .blog-empty {
   color: var(--color-muted);
   font-size: 1.1rem;
+}
+
+.blog-page-status {
+  margin: 0 0 20px;
+  color: var(--color-muted);
+}
+
+.blog-pagination {
+  margin-top: 36px;
+}
+
+.blog-pagination ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.blog-pagination a,
+.blog-pagination span {
+  display: inline-flex;
+  min-width: 2.5rem;
+  min-height: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem 0.7rem;
+  border: 1px solid rgba(68, 167, 227, 0.3);
+  border-radius: 999px;
+  color: var(--color-blue-dark);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.blog-pagination span {
+  color: var(--color-muted);
+  cursor: not-allowed;
+}
+
+.blog-pagination a[aria-current="page"] {
+  border-color: var(--color-blue-dark);
+  background: var(--color-blue-dark);
+  color: #fff;
 }
 
 .blog-post article {

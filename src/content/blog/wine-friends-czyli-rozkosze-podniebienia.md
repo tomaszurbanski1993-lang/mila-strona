@@ -2,6 +2,7 @@
 title: "Wine & Friends II, czyli rozkosze podniebienia"
 description: "“Jeśli masz do wyboru odchudzić się albo zrezygnować z wina, to co byś wybrał — białe czy czerwone?” Jak już pisaliśmy (TU), mieliśmy niedawno przyjemność…"
 date: "2018-11-26"
+author: anna-i-pawel
 tags: ["Blog"]
 draft: false
 ---

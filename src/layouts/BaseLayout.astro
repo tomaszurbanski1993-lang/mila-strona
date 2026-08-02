@@ -8,6 +8,8 @@ interface Props {
   description?: string;
   activePath?: string;
   handleIdentityCallback?: boolean;
+  previousPage?: string;
+  nextPage?: string;
 }
 
 const {
@@ -15,6 +17,8 @@ const {
   description,
   activePath = Astro.url.pathname,
   handleIdentityCallback = false,
+  previousPage,
+  nextPage,
 } = Astro.props;
 const identityApiUrl = `https://${currentDomain}/.netlify/identity`;
 ---
@@ -53,12 +57,20 @@ const identityApiUrl = `https://${currentDomain}/.netlify/identity`;
     }
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
+    {previousPage && <link rel="prev" href={previousPage} />}
+    {nextPage && <link rel="next" href={nextPage} />}
   </head>
 
   <body>
     <header class="site-header">
       <a class="logo" href="/" aria-label="Dzieciaki na Miłej — strona główna">
-        <img src="/images/legacy/logo-dnm.png" alt="Dzieciaki na Miłej" />
+        <img
+          src="/images/legacy/logo-dnm.png"
+          alt="Dzieciaki na Miłej"
+          width="1025"
+          height="549"
+          decoding="async"
+        />
       </a>
 
       <nav class="main-nav" aria-label="Główna nawigacja">

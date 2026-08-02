@@ -2,6 +2,7 @@
 title: "Wstępniak, czyli powitanie"
 description: "Pierwszy wpis na własnym blogu to pewnego rodzaju przeżycie. Nawet w czasach powszechnego używania portali społecznościowych napisanie czegoś, co będą mogli…"
 date: "2018-11-05"
+author: anna-i-pawel
 tags: ["Blog"]
 draft: false
 ---

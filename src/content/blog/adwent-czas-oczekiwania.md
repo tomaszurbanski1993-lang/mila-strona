@@ -2,6 +2,7 @@
 title: "Adwent – czas oczekiwania"
 description: "Adwent i Boże Narodzenie to dla nas wyjątkowy czas. Jestem zwolenniczką pielęgnowania tradycji i zwyczajów w naszym domu, robienia rzeczy „niepamiętnych” tzn.…"
 date: "2018-12-16"
+author: anna
 tags: ["Blog"]
 draft: false
 ---

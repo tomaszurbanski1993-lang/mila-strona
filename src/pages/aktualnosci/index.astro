@@ -1,6 +1,7 @@
 ---
 import { getCollection, type CollectionEntry } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import { authors } from "../../data/authors";
 import "../../styles/blog.css";
 
 const entries = await getCollection("news", ({ data }) => data.draft !== true);
@@ -25,6 +26,9 @@ const toSlug = (id: string): string => id.replace(/\.[^.]+$/, "");
               <time datetime={item.data.date.toISOString()}>
                 {item.data.date.toLocaleDateString("pl-PL")}
               </time>
+              {item.data.author && (
+                <p class="entry-author">Autor: {authors[item.data.author].name}</p>
+              )}
             </li>
           ))}
         </ul>

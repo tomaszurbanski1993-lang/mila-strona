@@ -2,9 +2,10 @@
 title: "SYMBOLE POLSKI I ZNAKI NARODOWE"
 description: "Dzień dobry 😊 W czasie majowych świąt chciałabym Państwu zaproponować zadania logopedyczne z tematyką patriotyczną w tle. Nauka przez zabawę – rozwijanie mowy,…"
 date: "2020-05-02"
+author: anna
 tags: ["Blog"]
 draft: false
-image: "/public/images/legacy/Flaga-Polski.gif"
+image: "/images/legacy/Flaga-Polski.gif"
 ---
 
 Dzień dobry 😊
@@ -17,6 +18,6 @@ Ważną rolę w życiu zarówno dorosłych jak i dzieci odgrywają symbole i zna
 
 Anna Strus, logopeda
 
-![](/public/images/legacy/Mapa-Polski-z-symbolami.jpg)
+![](/images/legacy/Mapa-Polski-z-symbolami.jpg)
 
 *Mapa Polski z symbolami – ćwiczenie*

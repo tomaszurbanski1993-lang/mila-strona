@@ -2,9 +2,10 @@
 title: "Jak przygotować święta i nie być zmęczonym a szczęśliwym?"
 description: "Bożonarodzeniową atmosferę można poczuć na długo przed świętami. Od kilku lat kalendarz adwentowy jest nieodłączną częścią oczekiwania na Święta Bożego Narodzen"
 date: "2024-12-20"
+author: anna
 tags: ["Blog", "Strona główna"]
 draft: false
-image: "/public/images/legacy/20241129_080012.jpg"
+image: "/images/legacy/20241129_080012.jpg"
 ---
 
 Bożonarodzeniową atmosferę można poczuć na długo przed świętami. Od kilku lat kalendarz adwentowy jest nieodłączną częścią oczekiwania na Święta Bożego Narodzenia a wieniec adwentowy towarzyszy nam od pierwszych lat naszego małżeństwa. Te drobiazgi niezwykle umilają świąteczne chwile i tworzą ich wyjątkowy nastrój. Światło świec to ważny element celebracji Bożego Narodzenia. Grudniowe święta to nasz ulubiony czas, na który czekamy przez cały rok. Magia tych świąt sprawia, że każdego roku cieszymy się tak samona nadchodzącą Gwiazdkę.
@@ -21,10 +22,10 @@ W tym roku w kalendarzu są nie tylko przygotowania ale także przyjemności zwi
 
 Dobry plan to podstawa!
 
-![20241129_162724](/public/images/legacy/20241129_162724.jpg)
+![20241129_162724](/images/legacy/20241129_162724.jpg)
 
-![20241208_091011](/public/images/legacy/20241208_091011.jpg)
+![20241208_091011](/images/legacy/20241208_091011.jpg)
 
-![20241129_163836](/public/images/legacy/20241129_163836.jpg)
+![20241129_163836](/images/legacy/20241129_163836.jpg)
 
-![20241216_201925](/public/images/legacy/20241216_201925.jpg)
+![20241216_201925](/images/legacy/20241216_201925.jpg)

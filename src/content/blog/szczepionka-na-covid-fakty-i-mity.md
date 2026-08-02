@@ -2,9 +2,10 @@
 title: "Szczepionka na COVID – fakty i mity"
 description: "Parę dni temu napisała do mnie mama – Anna Strus – i powiedziała: „Jak to jest z tą Astrą? Widziałam badania, że jest mniej skuteczna, niż ta Twoja z Pfizera,…"
 date: "2021-02-14"
+author: anna
 tags: ["Blog"]
 draft: false
-image: "/public/images/legacy/infodemic-square-1.jpg"
+image: "/images/legacy/infodemic-square-1.jpg"
 ---
 
 *Poniższy artykuł jest autorstwa naszego syna Piotra, studenta VI roku medycyny na Warszawskim Uniwersytecie Medycznym*
@@ -136,7 +137,7 @@ Po przeczytaniu powyższych punktów już wiemy, że to nieprawda. Astra został
 
 [
 
-![](/public/images/legacy/image.png)
+![](/images/legacy/image.png)
 
 ](http://logopedawarka.pl/image/)
 

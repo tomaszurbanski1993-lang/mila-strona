@@ -2,6 +2,7 @@
 title: "Nowości w gabinecie logopedycznym"
 description: "Od września 2023 r. rozszerzamy ofertę gabinetu logopedycznego. Szczegóły w zakładce “Logopeda“"
 date: "2023-07-27"
+author: admin
 tags: ["Aktualności"]
 draft: false
 ---

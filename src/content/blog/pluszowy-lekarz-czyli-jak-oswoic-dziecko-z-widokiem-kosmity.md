@@ -2,9 +2,10 @@
 title: "Pluszowy lekarz, czyli jak oswoić dziecko z widokiem \"kosmity\""
 description: "Kochane Dzieciaki, Drodzy Rodzice, jeśli mieliście okazję (lub konieczność) korzystać w ostatnim czasie z pomocy służby zdrowia, zapewne zauważyliście, że…"
 date: "2020-05-14"
+author: pawel
 tags: ["Blog"]
 draft: false
-image: "/public/images/legacy/woman-wearing-blue-surgery-suit-1.jpg"
+image: "/images/legacy/woman-wearing-blue-surgery-suit-1.jpg"
 ---
 
 **Kochane Dzieciaki, Drodzy Rodzice,**
@@ -15,6 +16,6 @@ My też ich nie lubimy, ale musimy ich używać, aby chronić Was i siebie przed
 
 [
 
-![](/public/images/legacy/Pluszowy-lekarz.jpg)
+![](/images/legacy/Pluszowy-lekarz.jpg)
 
 ](http://logopedawarka.pl/pluszowy-lekarz/)

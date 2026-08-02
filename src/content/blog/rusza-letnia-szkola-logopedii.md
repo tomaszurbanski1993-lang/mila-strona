@@ -2,9 +2,10 @@
 title: "RUSZA LETNIA SZKOŁA LOGOPEDII!"
 description: "Szanowni Państwo, Drodzy Rodzice, Kochane Dzieci, po długiej przerwie wracamy powoli do naszych spotkań. Nie ukrywam, że bardzo się już za Wami stęskniłam.…"
 date: "2020-05-24"
+author: anna
 tags: ["Blog"]
 draft: false
-image: "/public/images/legacy/funky-kids.jpg"
+image: "/images/legacy/funky-kids.jpg"
 ---
 
 Szanowni Państwo, Drodzy Rodzice, Kochane Dzieci,
