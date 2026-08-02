@@ -1,0 +1,67 @@
+---
+import Container from "../ui/Container.astro";
+
+interface Props {
+  title: string;
+  description: string;
+  date: Date;
+  image?: string;
+  tags?: string[];
+  eyebrow: string;
+  backHref: string;
+  backLabel: string;
+}
+
+const { title, description, date, image, tags = [], eyebrow, backHref, backLabel } = Astro.props;
+const normalizedImage = image?.replace(/^\/public(?=\/)/, "");
+const formattedDate = date.toLocaleDateString("pl-PL", {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+});
+---
+
+<main id="main-content" class="knowledge-post">
+  <Container class="post-breadcrumb">
+    <a href="/">Strona główna</a><span aria-hidden="true">/</span><a href={backHref}>{backLabel}</a>
+  </Container>
+
+  <article>
+    <header class="post-header">
+      <Container class="post-header__inner">
+        <p class="eyebrow">{eyebrow}</p>
+        <h1>{title}</h1>
+        <p class="post-description">{description}</p>
+        <div class="post-meta">
+          <time datetime={date.toISOString()}>{formattedDate}</time>
+          {tags.length > 0 && <span>{tags.join(" · ")}</span>}
+        </div>
+      </Container>
+    </header>
+
+    {normalizedImage && (
+      <Container class="post-cover">
+        <img src={normalizedImage} alt="" width="1200" height="760" />
+      </Container>
+    )}
+
+    <Container class="post-layout">
+      <aside class="post-aside">
+        <a href={backHref}><span aria-hidden="true">←</span> {backLabel}</a>
+        <p>Masz pytanie dotyczące gabinetu lub wizyty?</p>
+        <a href="/kontakt">Przejdź do kontaktu <span aria-hidden="true">→</span></a>
+      </aside>
+      <div class="post-prose">
+        <slot />
+      </div>
+    </Container>
+  </article>
+
+  <section class="post-next" aria-label="Powrót do listy">
+    <Container>
+      <p class="eyebrow eyebrow--light">Więcej treści</p>
+      <h2>Wróć do działu i zobacz pozostałe wpisy</h2>
+      <a class="button button--light" href={backHref}>{backLabel} <span aria-hidden="true">→</span></a>
+    </Container>
+  </section>
+</main>

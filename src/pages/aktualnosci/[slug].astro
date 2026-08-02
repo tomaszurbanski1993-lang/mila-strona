@@ -2,6 +2,7 @@
 import { getCollection, render, type CollectionEntry } from "astro:content";
 import type { GetStaticPaths } from "astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import KnowledgePost from "../../components/knowledge/KnowledgePost.astro";
 import "../../styles/blog.css";
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -19,15 +20,16 @@ const { Content } = await render(entry);
 ---
 
 <BaseLayout title={entry.data.title} description={entry.data.description} activePath="/aktualnosci">
-  <main class="blog-post">
-    <a class="blog-back" href="/aktualnosci/">Powrot do aktualnosci</a>
-    <article>
-      <h1>{entry.data.title}</h1>
-      <p>{entry.data.description}</p>
-      <time datetime={entry.data.date.toISOString()}>
-        {entry.data.date.toLocaleDateString("pl-PL")}
-      </time>
+  <KnowledgePost
+    title={entry.data.title}
+    description={entry.data.description}
+    date={entry.data.date}
+    image={entry.data.image}
+    tags={entry.data.tags}
+    eyebrow="Aktualności"
+    backHref="/aktualnosci/"
+    backLabel="Wszystkie aktualności"
+  >
       <Content />
-    </article>
-  </main>
+  </KnowledgePost>
 </BaseLayout>

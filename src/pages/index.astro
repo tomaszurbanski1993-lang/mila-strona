@@ -1,143 +1,25 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { services } from "../data/services";
+import Hero from "../components/sections/Hero.astro";
+import PracticeCards from "../components/sections/PracticeCards.astro";
+import ValuesGrid from "../components/sections/ValuesGrid.astro";
+import LatestContent from "../components/sections/LatestContent.astro";
+import ContactSection from "../components/sections/ContactSection.astro";
+import LocationSection from "../components/sections/LocationSection.astro";
 import "../styles/start.css";
 
-const pageTitle = "Dzieciaki na Miłej — Logopeda i Pediatra Warka";
+const pageTitle = "Dzieciaki na Miłej — logopeda i pediatra w Warce";
 const pageDescription =
-  "Specjalistyczne gabinety logopedyczny i pediatryczny Anny i Pawła Strusów w Warce, ul. Miła 12.";
+  "Gabinet logopedyczny Anny Strus i gabinet pediatryczny Pawła Strusa w Warce. Spokojna, specjalistyczna pomoc dla dzieci i ich rodziców.";
 ---
 
 <BaseLayout title={pageTitle} description={pageDescription} activePath="/">
-  <main>
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-bg-shape hero-bg-shape-one"></div>
-      <div class="hero-bg-shape hero-bg-shape-two"></div>
-
-      <div class="hero-content">
-        <p class="eyebrow">Logopeda i pediatra w Warce</p>
-
-        <h1 id="hero-title">
-          Dzieciaki na Miłej — spokojne miejsce dla dzieci i rodziców
-        </h1>
-
-        <p class="hero-lead">
-          Specjalistyczne gabinety Anny i Pawła Strusów przy ul. Miłej 12.
-          Łączymy profesjonalną opiekę, jasną komunikację i atmosferę,
-          w której młody pacjent może poczuć się bezpiecznie.
-        </p>
-
-        <div class="hero-actions">
-          <a class="button button-primary" href="/kontakt">Skontaktuj się</a>
-          <a class="button button-secondary" href="/o-nas">Poznaj nas</a>
-        </div>
-
-        <div class="trust-strip" aria-label="Najważniejsze informacje">
-          <span>Logopedia</span>
-          <span>Pediatria</span>
-          <span>Warka, ul. Miła 12</span>
-        </div>
-      </div>
-
-      <div class="hero-visual" aria-label="Anna i Paweł Strus">
-        <div class="photo-card photo-card-main">
-          <img
-            src="/images/legacy/specjalisci-home.png"
-            alt="Anna i Paweł Strus — specjaliści Dzieciaki na Miłej"
-          />
-        </div>
-
-        <div class="floating-note note-blue">
-          <span>👋</span>
-          <strong>Witamy na Miłej</strong>
-        </div>
-
-        <div class="floating-note note-pink">
-          <span>🙂</span>
-          <strong>Bez pośpiechu</strong>
-        </div>
-      </div>
-    </section>
-
-    <section class="intro reveal" aria-labelledby="intro-title">
-      <div>
-        <p class="eyebrow">Dla młodych pacjentów i ich rodziców</p>
-        <h2 id="intro-title">Gabinet, który ma być mniej „lekarski”, a bardziej ludzki</h2>
-      </div>
-
-      <p>
-        Nowa strona powinna zachować ciepły, rodzinny charakter poprzedniej:
-        uśmiech, lekkość, jasne kolory i zdjęcia specjalistów. Zmieniamy jednak
-        układ na bardziej nowoczesny: większy oddech, proste sekcje, wyraźne
-        ścieżki dla rodzica i czytelne CTA.
-      </p>
-    </section>
-
-    <section class="welcome-scroll" aria-labelledby="welcome-title">
-      <div class="welcome-sticky reveal">
-        <p class="eyebrow">Przewiń dalej</p>
-        <h2 id="welcome-title">Najpierw poznajesz duet, potem zapraszamy dalej</h2>
-        <p>
-          Ten blok odtwarza ideę ze starej strony: specjaliści są obecni
-          wizualnie, a przy scrollowaniu pojawia się gest zaproszenia — jakby
-          mówili: „chodźcie, pokażemy Wam, jak możemy pomóc”.
-        </p>
-        <a class="button button-primary" href="/logopedia">Zobacz ofertę</a>
-      </div>
-
-      <div class="welcome-people">
-        <article class="person-card reveal">
-          <img
-            src="/images/legacy/anna-home.png"
-            alt="Anna Strus zapraszająca gestem"
-          />
-          <div>
-            <h3>Anna Strus</h3>
-            <p>Logopeda</p>
-          </div>
-        </article>
-
-        <article class="person-card reveal delay">
-          <img
-            src="/images/legacy/pawel-home.png"
-            alt="Paweł Strus — pediatra"
-          />
-          <div>
-            <h3>Paweł Strus</h3>
-            <p>Pediatra</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="services" aria-labelledby="services-title">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Co znajdziesz na stronie</p>
-        <h2 id="services-title">Szybka ścieżka dla rodzica</h2>
-      </div>
-
-      <div class="service-grid">
-        {
-          services.map((service) => (
-            <a class="service-card reveal" href={service.href}>
-              <span class="service-icon">{service.icon}</span>
-              <h3>{service.title}</h3>
-              <p>{service.description}</p>
-              <span class="service-link">Przejdź dalej →</span>
-            </a>
-          ))
-        }
-      </div>
-    </section>
-
-    <section class="contact-band reveal" aria-labelledby="contact-title">
-      <div>
-        <p class="eyebrow">Kontakt</p>
-        <h2 id="contact-title">Dzieciaki na Miłej</h2>
-        <p>ul. Miła 12, Warka</p>
-      </div>
-
-      <a class="button button-light" href="/kontakt">Dane kontaktowe</a>
-    </section>
+  <main id="main-content">
+    <Hero />
+    <PracticeCards />
+    <ValuesGrid />
+    <LatestContent />
+    <ContactSection />
+    <LocationSection />
   </main>
 </BaseLayout>

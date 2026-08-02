@@ -1,0 +1,38 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Container from "../components/ui/Container.astro";
+import ContactSection from "../components/sections/ContactSection.astro";
+import LocationSection from "../components/sections/LocationSection.astro";
+import "../styles/start.css";
+import "../styles/contact.css";
+
+const pageTitle = "Kontakt i zapisy — Dzieciaki na Miłej";
+const pageDescription =
+  "Kontakt do gabinetu logopedycznego Anny Strus i gabinetu pediatrycznego Pawła Strusa przy ul. Miłej 12 w Warce.";
+---
+
+<BaseLayout title={pageTitle} description={pageDescription} activePath="/kontakt">
+  <main id="main-content">
+    <section class="contact-hero" aria-labelledby="contact-page-title">
+      <span class="contact-hero__shape" aria-hidden="true"></span>
+      <Container>
+        <p class="eyebrow">Kontakt</p>
+        <h1 id="contact-page-title">Dwa gabinety.<br />Dwa osobne kontakty.</h1>
+        <p class="lead">
+          Wybierz specjalistę, z którym chcesz się skontaktować. Wizyty ustalamy
+          bezpośrednio — telefonicznie lub przez SMS.
+        </p>
+        <nav class="contact-jump" aria-label="Przejdź do wybranej części strony">
+          <a href="#zapisy">Numery i zapisy <span aria-hidden="true">↓</span></a>
+          <a href="#dojazd">Adres i dojazd <span aria-hidden="true">↓</span></a>
+        </nav>
+      </Container>
+    </section>
+
+    <ContactSection />
+
+    <div id="dojazd">
+      <LocationSection />
+    </div>
+  </main>
+</BaseLayout>

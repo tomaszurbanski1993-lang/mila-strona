@@ -1,0 +1,208 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Container from "../../components/ui/Container.astro";
+import Button from "../../components/ui/Button.astro";
+import { site, phoneHref, smsHref } from "../../data/site";
+import {
+  pediatricBookingSteps,
+  pediatricExperience,
+  pediatricVisitPrinciples,
+} from "../../data/pediatra";
+import "../../styles/profile.css";
+
+const pageTitle = "Gabinet pediatryczny — Dzieciaki na Miłej";
+const pageDescription =
+  "Gabinet pediatryczny Pawła Strusa w Warce. Konsultacje dzieci w spokojnej atmosferze, z czasem na rozmowę i pytania rodziców.";
+---
+
+<BaseLayout title={pageTitle} description={pageDescription} activePath="/pediatra">
+  <main id="main-content">
+    <Container class="breadcrumb">
+      <a href="/">Strona główna</a><span aria-hidden="true">/</span><span>Gabinet pediatryczny</span>
+    </Container>
+
+    <section class="profile-hero profile-hero--pediatra" aria-labelledby="profile-title">
+      <span class="profile-hero__shape" aria-hidden="true"></span>
+      <Container class="profile-hero__grid">
+        <div class="profile-hero__image">
+          <img
+            src="/images/site/pawel-strus.jpg"
+            alt="Paweł Strus, lekarz pediatra"
+            width="933"
+            height="1400"
+            fetchpriority="high"
+          />
+          <p><strong>Od 1990 roku</strong> zawodowo związany z pediatrią</p>
+        </div>
+
+        <div class="profile-hero__copy">
+          <p class="eyebrow">Gabinet pediatryczny</p>
+          <h1 id="profile-title">Paweł Strus</h1>
+          <p class="profile-role">lekarz pediatra</p>
+          <p class="lead">
+            Pomagam dzieciom i ich rodzicom przejść przez chorobę spokojniej —
+            z uważnym badaniem, zrozumiałym wyjaśnieniem i konkretnym planem działania.
+          </p>
+
+          <div class="booking-note">
+            <span class="booking-note__mark" aria-hidden="true">↗</span>
+            <p><strong>Wizyty umawiamy telefonicznie</strong>Dni przyjęć są zmienne ze względu na pracę szpitalną.</p>
+          </div>
+
+          <div class="button-row">
+            <Button href="#jak-wyglada-wizyta">Jak wygląda wizyta <span aria-hidden="true">↓</span></Button>
+            <Button href="#kontakt-pediatra" variant="secondary">Kontakt i zapisy</Button>
+          </div>
+        </div>
+      </Container>
+    </section>
+
+    <section class="section profile-intro" aria-labelledby="about-title">
+      <Container class="profile-intro__grid">
+        <div class="profile-intro__copy">
+          <p class="eyebrow">O mnie</p>
+          <h2 id="about-title">Doświadczenie pomaga zachować spokój</h2>
+          <div class="profile-prose">
+            <p>
+              Pediatrią zajmuję się od ukończenia studiów na Akademii Medycznej
+              w Warszawie w 1990 roku. Doświadczenie zdobywałem w szpitalu i
+              przychodniach podstawowej opieki zdrowotnej w Grójcu i okolicach.
+            </p>
+            <p>
+              Od 2016 roku pracuję w Mazowieckim Szpitalu Specjalistycznym w Radomiu,
+              gdzie kieruję Klinicznym Oddziałem Pediatrii. Prowadzę także zajęcia
+              kliniczne ze studentami kierunku lekarskiego.
+            </p>
+            <p>
+              W prywatnym gabinecie spotykam dziś rodziców, którzy sami byli kiedyś
+              moimi pacjentami. To najlepsze przypomnienie, że w pediatrii liczą się
+              nie tylko wiedza i doświadczenie, ale również trwałe zaufanie.
+            </p>
+          </div>
+        </div>
+
+        <aside class="profile-aside">
+          <p class="eyebrow">W gabinecie</p>
+          <h3>Możesz liczyć na</h3>
+          <ul>
+            <li>czas na rozmowę o objawach</li>
+            <li>spokojne podejście do dziecka</li>
+            <li>zrozumiałe omówienie badania</li>
+            <li>jasne zalecenia dla rodzica</li>
+            <li>informację o kolejnych krokach</li>
+          </ul>
+        </aside>
+      </Container>
+    </section>
+
+    <section class="section services-section" id="jak-wyglada-wizyta" aria-labelledby="visit-principles-title">
+      <Container>
+        <div class="section-heading section-heading--split">
+          <div>
+            <p class="eyebrow">Podczas konsultacji</p>
+            <h2 id="visit-principles-title">Dziecko i rodzic wiedzą, co się dzieje</h2>
+          </div>
+          <p class="lead">
+            Dobra wizyta pediatryczna to nie tylko badanie. To również przestrzeń na
+            pytania, wyjaśnienie wątpliwości i spokojne ustalenie dalszego postępowania.
+          </p>
+        </div>
+
+        <div class="speech-services-grid">
+          {
+            pediatricVisitPrinciples.map((principle) => (
+              <article class="speech-service-card">
+                <span aria-hidden="true">{principle.number}</span>
+                <h3>{principle.title}</h3>
+                <p>{principle.description}</p>
+              </article>
+            ))
+          }
+        </div>
+      </Container>
+    </section>
+
+    <section class="section experience-section" aria-labelledby="experience-title">
+      <Container>
+        <div class="section-heading">
+          <p class="eyebrow">Doświadczenie zawodowe</p>
+          <h2 id="experience-title">Pediatria od ponad trzech dekad</h2>
+        </div>
+
+        <ol class="experience-list">
+          {
+            pediatricExperience.map((milestone) => (
+              <li>
+                <span>{milestone.number}</span>
+                <div>
+                  <h3>{milestone.title}</h3>
+                  <p>{milestone.description}</p>
+                </div>
+              </li>
+            ))
+          }
+        </ol>
+      </Container>
+    </section>
+
+    <section class="section first-visit" aria-labelledby="booking-title">
+      <Container class="first-visit__grid">
+        <div class="first-visit__visual first-visit__visual--photo">
+          <img
+            src="/images/site/pawel-detail.jpg"
+            alt="Lekarz Paweł Strus podaje stetoskop w kierunku pacjenta"
+            width="1200"
+            height="1800"
+            loading="lazy"
+          />
+          <p>Termin ustalamy bezpośrednio</p>
+        </div>
+
+        <div class="first-visit__copy">
+          <p class="eyebrow">Przed wizytą</p>
+          <h2 id="booking-title">Jak umówić spotkanie?</h2>
+          <p class="lead">
+            Rezerwacja konkretnej godziny pozwala ograniczyć oczekiwanie i oszczędza
+            dziecku niepotrzebnego stresu.
+          </p>
+
+          <ol class="visit-steps">
+            {
+              pediatricBookingSteps.map((step) => (
+                <li>
+                  <span aria-hidden="true">{step.number}</span>
+                  <div><h3>{step.title}</h3><p>{step.description}</p></div>
+                </li>
+              ))
+            }
+          </ol>
+        </div>
+      </Container>
+    </section>
+
+    <section class="section profile-contact" id="kontakt-pediatra" aria-labelledby="profile-contact-title">
+      <span class="profile-contact__shape" aria-hidden="true"></span>
+      <Container class="profile-contact__grid">
+        <div>
+          <p class="eyebrow eyebrow--light">Zapisy do pediatry</p>
+          <h2 id="profile-contact-title">Umów wizytę telefonicznie</h2>
+          <p class="lead">
+            Podczas przyjmowania pacjentów kontakt może być utrudniony. Jeśli nie
+            odbiorę, wyślij SMS — oddzwonię, gdy tylko będzie to możliwe.
+          </p>
+          <div class="button-row">
+            <Button href={phoneHref(site.practices.pediatra.phone)} variant="light">Zadzwoń do gabinetu</Button>
+            <Button href={smsHref(site.practices.pediatra.phone)} variant="secondary">Wyślij SMS</Button>
+          </div>
+        </div>
+
+        <div class="profile-contact__details">
+          <div><small>Telefon</small><a href={phoneHref(site.practices.pediatra.phone)}>{site.practices.pediatra.phone}</a></div>
+          <div><small>E-mail</small><a href={`mailto:${site.practices.pediatra.email}`}>{site.practices.pediatra.email}</a></div>
+          <div><small>Adres</small><strong>{site.address}</strong></div>
+          <div><small>Cennik</small><strong>Aktualne informacje w gabinecie</strong></div>
+        </div>
+      </Container>
+    </section>
+  </main>
+</BaseLayout>

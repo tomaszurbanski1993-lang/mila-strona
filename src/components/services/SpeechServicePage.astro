@@ -1,0 +1,160 @@
+---
+import type { SpeechServiceDetail } from "../../data/logopeda-services";
+import { speechServiceDetails } from "../../data/logopeda-services";
+import { site, phoneHref, smsHref } from "../../data/site";
+import Container from "../ui/Container.astro";
+import Button from "../ui/Button.astro";
+
+interface Props {
+  service: SpeechServiceDetail;
+}
+
+const { service } = Astro.props;
+const relatedServices = speechServiceDetails.filter(({ slug }) => slug !== service.slug);
+---
+
+<main id="main-content" class:list={["service-page", `service-page--${service.tone}`]}>
+  <Container class="service-breadcrumb">
+    <a href="/">Strona główna</a><span aria-hidden="true">/</span><a href="/logopeda/">Logopeda</a><span aria-hidden="true">/</span><span>{service.shortTitle}</span>
+  </Container>
+
+  <section class="service-hero" aria-labelledby="service-title">
+    <span class="service-hero__shape" aria-hidden="true"></span>
+    <Container class="service-hero__grid">
+      <div class="service-hero__copy">
+        <p class="eyebrow">{service.eyebrow}</p>
+        <h1 id="service-title">{service.title}</h1>
+        <p class="lead">{service.intro}</p>
+        <div class="button-row">
+          <Button href="#przebieg">Jak wygląda praca? <span aria-hidden="true">↓</span></Button>
+          <Button href="#kontakt-usluga" variant="secondary">Zapytaj o konsultację</Button>
+        </div>
+      </div>
+
+      <div class="service-hero__image">
+        <img
+          src={service.image}
+          alt={service.imageAlt}
+          width={service.imageWidth}
+          height={service.imageHeight}
+          fetchpriority="high"
+        />
+        <span aria-hidden="true">{service.badge}</span>
+      </div>
+    </Container>
+  </section>
+
+  <section class="service-facts" aria-label="Najważniejsze informacje">
+    <Container>
+      {service.facts.map((fact) => <p><small>{fact.label}</small><strong>{fact.value}</strong></p>)}
+    </Container>
+  </section>
+
+  <section class="section service-overview" aria-labelledby="overview-title">
+    <Container class="service-overview__grid">
+      <div class="service-overview__copy">
+        <p class="eyebrow">O usłudze</p>
+        <h2 id="overview-title">{service.overviewTitle}</h2>
+        <div class="service-prose">
+          {service.overview.map((paragraph) => <p>{paragraph}</p>)}
+        </div>
+      </div>
+
+      <aside class="service-signals">
+        <p class="eyebrow">Kiedy warto zapytać?</p>
+        <h3>{service.signalsTitle}</h3>
+        <p>{service.signalsLead}</p>
+        <ul>
+          {service.signals.map((signal) => <li>{signal}</li>)}
+        </ul>
+      </aside>
+    </Container>
+  </section>
+
+  <section class="section service-process" id="przebieg" aria-labelledby="process-title">
+    <Container>
+      <div class="section-heading section-heading--split">
+        <div>
+          <p class="eyebrow">Krok po kroku</p>
+          <h2 id="process-title">{service.processTitle}</h2>
+        </div>
+        <p class="lead">{service.processLead}</p>
+      </div>
+
+      <ol class="service-process__list">
+        {service.process.map((step) => (
+          <li>
+            <span aria-hidden="true">{step.number}</span>
+            <h3>{step.title}</h3>
+            <p>{step.description}</p>
+          </li>
+        ))}
+      </ol>
+
+      <aside class="service-note">
+        <span aria-hidden="true">i</span>
+        <div><h3>{service.noteTitle}</h3><p>{service.note}</p></div>
+      </aside>
+    </Container>
+  </section>
+
+  <section class="section service-faq" aria-labelledby="faq-title">
+    <Container class="service-faq__grid">
+      <div>
+        <p class="eyebrow">Najczęstsze pytania</p>
+        <h2 id="faq-title">Przed pierwszym spotkaniem</h2>
+        <p class="lead">Jeśli Twojego pytania nie ma na liście, skontaktuj się bezpośrednio z gabinetem.</p>
+      </div>
+      <div class="service-faq__items">
+        {service.faq.map((item) => (
+          <details>
+            <summary>{item.question}<span aria-hidden="true">+</span></summary>
+            <p>{item.answer}</p>
+          </details>
+        ))}
+      </div>
+    </Container>
+  </section>
+
+  <section class="section service-contact" id="kontakt-usluga" aria-labelledby="service-contact-title">
+    <span class="service-contact__shape" aria-hidden="true"></span>
+    <Container class="service-contact__grid">
+      <div>
+        <p class="eyebrow eyebrow--light">Gabinet Anny Strus</p>
+        <h2 id="service-contact-title">Nie wiesz, czy to właściwy kierunek?</h2>
+        <p class="lead">Opisz krótko, czego dotyczy trudność. Wspólnie ustalimy najlepszy rodzaj pierwszego spotkania.</p>
+      </div>
+      <div class="service-contact__actions">
+        <a href={phoneHref(site.practices.logopeda.phone)}><small>Telefon</small><strong>{site.practices.logopeda.phone}</strong></a>
+        <a href={`mailto:${site.practices.logopeda.email}`}><small>E-mail</small><strong>{site.practices.logopeda.email}</strong></a>
+        <div class="button-row">
+          <Button href={phoneHref(site.practices.logopeda.phone)} variant="light">Zadzwoń</Button>
+          <Button href={smsHref(site.practices.logopeda.phone)} variant="secondary">Wyślij SMS</Button>
+        </div>
+      </div>
+    </Container>
+  </section>
+
+  <section class="section related-services" aria-labelledby="related-title">
+    <Container>
+      <div class="section-heading">
+        <p class="eyebrow">Pozostałe usługi</p>
+        <h2 id="related-title">Zobacz także</h2>
+      </div>
+      <div class="related-services__grid">
+        {relatedServices.map((related) => (
+          <a href={`/logopeda/${related.slug}/`}>
+            <span aria-hidden="true">{related.badge}</span>
+            <div><small>{related.eyebrow}</small><h3>{related.shortTitle}</h3></div>
+            <b aria-hidden="true">→</b>
+          </a>
+        ))}
+        <a href="/logopeda/#oferta">
+          <span aria-hidden="true">+</span>
+          <div><small>Pełny zakres wsparcia</small><h3>Wszystkie usługi</h3></div>
+          <b aria-hidden="true">→</b>
+        </a>
+      </div>
+    </Container>
+  </section>
+</main>
