@@ -1,0 +1,48 @@
+---
+import Container from "../ui/Container.astro";
+import Button from "../ui/Button.astro";
+---
+
+<section class="home-hero" aria-labelledby="hero-title">
+  <span class="hero-orbit hero-orbit--yellow" aria-hidden="true"></span>
+  <span class="hero-orbit hero-orbit--pink" aria-hidden="true"></span>
+
+  <Container class="home-hero__grid">
+    <div class="home-hero__copy">
+      <p class="eyebrow">Logopedia i pediatria · Warka</p>
+      <h1 id="hero-title">Dwa gabinety.<br /><em>Jedno miejsce</em> pełne troski.</h1>
+      <p class="lead home-hero__lead">
+        Wspieramy dzieci i ich rodziców spokojnie, uważnie i z doświadczeniem.
+        Z konkretną wiedzą, jasną komunikacją i bez medycznego chłodu.
+      </p>
+
+      <div class="button-row home-hero__actions">
+        <Button href="/logopeda">Gabinet logopedyczny <span aria-hidden="true">→</span></Button>
+        <Button href="/pediatra" variant="secondary">Gabinet pediatryczny</Button>
+      </div>
+
+      <ul class="hero-facts" aria-label="Najważniejsze informacje">
+        <li>Wizyty na miejscu w Warce</li>
+        <li>Kontakt telefoniczny lub SMS</li>
+        <li>Dzieci, młodzież i dorośli</li>
+      </ul>
+    </div>
+
+    <div class="home-hero__visual">
+      <div class="home-hero__photo-wrap">
+        <img
+          src="/images/site/anna-pawel-hero.jpg"
+          alt="Anna i Paweł Strus, specjaliści Dzieciaków na Miłej"
+          width="2000"
+          height="1333"
+          fetchpriority="high"
+        />
+      </div>
+      <div class="hero-address">
+        <span class="hero-address__pin" aria-hidden="true">●</span>
+        <span><strong>ul. Miła 12</strong>05-660 Warka</span>
+      </div>
+      <span class="hero-doodle" aria-hidden="true"></span>
+    </div>
+  </Container>
+</section>

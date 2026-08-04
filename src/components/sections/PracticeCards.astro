@@ -1,0 +1,50 @@
+---
+import { practices } from "../../data/home";
+import Container from "../ui/Container.astro";
+import Button from "../ui/Button.astro";
+---
+
+<section class="section practices-section" aria-labelledby="practices-title">
+  <Container>
+    <div class="section-heading section-heading--split">
+      <div>
+        <p class="eyebrow">Dwa gabinety, jedno miejsce</p>
+        <h2 id="practices-title">Wybierz specjalistę, którego potrzebujesz</h2>
+      </div>
+      <p class="lead">
+        Logopedia i pediatria mają tu tę samą wagę. Każdy gabinet ma własny zakres
+        pomocy i osobny sposób zapisu.
+      </p>
+    </div>
+
+    <div class="practice-grid">
+      {
+        practices.map((practice, index) => (
+          <article class:list={["practice-card", `practice-card--${index === 0 ? "logopeda" : "pediatra"}`]}>
+            <div class="practice-card__image">
+              <img
+                src={practice.image}
+                alt={practice.imageAlt}
+                width="933"
+                height="1400"
+                loading="lazy"
+              />
+            </div>
+            <div class="practice-card__content">
+              <p class="eyebrow">{practice.eyebrow}</p>
+              <h3>{practice.name}</h3>
+              <p class="practice-card__role">{practice.role}</p>
+              <p>{practice.description}</p>
+              <ul class="practice-card__highlights">
+                {practice.highlights.map((item) => <li>{item}</li>)}
+              </ul>
+              <Button href={practice.href} variant="text">
+                {practice.linkLabel} <span aria-hidden="true">→</span>
+              </Button>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </Container>
+</section>

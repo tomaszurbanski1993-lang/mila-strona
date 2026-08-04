@@ -1,38 +1,30 @@
 ---
 import { getCollection, type CollectionEntry } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { authors } from "../../data/authors";
+import KnowledgeList from "../../components/knowledge/KnowledgeList.astro";
 import "../../styles/blog.css";
 
 const entries = await getCollection("news", ({ data }) => data.draft !== true);
 const items: CollectionEntry<"news">[] = entries.sort(
   (a, b) => b.data.date.getTime() - a.data.date.getTime()
 );
-const toSlug = (id: string): string => id.replace(/\.[^.]+$/, "");
 ---
 
-<BaseLayout title="Aktualności" activePath="/aktualnosci">
-  <main class="blog-list">
-    <h1>Aktualnosci</h1>
-    {
-      items.length === 0 ? (
-        <p class="blog-empty">Brak aktualnosci.</p>
-      ) : (
-        <ul>
-          {items.map((item) => (
-            <li>
-              <a href={`/aktualnosci/${toSlug(item.id)}/`}>{item.data.title}</a>
-              <p>{item.data.description}</p>
-              <time datetime={item.data.date.toISOString()}>
-                {item.data.date.toLocaleDateString("pl-PL")}
-              </time>
-              {item.data.author && (
-                <p class="entry-author">Autor: {authors[item.data.author].name}</p>
-              )}
-            </li>
-          ))}
-        </ul>
-      )
-    }
+<BaseLayout
+  title="Aktualności — Dzieciaki na Miłej"
+  description="Bieżące informacje organizacyjne z gabinetu logopedycznego i pediatrycznego Dzieciaki na Miłej w Warce."
+  activePath="/aktualnosci"
+>
+  <main id="main-content">
+    <KnowledgeList
+      items={items}
+      eyebrow="Z życia gabinetów"
+      title="Aktualności"
+      description="Zmiany organizacyjne, nowe możliwości w gabinetach i krótkie wiadomości ważne dla naszych pacjentów."
+      basePath="/aktualnosci"
+      emptyText="Nie ma jeszcze opublikowanych aktualności."
+      alternateHref="/blog"
+      alternateLabel="Przejdź do bloga"
+    />
   </main>
 </BaseLayout>

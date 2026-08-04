@@ -1,0 +1,33 @@
+---
+import { site } from "../../data/site";
+import Container from "../ui/Container.astro";
+import Button from "../ui/Button.astro";
+---
+
+<section class="section location-section" aria-labelledby="location-title">
+  <Container class="location-layout">
+    <div class="location-copy">
+      <p class="eyebrow">Na miejscu w Warce</p>
+      <h2 id="location-title">Spotkajmy się na Miłej</h2>
+      <p class="lead">
+        Oba gabinety mieszczą się pod jednym adresem. Szczegóły dotyczące wejścia,
+        parkowania i dostępności uzupełnimy po ich ostatecznym potwierdzeniu.
+      </p>
+      <address>
+        <span>Dzieciaki na Miłej</span>
+        <strong>{site.address}</strong>
+      </address>
+      <Button href={site.mapUrl} variant="secondary">Otwórz trasę w Mapach Google <span aria-hidden="true">↗</span></Button>
+    </div>
+
+    <div class="location-map" aria-label="Schematyczne oznaczenie lokalizacji gabinetu">
+      <span class="location-map__road location-map__road--one" aria-hidden="true"></span>
+      <span class="location-map__road location-map__road--two" aria-hidden="true"></span>
+      <div class="location-pin">
+        <span aria-hidden="true">●</span>
+        <strong>Miła 12</strong>
+        <small>Warka</small>
+      </div>
+    </div>
+  </Container>
+</section>

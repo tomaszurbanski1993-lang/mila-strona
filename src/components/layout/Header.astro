@@ -1,0 +1,89 @@
+---
+import { navItems } from "../../data/navigation";
+import Container from "../ui/Container.astro";
+
+interface Props {
+  activePath?: string;
+}
+
+const { activePath = Astro.url.pathname } = Astro.props;
+const normalizedPath = activePath.length > 1 ? activePath.replace(/\/$/, "") : activePath;
+const primaryItems = navItems.filter(({ label }) =>
+  ["Start", "Logopeda", "Pediatra", "O nas"].includes(label),
+);
+const knowledgeItems = navItems.filter(({ label }) => ["Blog", "Aktualności"].includes(label));
+const isActive = (href: string) =>
+  href === "/" ? normalizedPath === "/" : normalizedPath === href || normalizedPath.startsWith(`${href}/`);
+---
+
+<header class="site-header" data-site-header>
+  <Container class="header-inner">
+    <a class="brand" href="/" aria-label="Dzieciaki na Miłej — strona główna">
+      <img src="/images/site/logo-dnm.png" alt="Dzieciaki na Miłej" width="799" height="320" />
+    </a>
+
+    <button
+      class="menu-button"
+      type="button"
+      aria-expanded="false"
+      aria-controls="main-navigation"
+      data-menu-toggle
+    >
+      <span class="menu-button__icon" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span>Menu</span>
+    </button>
+
+    <nav class="main-nav" id="main-navigation" aria-label="Główna nawigacja" data-main-nav>
+      <div class="main-nav__links">
+        {
+          primaryItems.map((item) => (
+            <a href={item.href} class:list={{ active: isActive(item.href) }} aria-current={isActive(item.href) ? "page" : undefined}>
+              {item.label}
+            </a>
+          ))
+        }
+
+        <details class="nav-dropdown">
+          <summary class:list={{ active: knowledgeItems.some(({ href }) => isActive(href)) }}>Wiedza</summary>
+          <div class="nav-dropdown__menu">
+            {
+              knowledgeItems.map((item) => (
+                <a href={item.href} class:list={{ active: isActive(item.href) }} aria-current={isActive(item.href) ? "page" : undefined}>
+                  <span>{item.label}</span>
+                  <small>{item.label === "Blog" ? "Artykuły i materiały" : "Informacje z gabinetów"}</small>
+                </a>
+              ))
+            }
+          </div>
+        </details>
+
+        <a href="/kontakt" class:list={["main-nav__contact", { active: isActive("/kontakt") }]}>Kontakt</a>
+      </div>
+
+      <a class="button button--primary main-nav__mobile-cta" href="/kontakt#zapisy">Kontakt i zapisy</a>
+    </nav>
+
+    <a class="header-cta" href="/kontakt#zapisy">Jak się zapisać <span aria-hidden="true">→</span></a>
+  </Container>
+</header>
+
+<script>
+  const header = document.querySelector<HTMLElement>("[data-site-header]");
+  const menuButton = header?.querySelector<HTMLButtonElement>("[data-menu-toggle]");
+  const navigation = header?.querySelector<HTMLElement>("[data-main-nav]");
+
+  const closeMenu = () => {
+    navigation?.classList.remove("is-open");
+    menuButton?.setAttribute("aria-expanded", "false");
+  };
+
+  menuButton?.addEventListener("click", () => {
+    const isOpen = navigation?.classList.toggle("is-open") ?? false;
+    menuButton.setAttribute("aria-expanded", String(isOpen));
+  });
+
+  navigation?.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 960) closeMenu();
+  });
+</script>
