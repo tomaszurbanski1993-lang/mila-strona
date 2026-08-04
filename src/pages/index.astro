@@ -13,7 +13,12 @@ const pageDescription =
   "Gabinet logopedyczny Anny Strus i gabinet pediatryczny Pawła Strusa w Warce. Spokojna, specjalistyczna pomoc dla dzieci i ich rodziców.";
 ---
 
-<BaseLayout title={pageTitle} description={pageDescription} activePath="/">
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  activePath="/"
+  handleIdentityCallback={true}
+>
   <main id="main-content">
     <Hero />
     <PracticeCards />
