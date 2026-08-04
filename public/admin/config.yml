@@ -59,6 +59,7 @@ collections:
             - { label: Paweł Strus, value: pawel }
             - { label: Anna i Paweł, value: anna-i-pawel }
             - { label: Administrator, value: admin }
+      - { label: Obraz, name: image, widget: image, required: false }
       - { label: Tagi, name: tags, widget: list, required: false }
       - {
           label: Wersja robocza,
