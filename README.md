@@ -163,9 +163,9 @@ src/layouts/
 | Kolekcja        | Folder              | Obrazki | Opis                                |
 | --------------- | ------------------- | ------- | ----------------------------------- |
 | **Blog**        | `src/content/blog/` | Tak     | Wpisy blogowe z okładką i miniaturą |
-| **Aktualności** | `src/content/news/` | Nie     | Krótkie komunikaty, tylko tekst     |
+| **Aktualności** | `src/content/news/` | Tak     | Komunikaty z opcjonalnym obrazem    |
 
-Obie kolekcje mają wspólny schemat: tytuł, opis, data, autor, tagi, flaga wersji roboczej (`draft`) i treść Markdown. Blog dodatkowo ma pole obrazka.
+Obie kolekcje mają wspólny schemat: tytuł, opis, data, autor, opcjonalny obraz, tagi, flaga wersji roboczej (`draft`) i treść Markdown.
 
 ### Autorzy wpisów
 
