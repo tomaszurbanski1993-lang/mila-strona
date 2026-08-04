@@ -1,0 +1,120 @@
+---
+import Container from "../ui/Container.astro";
+import PublicImage from "../PublicImage.astro";
+import { authors, type AuthorId } from "../../data/authors";
+
+interface KnowledgeItem {
+  id: string;
+  data: {
+    title: string;
+    description: string;
+    date: Date;
+    image?: string;
+    tags?: string[];
+    author?: AuthorId;
+  };
+}
+
+interface Props {
+  items: KnowledgeItem[];
+  eyebrow: string;
+  title: string;
+  description: string;
+  basePath: "/blog" | "/aktualnosci";
+  emptyText: string;
+  alternateHref: string;
+  alternateLabel: string;
+}
+
+const {
+  items,
+  eyebrow,
+  title,
+  description,
+  basePath,
+  emptyText,
+  alternateHref,
+  alternateLabel,
+} = Astro.props;
+
+const featured = items[0];
+const remaining = items.slice(1);
+const toSlug = (id: string) => id.replace(/\.[^.]+$/, "");
+const normalizeImage = (image?: string) => image?.replace(/^\/public(?=\/)/, "");
+const formatDate = (date: Date) =>
+  date.toLocaleDateString("pl-PL", { day: "numeric", month: "long", year: "numeric" });
+const featuredImage = normalizeImage(featured?.data.image);
+---
+
+<section class="knowledge-hero" aria-labelledby="knowledge-title">
+  <span class="knowledge-hero__shape" aria-hidden="true"></span>
+  <Container>
+    <p class="eyebrow">{eyebrow}</p>
+    <h1 id="knowledge-title">{title}</h1>
+    <div class="knowledge-hero__bottom">
+      <p class="lead">{description}</p>
+      <a class="knowledge-switch" href={alternateHref}>{alternateLabel} <span aria-hidden="true">→</span></a>
+    </div>
+  </Container>
+</section>
+
+<section class="section knowledge-feed" aria-label={`Lista: ${title}`}>
+  <Container>
+    {
+      !featured ? (
+        <p class="knowledge-empty">{emptyText}</p>
+      ) : (
+        <>
+          <article class="featured-entry">
+            <a class:list={["featured-entry__media", { "featured-entry__media--empty": !featured.data.image }]} href={`${basePath}/${toSlug(featured.id)}/`} tabindex="-1" aria-hidden="true">
+              {featuredImage ? (
+                <PublicImage src={featuredImage} alt="" fetchpriority="high" />
+              ) : (
+                <span>{basePath === "/blog" ? "B" : "A"}</span>
+              )}
+            </a>
+            <div class="featured-entry__copy">
+              <p class="entry-meta">
+                <span>Najnowsze</span>
+                <time datetime={featured.data.date.toISOString()}>{formatDate(featured.data.date)}</time>
+                {featured.data.author && <span class="entry-author">Autor: {authors[featured.data.author].name}</span>}
+              </p>
+              <h2><a href={`${basePath}/${toSlug(featured.id)}/`}>{featured.data.title}</a></h2>
+              <p>{featured.data.description}</p>
+              <a class="entry-link" href={`${basePath}/${toSlug(featured.id)}/`}>Czytaj dalej <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          {remaining.length > 0 && (
+            <div class="knowledge-grid">
+              {remaining.map((item) => {
+                const itemImage = normalizeImage(item.data.image);
+
+                return (
+                  <article class="entry-card">
+                    <a class:list={["entry-card__media", { "entry-card__media--empty": !item.data.image }]} href={`${basePath}/${toSlug(item.id)}/`} tabindex="-1" aria-hidden="true">
+                      {itemImage ? (
+                        <PublicImage src={itemImage} alt="" loading="lazy" />
+                      ) : (
+                        <span>{basePath === "/blog" ? "B" : "A"}</span>
+                      )}
+                    </a>
+                    <div class="entry-card__copy">
+                      <p class="entry-card__meta">
+                        <time datetime={item.data.date.toISOString()}>{formatDate(item.data.date)}</time>
+                        {item.data.author && <span>Autor: {authors[item.data.author].name}</span>}
+                      </p>
+                      <h2><a href={`${basePath}/${toSlug(item.id)}/`}>{item.data.title}</a></h2>
+                      <p>{item.data.description}</p>
+                      <a class="entry-link" href={`${basePath}/${toSlug(item.id)}/`}>Czytaj <span aria-hidden="true">→</span></a>
+                    </div>
+                  </article>
+                );
+              })}
+            </div>
+          )}
+        </>
+      )
+    }
+  </Container>
+</section>

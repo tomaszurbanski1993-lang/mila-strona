@@ -1,0 +1,26 @@
+---
+import { values } from "../../data/home";
+import Container from "../ui/Container.astro";
+---
+
+<section class="section values-section" aria-labelledby="values-title">
+  <Container class="values-layout">
+    <div class="values-intro">
+      <p class="eyebrow">Nasze podejście</p>
+      <h2 id="values-title">Profesjonalnie, ale po ludzku</h2>
+      <p class="lead">Dziecko ma czuć się bezpiecznie, a rodzic wiedzieć, co robimy i dlaczego.</p>
+    </div>
+
+    <div class="values-grid">
+      {
+        values.map((value) => (
+          <article class:list={["value-card", `value-card--${value.tone}`]}>
+            <span class="value-card__mark" aria-hidden="true">{value.mark}</span>
+            <h3>{value.title}</h3>
+            <p>{value.description}</p>
+          </article>
+        ))
+      }
+    </div>
+  </Container>
+</section>

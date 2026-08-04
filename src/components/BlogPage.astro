@@ -1,0 +1,70 @@
+---
+import type { BlogPage as BlogPageData } from "../data/blog-pagination";
+import { getBlogPageUrl } from "../data/blog-pagination";
+import KnowledgeList from "./knowledge/KnowledgeList.astro";
+import Container from "./ui/Container.astro";
+
+interface Props {
+  page: BlogPageData;
+}
+
+const { page } = Astro.props;
+const previousPageUrl =
+  page.currentPage > 1 ? getBlogPageUrl(page.currentPage - 1) : undefined;
+const nextPageUrl =
+  page.currentPage < page.totalPages
+    ? getBlogPageUrl(page.currentPage + 1)
+    : undefined;
+const pageNumbers = Array.from({ length: page.totalPages }, (_, index) => index + 1);
+---
+
+<main id="main-content">
+  <KnowledgeList
+    items={page.posts}
+    eyebrow="Artykuły i materiały"
+    title="Blog"
+    description="Wiedza specjalistyczna, praktyczne podpowiedzi i teksty z życia Dzieciaków na Miłej — do spokojnego czytania w swoim tempie."
+    basePath="/blog"
+    emptyText="Nie ma jeszcze opublikowanych wpisów."
+    alternateHref="/aktualnosci"
+    alternateLabel="Zobacz aktualności"
+  />
+  {
+    page.totalPages > 1 && (
+      <section class="knowledge-pagination-section" aria-label="Paginacja bloga">
+        <Container>
+          <p class="knowledge-page-status">Strona {page.currentPage} z {page.totalPages}</p>
+          <nav class="knowledge-pagination">
+            <ul>
+              <li>
+                {previousPageUrl ? (
+                  <a href={previousPageUrl} rel="prev">Poprzednia</a>
+                ) : (
+                  <span aria-hidden="true">Poprzednia</span>
+                )}
+              </li>
+              {pageNumbers.map((pageNumber) => (
+                <li>
+                  <a
+                    href={getBlogPageUrl(pageNumber)}
+                    aria-label={`Strona ${pageNumber}`}
+                    aria-current={pageNumber === page.currentPage ? "page" : undefined}
+                  >
+                    {pageNumber}
+                  </a>
+                </li>
+              ))}
+              <li>
+                {nextPageUrl ? (
+                  <a href={nextPageUrl} rel="next">Następna</a>
+                ) : (
+                  <span aria-hidden="true">Następna</span>
+                )}
+              </li>
+            </ul>
+          </nav>
+        </Container>
+      </section>
+    )
+  }
+</main>

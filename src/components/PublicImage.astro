@@ -1,0 +1,31 @@
+---
+import { getPublicImageMetadata } from "../utils/public-image-metadata";
+
+interface Props {
+  src: string;
+  alt: string;
+  class?: string;
+  loading?: "eager" | "lazy";
+  fetchpriority?: "high" | "low" | "auto";
+}
+
+const {
+  src,
+  alt,
+  class: className,
+  loading,
+  fetchpriority,
+} = Astro.props;
+const metadata = await getPublicImageMetadata(src);
+---
+
+<img
+  src={src}
+  alt={alt}
+  class={className}
+  width={metadata?.width}
+  height={metadata?.height}
+  loading={loading}
+  fetchpriority={fetchpriority}
+  decoding="async"
+/>

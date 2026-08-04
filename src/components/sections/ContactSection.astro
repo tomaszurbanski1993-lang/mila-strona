@@ -1,0 +1,48 @@
+---
+import { site, phoneHref, smsHref } from "../../data/site";
+import Container from "../ui/Container.astro";
+import Button from "../ui/Button.astro";
+---
+
+<section class="section contact-section" id="zapisy" aria-labelledby="contact-title">
+  <span class="contact-section__shape" aria-hidden="true"></span>
+  <Container class="contact-layout">
+    <div class="contact-intro">
+      <p class="eyebrow eyebrow--light">Kontakt i zapisy</p>
+      <h2 id="contact-title">Umów wizytę bez formularzy</h2>
+      <p class="lead">
+        Wybierz właściwy gabinet i skontaktuj się bezpośrednio. Jeśli nie możemy
+        odebrać, wyślij SMS — oddzwonimy, gdy tylko będzie to możliwe.
+      </p>
+      <div class="contact-steps" aria-label="Jak umówić wizytę">
+        <span><b>1</b> Wybierz gabinet</span>
+        <span><b>2</b> Zadzwoń lub napisz SMS</span>
+        <span><b>3</b> Ustal dogodny termin</span>
+      </div>
+    </div>
+
+    <div class="contact-cards">
+      <article class="contact-card">
+        <p class="contact-card__type">Gabinet logopedyczny</p>
+        <h3>{site.practices.logopeda.name}</h3>
+        <a class="contact-card__phone" href={phoneHref(site.practices.logopeda.phone)}>{site.practices.logopeda.phone}</a>
+        <a class="contact-card__email" href={`mailto:${site.practices.logopeda.email}`}>{site.practices.logopeda.email}</a>
+        <div class="contact-card__actions">
+          <Button href={phoneHref(site.practices.logopeda.phone)} variant="light">Zadzwoń</Button>
+          <Button href={smsHref(site.practices.logopeda.phone)} variant="secondary">Wyślij SMS</Button>
+        </div>
+      </article>
+
+      <article class="contact-card">
+        <p class="contact-card__type">Gabinet pediatryczny</p>
+        <h3>{site.practices.pediatra.name}</h3>
+        <a class="contact-card__phone" href={phoneHref(site.practices.pediatra.phone)}>{site.practices.pediatra.phone}</a>
+        <a class="contact-card__email" href={`mailto:${site.practices.pediatra.email}`}>{site.practices.pediatra.email}</a>
+        <div class="contact-card__actions">
+          <Button href={phoneHref(site.practices.pediatra.phone)} variant="light">Zadzwoń</Button>
+          <Button href={smsHref(site.practices.pediatra.phone)} variant="secondary">Wyślij SMS</Button>
+        </div>
+      </article>
+    </div>
+  </Container>
+</section>

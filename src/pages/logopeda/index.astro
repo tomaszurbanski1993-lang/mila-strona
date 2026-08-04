@@ -1,0 +1,179 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Container from "../../components/ui/Container.astro";
+import Button from "../../components/ui/Button.astro";
+import { site, phoneHref, smsHref } from "../../data/site";
+import { firstVisitSteps, speechTherapyServices } from "../../data/logopeda";
+import "../../styles/profile.css";
+
+const pageTitle = "Gabinet logopedyczny — Dzieciaki na Miłej";
+const pageDescription =
+  "Gabinet logopedyczny Anny Strus w Warce. Konsultacja, diagnoza i indywidualna terapia dzieci, młodzieży oraz dorosłych.";
+---
+
+<BaseLayout title={pageTitle} description={pageDescription} activePath="/logopeda">
+  <main id="main-content">
+    <Container class="breadcrumb">
+      <a href="/">Strona główna</a><span aria-hidden="true">/</span><span>Gabinet logopedyczny</span>
+    </Container>
+
+    <section class="profile-hero" aria-labelledby="profile-title">
+      <span class="profile-hero__shape" aria-hidden="true"></span>
+      <Container class="profile-hero__grid">
+        <div class="profile-hero__image">
+          <img
+            src="/images/site/anna-strus.jpg"
+            alt="Anna Strus, logopeda i neurologopeda"
+            width="933"
+            height="1400"
+            fetchpriority="high"
+          />
+          <p><strong>Od 2001 roku</strong> własna praktyka logopedyczna w Warce</p>
+        </div>
+
+        <div class="profile-hero__copy">
+          <p class="eyebrow">Gabinet logopedyczny</p>
+          <h1 id="profile-title">Anna Strus</h1>
+          <p class="profile-role">logopeda · neurologopeda · terapeuta</p>
+          <p class="lead">
+            Wspieram dzieci, młodzież i dorosłych w rozwoju komunikacji, mowy oraz
+            funkcji potrzebnych do swobodnego mówienia, jedzenia i codziennego funkcjonowania.
+          </p>
+
+          <div class="booking-note">
+            <span class="booking-note__mark" aria-hidden="true">↗</span>
+            <p><strong>Jak umówić konsultację?</strong>Zadzwoń lub wyślij SMS. Termin ustalimy bezpośrednio.</p>
+          </div>
+
+          <div class="button-row">
+            <Button href="#oferta">Zobacz zakres wsparcia <span aria-hidden="true">↓</span></Button>
+            <Button href="#kontakt-logopeda" variant="secondary">Kontakt i zapisy</Button>
+          </div>
+        </div>
+      </Container>
+    </section>
+
+    <section class="section profile-intro" aria-labelledby="about-title">
+      <Container class="profile-intro__grid">
+        <div class="profile-intro__copy">
+          <p class="eyebrow">O mnie</p>
+          <h2 id="about-title">Najpierw słucham. Potem dobieram właściwą drogę.</h2>
+          <div class="profile-prose">
+            <p>
+              Logopedią zajmuję się zawodowo od 2000 roku, a od 2001 roku prowadzę
+              własną praktykę i współpracuję z Przedszkolem Samorządowym nr 1 w Warce.
+            </p>
+            <p>
+              W pracy patrzę na pacjenta całościowo. Łączę klasyczny warsztat
+              logopedyczny z metodami wspierającymi, między innymi elektrostymulacją,
+              kinesiotapingiem oraz treningiem Neuroflow ATS®.
+            </p>
+            <p>
+              Ważne są dla mnie relacja, bezpieczeństwo i współpraca z rodzicem.
+              Zalecenia powinny być zrozumiałe i możliwe do wykorzystania w codziennym życiu.
+            </p>
+          </div>
+        </div>
+
+        <aside class="profile-aside">
+          <p class="eyebrow">W gabinecie</p>
+          <h3>Możesz liczyć na</h3>
+          <ul>
+            <li>spokojną diagnozę i rozmowę</li>
+            <li>indywidualny plan postępowania</li>
+            <li>wskazówki dla rodzica lub opiekuna</li>
+            <li>jasne omówienie kolejnych kroków</li>
+            <li>współpracę z innymi specjalistami</li>
+          </ul>
+        </aside>
+      </Container>
+    </section>
+
+    <section class="section services-section" id="oferta" aria-labelledby="services-title">
+      <Container>
+        <div class="section-heading section-heading--split">
+          <div>
+            <p class="eyebrow">Zakres wsparcia</p>
+            <h2 id="services-title">Z czym możesz się zgłosić?</h2>
+          </div>
+          <p class="lead">
+            Najpierw rozpoznajemy potrzeby, a dopiero potem dobieramy metodę i plan
+            pracy. Nie każda trudność wymaga od razu długiej terapii.
+          </p>
+        </div>
+
+        <div class="speech-services-grid">
+          {
+            speechTherapyServices.map((service) => (
+              <article class="speech-service-card">
+                <span aria-hidden="true">{service.number}</span>
+                <h3>{service.title}</h3>
+                <p>{service.description}</p>
+                {service.href && <a href={service.href}>Dowiedz się więcej <span aria-hidden="true">→</span></a>}
+              </article>
+            ))
+          }
+        </div>
+
+        <p class="services-note">
+          Nie wiesz, którą usługę wybrać? <a href="#kontakt-logopeda">Skontaktuj się</a> — wspólnie ustalimy odpowiedni rodzaj spotkania.
+        </p>
+      </Container>
+    </section>
+
+    <section class="section first-visit" aria-labelledby="visit-title">
+      <Container class="first-visit__grid">
+        <div class="first-visit__visual" aria-hidden="true">
+          <span class="first-visit__letter">O</span>
+          <span class="first-visit__ring"></span>
+          <p>Spokojnie i krok po kroku</p>
+        </div>
+
+        <div class="first-visit__copy">
+          <p class="eyebrow">Pierwsza wizyta</p>
+          <h2 id="visit-title">Czego możesz się spodziewać?</h2>
+          <p class="lead">
+            Pierwsze spotkanie pomaga nam poznać sytuację i zaplanować dalsze działania
+            bez niepotrzebnej presji.
+          </p>
+
+          <ol class="visit-steps">
+            {
+              firstVisitSteps.map((step) => (
+                <li>
+                  <span aria-hidden="true">{step.number}</span>
+                  <div><h3>{step.title}</h3><p>{step.description}</p></div>
+                </li>
+              ))
+            }
+          </ol>
+        </div>
+      </Container>
+    </section>
+
+    <section class="section profile-contact" id="kontakt-logopeda" aria-labelledby="profile-contact-title">
+      <span class="profile-contact__shape" aria-hidden="true"></span>
+      <Container class="profile-contact__grid">
+        <div>
+          <p class="eyebrow eyebrow--light">Zapisy do logopedy</p>
+          <h2 id="profile-contact-title">Porozmawiajmy o potrzebach pacjenta</h2>
+          <p class="lead">
+            Jeśli nie możesz teraz zadzwonić, wyślij krótką wiadomość SMS. Oddzwonimy,
+            gdy tylko będzie to możliwe.
+          </p>
+          <div class="button-row">
+            <Button href={phoneHref(site.practices.logopeda.phone)} variant="light">Zadzwoń do gabinetu</Button>
+            <Button href={smsHref(site.practices.logopeda.phone)} variant="secondary">Wyślij SMS</Button>
+          </div>
+        </div>
+
+        <div class="profile-contact__details">
+          <div><small>Telefon</small><a href={phoneHref(site.practices.logopeda.phone)}>{site.practices.logopeda.phone}</a></div>
+          <div><small>E-mail</small><a href={`mailto:${site.practices.logopeda.email}`}>{site.practices.logopeda.email}</a></div>
+          <div><small>Adres</small><strong>{site.address}</strong></div>
+          <div><small>Cennik</small><strong>Szczegóły dostępne w gabinecie</strong></div>
+        </div>
+      </Container>
+    </section>
+  </main>
+</BaseLayout>

@@ -5,14 +5,14 @@ export const services = [
     title: "Logopeda",
     description:
       "Diagnoza, terapia mowy i spokojne prowadzenie dziecka oraz rodzica przez kolejne etapy rozwoju komunikacji.",
-    href: "/logopedia",
+    href: "/logopeda",
     icon: "🗣️",
   },
   {
     title: "Pediatra",
     description:
       "Opieka pediatryczna w przyjaznym gabinecie — z czasem na rozmowę, pytania i uważność na dziecko.",
-    href: "/pediatria",
+    href: "/pediatra",
     icon: "🩺",
   },
   {

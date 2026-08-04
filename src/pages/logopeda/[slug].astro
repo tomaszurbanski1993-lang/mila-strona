@@ -1,0 +1,30 @@
+---
+import type { GetStaticPaths } from "astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import SpeechServicePage from "../../components/services/SpeechServicePage.astro";
+import {
+  speechServiceDetails,
+  type SpeechServiceDetail,
+} from "../../data/logopeda-services";
+import "../../styles/service.css";
+
+export const getStaticPaths: GetStaticPaths = () =>
+  speechServiceDetails.map((service) => ({
+    params: { slug: service.slug },
+    props: { service },
+  }));
+
+interface Props {
+  service: SpeechServiceDetail;
+}
+
+const { service } = Astro.props;
+---
+
+<BaseLayout
+  title={`${service.title} — Dzieciaki na Miłej`}
+  description={service.description}
+  activePath="/logopeda"
+>
+  <SpeechServicePage service={service} />
+</BaseLayout>

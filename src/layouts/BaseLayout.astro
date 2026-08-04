@@ -1,74 +1,78 @@
 ---
 import "../styles/global.css";
-import { navItems } from "../data/navigation";
+import Header from "../components/layout/Header.astro";
+import Footer from "../components/layout/Footer.astro";
+import { currentDomain } from "../data/url";
 
 interface Props {
   title: string;
   description?: string;
   activePath?: string;
+  handleIdentityCallback?: boolean;
+  previousPage?: string;
+  nextPage?: string;
 }
 
-const { title, description, activePath = Astro.url.pathname } = Astro.props;
+const {
+  title,
+  description,
+  activePath = Astro.url.pathname,
+  handleIdentityCallback = false,
+  previousPage,
+  nextPage,
+} = Astro.props;
+const identityApiUrl = `https://${currentDomain}/.netlify/identity`;
 ---
 
 <html lang="pl">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <script is:inline src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script is:inline>
-      const isProduction =
-        location.hostname !== "localhost" && location.hostname !== "127.0.0.1";
-      if (isProduction && window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", (user) => {
-          if (!user) {
-            window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin/";
-            });
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#59388e" />
+    <meta name="color-scheme" content="light" />
+    {
+      handleIdentityCallback && (
+        <script is:inline define:vars={{ identityApiUrl }}>
+          const identityCallbackToken =
+            /(?:^#|[&#])(invite_token|confirmation_token|recovery_token|email_change_token)=/;
+          const isProduction =
+            location.hostname !== "localhost" && location.hostname !== "127.0.0.1";
+
+          if (isProduction && identityCallbackToken.test(location.hash)) {
+            const widgetScript = document.createElement("script");
+            widgetScript.src =
+              "https://identity.netlify.com/v1/netlify-identity-widget.js";
+            widgetScript.onload = () => {
+              if (!window.netlifyIdentity) return;
+
+              const redirectToAdmin = () => location.replace("/admin/");
+
+              window.netlifyIdentity.on("init", (user) => {
+                if (user) redirectToAdmin();
+              });
+              window.netlifyIdentity.on("login", redirectToAdmin);
+              window.netlifyIdentity.init({ APIUrl: identityApiUrl });
+            };
+            document.head.append(widgetScript);
           }
-        });
-      }
-    </script>
+        </script>
+      )
+    }
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
+    <meta property="og:locale" content="pl_PL" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    {description && <meta property="og:description" content={description} />}
+    {previousPage && <link rel="prev" href={previousPage} />}
+    {nextPage && <link rel="next" href={nextPage} />}
   </head>
 
   <body>
-    <header class="site-header">
-      <a class="logo" href="/" aria-label="Dzieciaki na Miłej — strona główna">
-        <img src="/images/legacy/logo-dnm.png" alt="Dzieciaki na Miłej" />
-      </a>
-
-      <nav class="main-nav" aria-label="Główna nawigacja">
-        {
-          navItems.map((item) => (
-            <a href={item.href} class={item.href === activePath ? "active" : ""}>
-              {item.label}
-            </a>
-          ))
-        }
-      </nav>
-
-      <a class="header-cta" href="/kontakt">Umów wizytę</a>
-    </header>
+    <a class="skip-link" href="#main-content">Przejdź do treści</a>
+    <Header activePath={activePath} />
 
     <slot />
-
-    <script>
-      const revealElements = document.querySelectorAll(".reveal");
-
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("is-visible");
-            }
-          });
-        },
-        { threshold: 0.16 }
-      );
-
-      revealElements.forEach((element) => observer.observe(element));
-    </script>
+    <Footer />
   </body>
 </html>

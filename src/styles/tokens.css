@@ -1,0 +1,32 @@
+:root {
+  --color-ink: #29272d;
+  --color-heading: #302a34;
+  --color-muted: #68636f;
+  --color-paper: #fffdfb;
+  --color-surface: #ffffff;
+  --color-soft: #f7f3f8;
+  --color-purple: #59388e;
+  --color-purple-dark: #42266f;
+  --color-purple-soft: #ece5f4;
+  --color-teal: #008f98;
+  --color-teal-soft: #dff3f2;
+  --color-pink: #d91d59;
+  --color-pink-soft: #fde8ef;
+  --color-yellow: #f9bc39;
+  --color-line: #e8e0e9;
+  --color-footer: #242129;
+
+  --font-sans: "Avenir Next", Avenir, "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: Georgia, "Times New Roman", serif;
+
+  --page-gutter: clamp(1.15rem, 4vw, 2.5rem);
+  --content-width: 73.75rem;
+  --section-space: clamp(4.5rem, 9vw, 7.5rem);
+  --radius-sm: 1rem;
+  --radius-md: 1.5rem;
+  --radius-lg: 1.875rem;
+  --radius-xl: 2.5rem;
+  --shadow-soft: 0 1.125rem 3.5rem rgba(49, 32, 58, 0.11);
+  --shadow-card: 0 0.75rem 2.5rem rgba(47, 41, 51, 0.07);
+  --transition: 180ms ease;
+}

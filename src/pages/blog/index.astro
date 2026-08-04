@@ -1,38 +1,26 @@
 ---
-import { getCollection, type CollectionEntry } from "astro:content";
+import { getCollection } from "astro:content";
+import BlogPage from "../../components/BlogPage.astro";
+import {
+  getBlogPageUrl,
+  paginateBlogPosts,
+} from "../../data/blog-pagination";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import "../../styles/blog.css";
 
 const entries = await getCollection("blog", ({ data }) => data.draft !== true);
-const posts: CollectionEntry<"blog">[] = entries.sort(
-  (a, b) => b.data.date.getTime() - a.data.date.getTime()
-);
-//regex do obciecia .md z końcówki url
-const toSlug = (id: string): string => id.replace(/\.[^.]+$/, "");
+const [page] = paginateBlogPosts(entries);
+const nextPage =
+  page.currentPage < page.totalPages
+    ? getBlogPageUrl(page.currentPage + 1)
+    : undefined;
 ---
 
-<BaseLayout title="Blog" activePath="/blog">
-  <main class="blog-list">
-    <h1>Blog</h1>
-    {
-      posts.length === 0 ? (
-        <p class="blog-empty">Brak wpisow.</p>
-      ) : (
-        <ul>
-          {posts.map((post) => (
-            <li>
-              <a href={`/blog/${toSlug(post.id)}/`}>{post.data.title}</a>
-              {post.data.image && (
-                <img src={post.data.image} alt={post.data.title} class="blog-thumb" />
-              )}
-              <p>{post.data.description}</p>
-              <time datetime={post.data.date.toISOString()}>
-                {post.data.date.toLocaleDateString("pl-PL")}
-              </time>
-            </li>
-          ))}
-        </ul>
-      )
-    }
-  </main>
+<BaseLayout
+  title="Blog — Dzieciaki na Miłej"
+  description="Artykuły Anny i Pawła Strusów o rozwoju dziecka, zdrowiu, logopedii oraz codzienności rodzinnej."
+  activePath="/blog"
+  nextPage={nextPage}
+>
+  <BlogPage page={page} />
 </BaseLayout>

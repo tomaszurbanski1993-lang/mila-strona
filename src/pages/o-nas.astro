@@ -1,0 +1,79 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Container from "../components/ui/Container.astro";
+import Button from "../components/ui/Button.astro";
+import PracticeCards from "../components/sections/PracticeCards.astro";
+import ValuesGrid from "../components/sections/ValuesGrid.astro";
+import ContactSection from "../components/sections/ContactSection.astro";
+import "../styles/start.css";
+import "../styles/about.css";
+
+const pageTitle = "O nas — Dzieciaki na Miłej";
+const pageDescription =
+  "Poznaj Annę i Pawła Strusów, którzy prowadzą gabinet logopedyczny i pediatryczny Dzieciaki na Miłej w Warce.";
+---
+
+<BaseLayout title={pageTitle} description={pageDescription} activePath="/o-nas">
+  <main id="main-content">
+    <section class="about-hero" aria-labelledby="about-page-title">
+      <span class="about-hero__shape" aria-hidden="true"></span>
+      <Container class="about-hero__grid">
+        <div class="about-hero__copy">
+          <p class="eyebrow">O nas</p>
+          <h1 id="about-page-title">Dwoje specjalistów. Jedno wspólne miejsce.</h1>
+          <p class="lead">
+            Pod nazwą Dzieciaki na Miłej prowadzimy w Warce dwa niezależne gabinety:
+            logopedyczny Anny Strus i pediatryczny Pawła Strusa.
+          </p>
+          <div class="button-row">
+            <Button href="#poznaj-nas">Poznaj nas bliżej <span aria-hidden="true">↓</span></Button>
+            <Button href="/kontakt" variant="secondary">Kontakt i dojazd</Button>
+          </div>
+        </div>
+
+        <div class="about-hero__image">
+          <img
+            src="/images/site/anna-pawel-hero.jpg"
+            alt="Anna i Paweł Strusowie, logopeda i pediatra"
+            width="2000"
+            height="1333"
+            fetchpriority="high"
+          />
+          <p><span>Dzieciaki</span><strong>na Miłej</strong><small>Warka</small></p>
+        </div>
+      </Container>
+    </section>
+
+    <section class="section about-story" aria-labelledby="story-title">
+      <Container class="about-story__grid">
+        <div>
+          <p class="eyebrow">Skąd ta nazwa?</p>
+          <h2 id="story-title">Prosto: komu i gdzie pomagamy</h2>
+        </div>
+        <div class="about-story__prose">
+          <p>
+            „Dzieciaki na Miłej” wskazują zarówno naszych najważniejszych pacjentów,
+            jak i miejsce, w którym ich przyjmujemy — ulicę Miłą w Warce.
+          </p>
+          <p>
+            Łączą nas wieloletnie doświadczenie, pasja do własnych zawodów oraz
+            przekonanie, że specjalistyczna wiedza powinna iść w parze ze spokojnym,
+            zrozumiałym kontaktem z pacjentem i jego rodziną.
+          </p>
+          <p>
+            Każde z nas prowadzi własny gabinet i własny proces zapisów. Wspólne są
+            miejsce, standard opieki i satysfakcja z kolejnych małych oraz dużych sukcesów.
+          </p>
+        </div>
+      </Container>
+    </section>
+
+    <ValuesGrid />
+
+    <div id="poznaj-nas">
+      <PracticeCards />
+    </div>
+
+    <ContactSection />
+  </main>
+</BaseLayout>

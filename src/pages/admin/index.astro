@@ -16,6 +16,32 @@ const identityApiUrl = `https://${currentDomain}/.netlify/identity`;
   </head>
   <body>
     <script is:inline src="https://unpkg.com/decap-cms@3.8.3/dist/decap-cms.js"></script>
+    <script is:inline>
+      // Only public IDs are persisted in Markdown. user_metadata.author_id on
+      // the Identity profile maps the account without putting addresses in the
+      // repository or in generated HTML.
+      const authorIds = new Set(["anna", "pawel", "anna-i-pawel", "admin"]);
+
+      function authorFromIdentity() {
+        const authorId = window.netlifyIdentity?.currentUser?.()?.user_metadata?.author_id;
+        return authorIds.has(authorId) ? authorId : undefined;
+      }
+
+      window.CMS.registerEventListener({
+        name: "preSave",
+        handler: ({ entry }) => {
+          if (!["blog", "news"].includes(entry.get("collection"))) return entry;
+
+          const existingAuthor = entry.getIn(["data", "author"]);
+          if (authorIds.has(existingAuthor)) return entry;
+
+          const authorId = authorFromIdentity();
+          return authorId
+            ? entry.set("data", entry.get("data").set("author", authorId))
+            : entry;
+        },
+      });
+    </script>
     <script is:inline define:vars={{ identityApiUrl }}>
       // Decap CMS sam wykrywa lokalny proxy (local_backend: true w config.yml):
       // na localhost łączy się z decap-server (zapis na dysk, bez logowania),

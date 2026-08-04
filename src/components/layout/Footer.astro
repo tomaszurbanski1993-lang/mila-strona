@@ -1,0 +1,48 @@
+---
+import { site, phoneHref } from "../../data/site";
+import Container from "../ui/Container.astro";
+---
+
+<footer class="site-footer">
+  <Container>
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a href="/" aria-label="Dzieciaki na Miłej — strona główna">
+          <img src="/images/site/logo-dnm.png" alt="Dzieciaki na Miłej" width="799" height="320" />
+        </a>
+        <p>{site.shortDescription}. Dwa gabinety, jedno spokojne miejsce dla dzieci i ich bliskich.</p>
+      </div>
+
+      <div class="footer-contact">
+        <p class="footer-label">Gabinet logopedyczny</p>
+        <strong>{site.practices.logopeda.name}</strong>
+        <a href={phoneHref(site.practices.logopeda.phone)}>{site.practices.logopeda.phone}</a>
+        <a href={`mailto:${site.practices.logopeda.email}`}>{site.practices.logopeda.email}</a>
+      </div>
+
+      <div class="footer-contact">
+        <p class="footer-label">Gabinet pediatryczny</p>
+        <strong>{site.practices.pediatra.name}</strong>
+        <a href={phoneHref(site.practices.pediatra.phone)}>{site.practices.pediatra.phone}</a>
+        <a href={`mailto:${site.practices.pediatra.email}`}>{site.practices.pediatra.email}</a>
+      </div>
+
+      <nav class="footer-nav" aria-label="Nawigacja w stopce">
+        <p class="footer-label">Na skróty</p>
+        <a href="/o-nas">O nas</a>
+        <a href="/blog">Blog</a>
+        <a href="/aktualnosci">Aktualności</a>
+        <a href="/kontakt">Kontakt i dojazd</a>
+      </nav>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© {new Date().getFullYear()} {site.name}</p>
+      <nav aria-label="Dokumenty prawne">
+        <a href="/polityka-prywatnosci">Polityka prywatności</a>
+        <a href="/rodo/logopeda">RODO — logopeda</a>
+        <a href="/rodo/pediatra">RODO — pediatra</a>
+      </nav>
+    </div>
+  </Container>
+</footer>

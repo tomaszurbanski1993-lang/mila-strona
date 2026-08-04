@@ -17,6 +17,17 @@ collections:
       - { label: Tytul, name: title, widget: string }
       - { label: Opis, name: description, widget: text }
       - { label: Data, name: date, widget: datetime }
+      -
+          label: Autor
+          name: author
+          widget: select
+          required: false
+          hint: Pozostaw puste, aby przy zapisie zastosować autora przypisanego do konta Identity.
+          options:
+            - { label: Anna Strus, value: anna }
+            - { label: Paweł Strus, value: pawel }
+            - { label: Anna i Paweł, value: anna-i-pawel }
+            - { label: Administrator, value: admin }
       - { label: Obraz, name: image, widget: image, required: false }
       - { label: Tagi, name: tags, widget: list, required: false }
       - {
@@ -37,6 +48,17 @@ collections:
       - { label: Tytul, name: title, widget: string }
       - { label: Opis, name: description, widget: text }
       - { label: Data, name: date, widget: datetime }
+      -
+          label: Autor
+          name: author
+          widget: select
+          required: false
+          hint: Pozostaw puste, aby przy zapisie zastosować autora przypisanego do konta Identity.
+          options:
+            - { label: Anna Strus, value: anna }
+            - { label: Paweł Strus, value: pawel }
+            - { label: Anna i Paweł, value: anna-i-pawel }
+            - { label: Administrator, value: admin }
       - { label: Tagi, name: tags, widget: list, required: false }
       - {
           label: Wersja robocza,
