@@ -1,4 +1,5 @@
 local_backend: true
+locale: pl
 
 backend:
   name: git-gateway
