@@ -152,8 +152,7 @@ src/pages/admin/
 └── index.astro         # panel CMS (ładowany pod /admin/) + inicjalizacja Netlify Identity (tylko produkcja)
 
 src/data/
-├── authors.ts          # publiczne identyfikatory i nazwy autorów
-└── url.ts              # currentDomain — domena produkcyjna używana przez Identity widget
+└── authors.ts          # publiczne identyfikatory i nazwy autorów
 
 src/layouts/
 └── BaseLayout.astro    # warunkowa obsługa callbacków Identity na stronie głównej
@@ -203,19 +202,14 @@ Decap CMS **sam rozróżnia localhost od produkcji** (wynika z `detectProxyServe
 
 Przełącznikiem trybu jest więc **uruchomienie `decap-server`**, a nie ręczna edycja `config.yml`. `local_backend: true` jest bezpieczne na produkcji, bo detekcja proxy działa tylko na localhost.
 
-Widget **Netlify Identity** jest inicjalizowany **tylko na produkcji**. Panel
-`/admin/` ładuje go zawsze, natomiast strona główna ładuje go tylko wtedy, gdy
-adres zawiera token callbacku (`invite_token`, `confirmation_token`,
-`recovery_token` albo `email_change_token`). Dzięki temu zwykłe podstrony nie
-pobierają widgetu. W obu przypadkach `APIUrl` wskazuje na domenę produkcyjną:
-
-```js
-const identityApiUrl = `https://${currentDomain}/.netlify/identity`;
-// currentDomain = "siup.me" (src/data/url.ts)
-window.netlifyIdentity.init({ APIUrl: identityApiUrl });
-```
-
-Dzięki temu tryb lokalny jest w pełni offline (nie odpytuje produkcyjnego API Identity), a tryb produkcyjny loguje się przez usługę Identity na `siup.me`.
+Widget **Netlify Identity** sam inicjalizuje się po załadowaniu swojego skryptu
+i korzysta z domeny bieżącej strony. Panel `/admin/` ładuje go zawsze,
+natomiast strona główna ładuje go tylko wtedy, gdy adres zawiera token callbacku
+(`invite_token`, `confirmation_token`, `recovery_token` albo
+`email_change_token`). Nie należy wywoływać `netlifyIdentity.init()` ręcznie:
+powoduje to utworzenie drugiego iframe i ukrycie formularza przyjęcia
+zaproszenia. Dzięki temu zwykłe podstrony nie pobierają widgetu, a lokalny tryb
+CMS nie rejestruje przekierowania po logowaniu.
 
 ### Praca z panelem — dwa tryby
 
@@ -239,13 +233,11 @@ Na wdrożonej stronie panel jest pod `https://siup.me/admin/`. Logowanie przez *
 - **git-gateway** wymaga ważnego tokena Identity do wykonywania commitów — bez zalogowania nie da się zapisać żadnych zmian.
 - **Widget Identity** ładuje się i inicjalizuje tylko na produkcji; na localhost panel nie kontaktuje się z usługą Identity.
 - **Opcjonalne usztywnienie:** w Netlify można dodatkowo ograniczyć dostęp do ścieżki `/admin/` (np. Site access → Role-based redirects / password protection), aby nie wyświetlać nawet strony panelu niezalogowanym. Sam HTML panelu jest statyczny, ale bez zalogowania przez Identity nie pozwala na żadne akcje.
-- **`currentDomain`** (`src/data/url.ts`) wskazuje `siup.me` — przy zmianie domeny produkcyjnej zaktualizuj tę wartość, aby logowanie Identity wskazywało na właściwą domenę.
 
 ### Konfiguracja plików
 
 - **`netlify.toml`** — konfiguracja deployu na Netlify (`[build]`: komenda budowania `npm run build`, katalog publikacji `dist/`).
 - **`astro.config.mjs`** — konfiguracja Astro (obecnie domyślna, bez dodatkowych integracji).
 - **`public/admin/config.yml`** — konfiguracja Decap CMS: `local_backend: true` (auto-detekcja localhost), backend `git-gateway` na gałęzi `main`, ścieżki mediów (`public/images/uploads` → `/images/uploads`), definicje kolekcji i pól formularza.
-- **`src/data/url.ts`** — `currentDomain` ("siup.me") używany do budowy `APIUrl` dla Netlify Identity w panelu CMS. Przy zmianie domeny produkcyjnej zaktualizuj tę wartość.
 - **`src/layouts/BaseLayout.astro`** — warunkowo doładowuje `netlify-identity-widget` tylko dla strony głównej z tokenem callbacku Identity, a po zalogowaniu przekierowuje do `/admin/`; aktywny **tylko na produkcji**.
-- **`src/pages/admin/index.astro`** — panel Decap CMS + inicjalizacja widgetu Identity z `APIUrl = https://siup.me/.netlify/identity`, aktywna **tylko na produkcji**.
+- **`src/pages/admin/index.astro`** — panel Decap CMS + przekierowanie do panelu po logowaniu przez samoinicjalizujący się widget Identity, aktywne **tylko na produkcji**.

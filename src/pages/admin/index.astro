@@ -1,10 +1,3 @@
----
-import { currentDomain } from "../../data/url";
-const identityApiUrl = `https://${currentDomain}/.netlify/identity`;
----
-
-
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -12,7 +5,6 @@ const identityApiUrl = `https://${currentDomain}/.netlify/identity`;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <base href="/admin/" />
     <title>Content Manager</title>
-    <script is:inline src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
     <script is:inline src="https://unpkg.com/decap-cms@3.8.3/dist/decap-cms.js"></script>
@@ -42,23 +34,26 @@ const identityApiUrl = `https://${currentDomain}/.netlify/identity`;
         },
       });
     </script>
-    <script is:inline define:vars={{ identityApiUrl }}>
+    <script is:inline>
       // Decap CMS sam wykrywa lokalny proxy (local_backend: true w config.yml):
       // na localhost łączy się z decap-server (zapis na dysk, bez logowania),
-      // a na produkcji używa git-gateway + Netlify Identity. Widget Identity
-      // inicjalizujemy tylko poza localhostem, żeby tryb lokalny był w pełni
-      // offline i nie odpytywał produkcyjnego API.
+      // a na produkcji używa git-gateway + Netlify Identity. Widget sam
+      // inicjalizuje się po załadowaniu skryptu; ponowne init() tworzy drugi
+      // iframe i blokuje formularz przyjęcia zaproszenia.
       const isProduction =
         location.hostname !== "localhost" && location.hostname !== "127.0.0.1";
-      if (isProduction && window.netlifyIdentity) {
-        window.netlifyIdentity.init({ APIUrl: identityApiUrl });
-        window.netlifyIdentity.on("init", function (user) {
-          if (!user) {
-            window.netlifyIdentity.on("login", function () {
-              document.location.href = "/admin/";
-            });
-          }
-        });
+      if (isProduction) {
+        const widgetScript = document.createElement("script");
+        widgetScript.src =
+          "https://identity.netlify.com/v1/netlify-identity-widget.js";
+        widgetScript.onload = () => {
+          if (!window.netlifyIdentity) return;
+
+          window.netlifyIdentity.on("login", function () {
+            document.location.href = "/admin/";
+          });
+        };
+        document.head.append(widgetScript);
       }
     </script>
   </body>
