@@ -47,9 +47,8 @@ const identityApiUrl = `https://${currentDomain}/.netlify/identity`;
 
               const redirectToAdmin = () => location.replace("/admin/");
 
-              window.netlifyIdentity.on("init", (user) => {
-                if (user) redirectToAdmin();
-              });
+              // The widget fires "init" before it consumes invite_token.
+              // Redirect only after the invitation has completed as a login.
               window.netlifyIdentity.on("login", redirectToAdmin);
               window.netlifyIdentity.init({ APIUrl: identityApiUrl });
             };
