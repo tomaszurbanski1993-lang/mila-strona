@@ -39,7 +39,6 @@ const relatedServices = speechServiceDetails.filter(({ slug }) => slug !== servi
           height={service.imageHeight}
           fetchpriority="high"
         />
-        <span aria-hidden="true">{service.badge}</span>
       </div>
     </Container>
   </section>
@@ -126,7 +125,6 @@ const relatedServices = speechServiceDetails.filter(({ slug }) => slug !== servi
       </div>
       <div class="service-contact__actions">
         <a href={phoneHref(site.practices.logopeda.phone)}><small>Telefon</small><strong>{site.practices.logopeda.phone}</strong></a>
-        <a href={`mailto:${site.practices.logopeda.email}`}><small>E-mail</small><strong>{site.practices.logopeda.email}</strong></a>
         <div class="button-row">
           <Button href={phoneHref(site.practices.logopeda.phone)} variant="light">Zadzwoń</Button>
           <Button href={smsHref(site.practices.logopeda.phone)} variant="secondary">Wyślij SMS</Button>

@@ -1,0 +1,37 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Container from "./ui/Container.astro";
+import "../styles/legal.css";
+
+interface Props {
+  title: string;
+  description: string;
+  eyebrow: string;
+  activePath: string;
+}
+
+const { title, description, eyebrow, activePath } = Astro.props;
+---
+
+<BaseLayout title={`${title} — Dzieciaki na Miłej`} description={description} activePath={activePath}>
+  <main id="main-content">
+    <section class="legal-hero" aria-labelledby="legal-title">
+      <Container>
+        <nav class="legal-breadcrumb" aria-label="Okruszki">
+          <a href="/">Strona główna</a><span aria-hidden="true">/</span><span>RODO</span>
+        </nav>
+        <p class="eyebrow">{eyebrow}</p>
+        <h1 id="legal-title">{title}</h1>
+        <p class="lead">{description}</p>
+      </Container>
+    </section>
+
+    <section class="section legal-content" aria-label="Treść klauzuli informacyjnej">
+      <Container>
+        <article class="legal-prose">
+          <slot />
+        </article>
+      </Container>
+    </section>
+  </main>
+</BaseLayout>

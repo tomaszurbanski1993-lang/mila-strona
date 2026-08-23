@@ -88,8 +88,8 @@ h3 {
 h1,
 h2 {
   font-family: var(--font-display);
-  font-weight: 500;
-  letter-spacing: -0.045em;
+  font-weight: 600;
+  letter-spacing: -0.035em;
 }
 
 h1 {
@@ -108,7 +108,7 @@ h3 {
   margin: 0 0 0.85rem;
   color: var(--color-purple);
   font-size: 0.77rem;
-  font-weight: 850;
+  font-weight: 700;
   letter-spacing: 0.15em;
   text-transform: uppercase;
 }
@@ -157,7 +157,7 @@ h3 {
   padding: 0.72rem 1.35rem;
   border: 0.0625rem solid transparent;
   border-radius: 999px;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.2;
   text-align: center;
   text-decoration: none;
@@ -210,7 +210,7 @@ h3 {
 
 .text-link {
   color: var(--color-purple);
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .site-header {
@@ -255,7 +255,7 @@ h3 {
   position: relative;
   color: #4f4954;
   font-size: 0.91rem;
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
 }
 
@@ -350,7 +350,7 @@ h3 {
   background: var(--color-purple);
   color: #fff;
   font-size: 0.86rem;
-  font-weight: 800;
+  font-weight: 700;
   text-decoration: none;
   box-shadow: 0 0.55rem 1.5rem rgba(89, 56, 142, 0.2);
 }
@@ -378,6 +378,11 @@ h3 {
   padding: 0.75rem;
   border-radius: 1rem;
   background: #fff;
+}
+
+.footer-brand img {
+  width: 100%;
+  height: auto;
 }
 
 .footer-brand p {

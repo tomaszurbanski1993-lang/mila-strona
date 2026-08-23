@@ -2,11 +2,11 @@ export const practices = [
   {
     eyebrow: "Gabinet logopedyczny",
     name: "Anna Strus",
-    role: "Logopeda i neurologopeda",
+    role: "Logopeda i glottodydaktyk",
     description:
       "Diagnoza i terapia dzieci, młodzieży oraz dorosłych. Uważna ocena, indywidualny plan i współpraca z rodzicem na każdym etapie.",
     image: "/images/site/anna-strus.jpg",
-    imageAlt: "Anna Strus, logopeda i neurologopeda",
+    imageAlt: "Anna Strus, logopeda i glottodydaktyk",
     href: "/logopeda",
     linkLabel: "Poznaj Annę i zakres wsparcia",
     highlights: ["diagnoza i terapia mowy", "karmienie i funkcje oralne", "Neuroflow ATS®"],
@@ -21,7 +21,7 @@ export const practices = [
     imageAlt: "Paweł Strus, lekarz pediatra",
     href: "/pediatra",
     linkLabel: "Poznaj Pawła i gabinet pediatryczny",
-    highlights: ["konsultacje pediatryczne", "opieka nad dziećmi i młodzieżą", "wizyta bez pośpiechu"],
+    highlights: ["konsultacje pediatryczne", "opieka nad dziećmi i młodzieżą", "leczenie wg aktualnej wiedzy"],
   },
 ] as const;
 

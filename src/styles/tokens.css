@@ -4,20 +4,20 @@
   --color-muted: #68636f;
   --color-paper: #fffdfb;
   --color-surface: #ffffff;
-  --color-soft: #f7f3f8;
-  --color-purple: #59388e;
-  --color-purple-dark: #42266f;
-  --color-purple-soft: #ece5f4;
+  --color-soft: #f8f5fa;
+  --color-purple: #76578f;
+  --color-purple-dark: #523968;
+  --color-purple-soft: #eee7f3;
   --color-teal: #008f98;
   --color-teal-soft: #dff3f2;
   --color-pink: #d91d59;
   --color-pink-soft: #fde8ef;
   --color-yellow: #f9bc39;
-  --color-line: #e8e0e9;
-  --color-footer: #242129;
+  --color-line: #e7deeb;
+  --color-footer: #2d2731;
 
   --font-sans: "Avenir Next", Avenir, "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-display: Georgia, "Times New Roman", serif;
+  --font-display: "Avenir Next", Avenir, "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 
   --page-gutter: clamp(1.15rem, 4vw, 2.5rem);
   --content-width: 73.75rem;
