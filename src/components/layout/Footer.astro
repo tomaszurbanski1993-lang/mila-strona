@@ -17,14 +17,12 @@ import Container from "../ui/Container.astro";
         <p class="footer-label">Gabinet logopedyczny</p>
         <strong>{site.practices.logopeda.name}</strong>
         <a href={phoneHref(site.practices.logopeda.phone)}>{site.practices.logopeda.phone}</a>
-        <a href={`mailto:${site.practices.logopeda.email}`}>{site.practices.logopeda.email}</a>
       </div>
 
       <div class="footer-contact">
         <p class="footer-label">Gabinet pediatryczny</p>
         <strong>{site.practices.pediatra.name}</strong>
         <a href={phoneHref(site.practices.pediatra.phone)}>{site.practices.pediatra.phone}</a>
-        <a href={`mailto:${site.practices.pediatra.email}`}>{site.practices.pediatra.email}</a>
       </div>
 
       <nav class="footer-nav" aria-label="Nawigacja w stopce">
@@ -39,6 +37,7 @@ import Container from "../ui/Container.astro";
     <div class="footer-bottom">
       <p>© {new Date().getFullYear()} {site.name}</p>
       <nav aria-label="Dokumenty prawne">
+        <a href="/documents/standardy-ochrony-maloletnich-dzieciaki-na-milej.pdf">Standardy ochrony małoletnich</a>
         <a href="/polityka-prywatnosci">Polityka prywatności</a>
         <a href="/rodo/logopeda">RODO — logopeda</a>
         <a href="/rodo/pediatra">RODO — pediatra</a>

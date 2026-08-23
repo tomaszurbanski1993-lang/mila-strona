@@ -2,8 +2,6 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Container from "../components/ui/Container.astro";
 import Button from "../components/ui/Button.astro";
-import PracticeCards from "../components/sections/PracticeCards.astro";
-import ValuesGrid from "../components/sections/ValuesGrid.astro";
 import ContactSection from "../components/sections/ContactSection.astro";
 import "../styles/start.css";
 import "../styles/about.css";
@@ -68,11 +66,199 @@ const pageDescription =
       </Container>
     </section>
 
-    <ValuesGrid />
+    <section class="section about-profiles" id="poznaj-nas" aria-labelledby="profiles-title">
+      <Container>
+        <header class="about-profiles__intro">
+          <p class="eyebrow">Nasze historie</p>
+          <h2 id="profiles-title">Dwie drogi, które spotkały się na Miłej</h2>
+          <p class="lead">
+            Za każdym gabinetem stoi osobna historia, doświadczenie i pasja. Tutaj
+            opowiadamy o nich własnymi słowami — zawodowo i zupełnie prywatnie.
+          </p>
+        </header>
 
-    <div id="poznaj-nas">
-      <PracticeCards />
-    </div>
+        <article class="about-profile" aria-labelledby="anna-story-title">
+          <div class="about-profile__visual">
+            <img
+              src="/images/site/anna-strus.jpg"
+              alt="Anna Strus, logopeda i glottodydaktyk"
+              width="933"
+              height="1400"
+              loading="lazy"
+            />
+            <p><span>Gabinet logopedyczny</span><strong>Anna Strus</strong><small>Logopeda i glottodydaktyk</small></p>
+          </div>
+
+          <div class="about-profile__content">
+            <p class="eyebrow">Poznaj Annę</p>
+            <h2 id="anna-story-title">Z ciekawości człowieka i pasji do pracy z dziećmi</h2>
+            <p class="about-profile__opening">
+              Moją pierwszą uczelnią była Politechnika Warszawska, gdzie ukończyłam
+              studia na kierunku biotechnologii, jednak od bardzo dawna pociągała mnie
+              praca z dziećmi. Zawsze miałam z nimi dobry kontakt i fascynowało mnie
+              zdobywanie ich zaufania.
+            </p>
+
+            <div class="about-profile__chapter">
+              <h3>Droga zawodowa</h3>
+              <p>
+                W którymś momencie życia pomyślałam, że logopedia będzie spełnieniem
+                moich zainteresowań. W 2000 roku ukończyłam studia logopedyczne w
+                Akademii Pedagogiki Specjalnej w Warszawie pod kierunkiem Profesora
+                Bronisława Rocławskiego. Od 2001 roku jestem związana z Przedszkolem
+                Samorządowym nr 1 w Warce oraz prowadzę własną praktykę. Logopedia jest
+                nie tylko moim zawodem, ale i pasją, którą realizuję z ogromnym
+                zaangażowaniem.
+              </p>
+              <p>
+                Jestem członkiem Polskiego Związku Logopedów. Systematycznie doskonalę
+                swój warsztat, uczestnicząc w konferencjach, kursach i szkoleniach.
+                Prowadzę zajęcia z zakresu logopedii i glottodydaktyki.
+              </p>
+              <p>
+                Z biegiem czasu tradycyjny warsztat logopedyczny przestał mi wystarczać.
+                Czułam, że prawidłowa artykulacja głosek to tylko część szerszego
+                problemu dziecka. Chciałam widzieć moich pacjentów w szerszym ujęciu i
+                traktować ich bardziej holistycznie. Dlatego systematycznie rozszerzam
+                swoje kompetencje, wprowadzając innowacyjne metody terapii. Na co dzień
+                posługuję się elektrostymulacją i kinesiotapingiem.
+              </p>
+              <p>
+                Jestem providerem metody Neuroflow ATS w zakresie diagnozy i terapii
+                zaburzeń przetwarzania słuchowego. Jestem także terapeutą zaburzeń
+                karmienia i żywienia (Pediatric Feeding Disorders), które często
+                towarzyszą nieprawidłowemu rozwojowi mowy. Te i szereg innych ukończonych
+                szkoleń i kursów przekonały mnie, że współczesna logopedia jest i powinna
+                być na wskroś nowoczesną dziedziną wiedzy, wykorzystującą nowe zdobycze
+                techniki. Pozwala to na szersze widzenie problemu dziecka, a tym samym
+                skuteczniejszą terapię. O niektórych aspektach mojej pracy piszę na
+                stronie prowadzonej wspólnie z mężem — pediatrą — w ramach projektu
+                Dzieciaki na Miłej.
+              </p>
+              <p>
+                Pracuję z dziećmi autystycznymi, w tym dziećmi z zespołem Aspergera oraz
+                niepłynnością mowy. Z doświadczenia wiem, że każde dziecko w inny sposób
+                najefektywniej się uczy, dlatego jestem zwolenniczką zajęć indywidualnych.
+                W tym celu dla każdego dziecka przygotowuję spersonalizowane materiały,
+                stosownie do wieku, zainteresowań oraz umiejętności.
+              </p>
+            </div>
+
+            <div class="about-profile__chapter about-profile__chapter--personal">
+              <h3>Po godzinach</h3>
+              <p>
+                Najważniejsza dla mnie jest rodzina. Jestem przede wszystkim spełnioną
+                żoną i mamą. Jestem naprawdę dumna z syna — lekarza, rezydenta w Klinice
+                Otolaryngologii Szpitala Bródnowskiego w Warszawie — i córki, studentki
+                na Wydziale Prawa UKSW. Cechuje mnie optymizm. Lubię niespodzianki i
+                wyzwania. Cenię sobie posiadanie przyjaciół, ludzi żyjących z klasą. Siłę
+                do działania czerpię każdego dnia z wiary i nieocenionego wsparcia
+                najbliższych.
+              </p>
+              <p>
+                Lubię spędzać czas z rodziną i kultywować wspólne codzienne kolacje,
+                które nie tylko są posiłkiem, ale też pozwalają naładować „akumulatory”
+                na następny dzień. Bardzo lubię wraz z mężem kucharzyć i przygotowywać
+                coraz to nowe potrawy. Moją ulubioną jest kuchnia śródziemnomorska. Wolne
+                chwile poświęcam planowaniu podróży. Zawsze, o każdej porze, mogłabym
+                pojechać do Włoch, a szczególnie do Rzymu — ukochanego mojego miasta,
+                miasta pełnego wspomnień i wzruszeń.
+              </p>
+              <p>
+                Moim autorytetem był i jest Święty Jan Paweł II, dlatego jego słowa
+                „Jeszcze będzie pięknie, mimo wszystko. Tylko załóż wygodne buty, bo masz
+                do przejścia całe życie” sprowokowały i rozbudziły myśli o zaangażowaniu
+                się w Szlachetną Paczkę — przez wiele lat byłam wolontariuszem tego
+                Dzieła.
+              </p>
+            </div>
+
+            <Button href="/logopeda" variant="secondary">Przejdź do gabinetu logopedycznego <span aria-hidden="true">→</span></Button>
+          </div>
+        </article>
+
+        <article class="about-profile about-profile--reverse" aria-labelledby="pawel-story-title">
+          <div class="about-profile__visual">
+            <img
+              src="/images/site/pawel-strus.jpg"
+              alt="Paweł Strus, lekarz pediatra"
+              width="933"
+              height="1400"
+              loading="lazy"
+            />
+            <p><span>Gabinet pediatryczny</span><strong>Paweł Strus</strong><small>Lekarz pediatra</small></p>
+          </div>
+
+          <div class="about-profile__content">
+            <p class="eyebrow">Poznaj Pawła</p>
+            <h2 id="pawel-story-title">Medycyna, której miarą jest zaufanie pokoleń</h2>
+            <p class="about-profile__opening">
+              Od 27 lat prowadzę prywatną praktykę lekarską i coraz częściej rozpoznaję
+              w rodzicach dzieci, które leczę, moich dawnych pacjentów, co uświadamia mi
+              nieuchronny upływ czasu…
+            </p>
+
+            <div class="about-profile__chapter">
+              <h3>Droga zawodowa</h3>
+              <p>
+                Pediatrią zajmuję się od ukończenia studiów na Akademii Medycznej w
+                Warszawie w 1990 roku. Wtedy rozpocząłem pracę w Szpitalu w Grójcu — tam
+                odbyłem staż podyplomowy, a następnie uzyskałem I i II stopień
+                specjalizacji. Oprócz pracy w oddziale szpitalnym współpracowałem z
+                kilkoma przychodniami POZ w Grójcu i okolicach.
+              </p>
+              <p>
+                Od kwietnia 2016 roku pracuję w Mazowieckim Szpitalu Specjalistycznym w
+                Radomiu, gdzie kieruję Klinicznym Oddziałem Pediatrii. Prowadzę także
+                zajęcia kliniczne ze studentami kierunku lekarskiego Uniwersytetu
+                Technologiczno-Humanistycznego w Radomiu.
+              </p>
+              <p>
+                Drugim — obok leczenia dzieci — obszarem moich zainteresowań zawodowych
+                jest organizacja i zarządzanie działalnością instytucji z branży
+                medycznej. W związku z tym ukończyłem roczne studia w zakresie planowania
+                i zarządzania w ochronie zdrowia w Międzynarodowej Szkole Menedżerów w
+                Warszawie, a następnie dwuletnie podyplomowe studia „Zarządzanie w
+                Ochronie Zdrowia” na Uniwersytecie Kardynała Stefana Wyszyńskiego w
+                Warszawie. W wymiarze praktycznym te zainteresowania realizowałem,
+                pełniąc przez 15 lat obowiązki dyrektora ds. medycznych w Przychodni
+                Lekarzy Specjalistów PRIMA-MED w Warce.
+              </p>
+            </div>
+
+            <div class="about-profile__chapter about-profile__chapter--personal">
+              <h3>Po godzinach</h3>
+              <p>
+                W prywatnym życiu jestem od wielu lat szczęśliwym mężem mojej Anulki.
+                Nasze małżeństwo to najwspanialsza przygoda mojego życia. Mamy dwoje
+                cudownych dzieci, z których jestem bardzo dumny. Piotr po ukończeniu
+                studiów na Wydziale Lekarskim Warszawskiego Uniwersytetu Medycznego jest
+                lekarzem rezydentem w Klinice Otolaryngologii Mazowieckiego Szpitala
+                Bródnowskiego w Warszawie, zaś Zuzanna studiuje na Wydziale Prawa i
+                Administracji Uniwersytetu Kardynała Stefana Wyszyńskiego w Warszawie, a
+                w czasie wolnym gotowa jest pomagać każdemu, zawsze i wszędzie.
+              </p>
+              <p>
+                Pasjonuje mnie kuchnia — to moje ulubione miejsce relaksu i odpoczynku
+                po pracy. Mało jest rzeczy, których nie podjąłbym się ugotować, bo
+                uwielbiam poznawać techniki kulinarne i testować nowe smaki i aromaty.
+              </p>
+              <p>
+                Bardzo lubię podróże, w których staram się wyłuskać mniej oczywiste
+                „perełki”, nawet w bardzo turystycznych rejonach. Czasem udaje mi się na
+                takiej wyprawie zrobić wyjątkowe zdjęcie — bardzo mnie to wtedy cieszy.
+              </p>
+              <p>
+                Szczęśliwie swoje pasje dzielę z moją żoną, co sprawia, że uprawianie
+                ich jest jeszcze fajniejsze 🙂
+              </p>
+            </div>
+
+            <Button href="/pediatra" variant="secondary">Przejdź do gabinetu pediatrycznego <span aria-hidden="true">→</span></Button>
+          </div>
+        </article>
+      </Container>
+    </section>
 
     <ContactSection />
   </main>

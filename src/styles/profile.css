@@ -57,28 +57,6 @@
   object-position: center top;
 }
 
-.profile-hero__image > p {
-  position: absolute;
-  right: -1rem;
-  bottom: 1.8rem;
-  display: grid;
-  max-width: 13rem;
-  margin: 0;
-  padding: 0.9rem 1rem;
-  border: 0.0625rem solid var(--color-line);
-  border-radius: 1rem;
-  background: #fff;
-  box-shadow: var(--shadow-card);
-  color: var(--color-muted);
-  font-size: 0.75rem;
-  line-height: 1.45;
-}
-
-.profile-hero__image > p strong {
-  color: var(--color-purple);
-  font-size: 0.92rem;
-}
-
 .profile-hero--pediatra .profile-hero__image::before {
   background: var(--color-pink-soft);
 }
@@ -231,9 +209,19 @@
   margin-bottom: 2rem;
   border-radius: 0.75rem;
   background: var(--color-purple-soft);
-  color: var(--color-purple);
-  font-size: 0.74rem;
-  font-weight: 900;
+  color: transparent;
+}
+
+.speech-service-card:nth-child(4n + 2) > span {
+  background: var(--color-teal-soft);
+}
+
+.speech-service-card:nth-child(4n + 3) > span {
+  background: var(--color-pink-soft);
+}
+
+.speech-service-card:nth-child(4n) > span {
+  background: #fff1cc;
 }
 
 .speech-service-card h3 {
@@ -335,19 +323,6 @@
   object-position: center 38%;
 }
 
-.first-visit__visual--photo::after {
-  position: absolute;
-  inset: 55% 0 0;
-  background: linear-gradient(transparent, rgba(36, 33, 41, 0.5));
-  content: "";
-  pointer-events: none;
-}
-
-.first-visit__visual--photo p {
-  z-index: 1;
-  color: #fff;
-}
-
 .experience-section {
   background: var(--color-purple);
   color: #fff;
@@ -432,6 +407,60 @@
   font-size: 0.88rem;
 }
 
+.safeguarding-section {
+  background: #fff;
+}
+
+.safeguarding-grid {
+  display: grid;
+  grid-template-columns: minmax(20rem, 0.9fr) minmax(24rem, 1.1fr);
+  align-items: center;
+  gap: clamp(3rem, 8vw, 7rem);
+}
+
+.safeguarding-copy .button-row {
+  margin-top: 1.8rem;
+}
+
+.safeguarding-meta {
+  margin: 0.9rem 0 0;
+  color: var(--color-muted);
+  font-size: 0.78rem;
+}
+
+.safeguarding-poster {
+  width: min(100%, 35rem);
+  justify-self: end;
+  margin: 0;
+}
+
+.safeguarding-poster > a {
+  display: block;
+  overflow: hidden;
+  border: 0.0625rem solid var(--color-line);
+  border-radius: var(--radius-lg);
+  background: #fff;
+  box-shadow: var(--shadow-card);
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+
+.safeguarding-poster > a:hover {
+  box-shadow: var(--shadow-soft);
+  transform: translateY(-0.2rem);
+}
+
+.safeguarding-poster img {
+  width: 100%;
+  height: auto;
+}
+
+.safeguarding-poster figcaption {
+  margin-top: 0.8rem;
+  color: var(--color-muted);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
 .profile-contact {
   position: relative;
   overflow: hidden;
@@ -511,8 +540,13 @@
   .profile-hero__grid,
   .profile-intro__grid,
   .first-visit__grid,
+  .safeguarding-grid,
   .profile-contact__grid {
     grid-template-columns: 1fr;
+  }
+
+  .safeguarding-poster {
+    justify-self: center;
   }
 
   .profile-hero__image {
@@ -547,11 +581,6 @@
 
   .profile-hero__image::before {
     border-radius: 2rem;
-  }
-
-  .profile-hero__image > p {
-    right: 0.8rem;
-    bottom: 0.8rem;
   }
 
   .speech-services-grid,

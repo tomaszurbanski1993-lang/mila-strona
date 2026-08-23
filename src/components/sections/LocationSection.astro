@@ -7,11 +7,11 @@ import Button from "../ui/Button.astro";
 <section class="section location-section" aria-labelledby="location-title">
   <Container class="location-layout">
     <div class="location-copy">
-      <p class="eyebrow">Na miejscu w Warce</p>
-      <h2 id="location-title">Spotkajmy się na Miłej</h2>
+      <p class="eyebrow">Dojazd</p>
+      <h2 id="location-title">Jak nas znaleźć</h2>
       <p class="lead">
-        Oba gabinety mieszczą się pod jednym adresem. Szczegóły dotyczące wejścia,
-        parkowania i dostępności uzupełnimy po ich ostatecznym potwierdzeniu.
+        Gabinety „Dzieciaki na Miłej” mieszczą się przy ul. Miłej 12 w Warce.
+        W aplikacjach typu Google Maps wystarczy wpisać „Dzieciaki na Miłej Warka”.
       </p>
       <address>
         <span>Dzieciaki na Miłej</span>
@@ -20,14 +20,16 @@ import Button from "../ui/Button.astro";
       <Button href={site.mapUrl} variant="secondary">Otwórz trasę w Mapach Google <span aria-hidden="true">↗</span></Button>
     </div>
 
-    <div class="location-map" aria-label="Schematyczne oznaczenie lokalizacji gabinetu">
-      <span class="location-map__road location-map__road--one" aria-hidden="true"></span>
-      <span class="location-map__road location-map__road--two" aria-hidden="true"></span>
-      <div class="location-pin">
-        <span aria-hidden="true">●</span>
-        <strong>Miła 12</strong>
-        <small>Warka</small>
-      </div>
+    <div class="location-map">
+      <iframe
+        title="Mapa dojazdu do Dzieciaków na Miłej przy ul. Miłej 12 w Warce"
+        src="https://www.google.com/maps?q=Dzieciaki%20na%20Mi%C5%82ej%2C%20Mi%C5%82a%2012%2C%2005-660%20Warka&output=embed"
+        width="800"
+        height="560"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
     </div>
   </Container>
 </section>

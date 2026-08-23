@@ -4,44 +4,60 @@ import Container from "../ui/Container.astro";
 import Button from "../ui/Button.astro";
 ---
 
-<section class="section knowledge-section" aria-labelledby="knowledge-title">
+<section class="section knowledge-section" aria-labelledby="news-title">
   <Container>
     <div class="section-heading section-heading--split">
       <div>
-        <p class="eyebrow">Wiedza i aktualności</p>
-        <h2 id="knowledge-title">Przydatnie dla rodziców</h2>
+        <p class="eyebrow">Aktualności</p>
+        <h2 id="news-title">Wieści z Miłej</h2>
       </div>
       <p class="lead">
-        Artykuły zostają oddzielone od krótkich komunikatów organizacyjnych,
-        żeby łatwo znaleźć właściwy rodzaj informacji.
+        Bądź na bieżąco z wydarzeniami w naszych gabinetach oraz nowinkami ze świata
+        pediatrii i logopedii.
       </p>
     </div>
 
-    <div class="knowledge-grid">
-      <article class="featured-article">
-        <div class="featured-article__content">
-          <p class="eyebrow">{featuredBlog.type}</p>
-          <h3>{featuredBlog.title}</h3>
-          <p>{featuredBlog.description}</p>
-          <time>{featuredBlog.date}</time>
-          <Button href={featuredBlog.href} variant="light">Przeczytaj artykuł <span aria-hidden="true">→</span></Button>
-        </div>
-        <span class="featured-article__shape" aria-hidden="true">Aa</span>
-      </article>
-
-      <div class="news-stack">
-        {
-          latestNews.map((item) => (
-            <article class="news-card">
-              <p class="news-card__meta">Aktualność · {item.date}</p>
-              <h3><a href={item.href}>{item.title}</a></h3>
-              <p>{item.description}</p>
-              <a class="text-link" href={item.href}>Czytaj dalej <span aria-hidden="true">→</span></a>
-            </article>
-          ))
-        }
-        <Button href="/aktualnosci" variant="secondary" class="news-stack__all">Wszystkie aktualności</Button>
-      </div>
+    <div class="news-stack news-stack--home">
+      {
+        latestNews.map((item) => (
+          <article class="news-card">
+            <p class="news-card__meta">Aktualność · {item.date}</p>
+            <h3><a href={item.href}>{item.title}</a></h3>
+            <p>{item.description}</p>
+            <a class="text-link" href={item.href}>Czytaj dalej <span aria-hidden="true">→</span></a>
+          </article>
+        ))
+      }
     </div>
+    <Button href="/aktualnosci" variant="secondary" class="content-section__all">Wszystkie aktualności</Button>
+  </Container>
+</section>
+
+<section class="section blog-home-section" aria-labelledby="blog-home-title">
+  <Container>
+    <div class="section-heading section-heading--split">
+      <div>
+        <p class="eyebrow">Blog</p>
+        <h2 id="blog-home-title">Poza gabinetem. Nasz świat pełen pasji.</h2>
+      </div>
+      <p class="lead">
+        Pomiędzy medycyną a codziennością — wiedza profesjonalna połączona z tym,
+        co daje nam energię do działania po godzinach.
+      </p>
+    </div>
+
+    <article class="featured-article">
+      <div class="featured-article__content">
+        <p class="eyebrow">{featuredBlog.type}</p>
+        <h3>{featuredBlog.title}</h3>
+        <p>{featuredBlog.description}</p>
+        <time>{featuredBlog.date}</time>
+        <div class="button-row">
+          <Button href={featuredBlog.href} variant="light">Przeczytaj artykuł <span aria-hidden="true">→</span></Button>
+          <Button href="/blog" variant="secondary">Wszystkie artykuły</Button>
+        </div>
+      </div>
+      <span class="featured-article__shape" aria-hidden="true">Aa</span>
+    </article>
   </Container>
 </section>

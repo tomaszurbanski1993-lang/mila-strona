@@ -1,0 +1,85 @@
+.legal-hero {
+  position: relative;
+  overflow: hidden;
+  padding-block: clamp(2rem, 5vw, 4.5rem) clamp(3.5rem, 8vw, 6.5rem);
+  background:
+    radial-gradient(circle at 88% 20%, rgba(249, 188, 57, 0.2), transparent 14rem),
+    linear-gradient(145deg, var(--color-paper), var(--color-soft));
+}
+
+.legal-hero h1 {
+  max-width: 15ch;
+  font-size: clamp(2.75rem, 6vw, 5.25rem);
+}
+
+.legal-breadcrumb {
+  display: flex;
+  gap: 0.55rem;
+  margin-bottom: clamp(3rem, 7vw, 5.5rem);
+  color: var(--color-muted);
+  font-size: 0.8rem;
+}
+
+.legal-breadcrumb a {
+  color: var(--color-purple);
+}
+
+.legal-content {
+  background: #fff;
+}
+
+.legal-prose {
+  width: min(100%, 52rem);
+  margin-inline: auto;
+  color: #514b56;
+}
+
+.legal-prose h2 {
+  margin-top: 3rem;
+  font-size: clamp(1.65rem, 3vw, 2.25rem);
+}
+
+.legal-prose h2:first-child {
+  margin-top: 0;
+}
+
+.legal-prose h3 {
+  margin-top: 2rem;
+}
+
+.legal-prose p,
+.legal-prose li {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.legal-prose ol,
+.legal-prose ul {
+  display: grid;
+  gap: 1rem;
+  padding-left: 1.4rem;
+}
+
+.legal-prose strong {
+  color: var(--color-heading);
+  font-weight: 700;
+}
+
+.legal-signature,
+.legal-administrator {
+  margin-top: 2.5rem;
+  padding: 1.25rem 1.4rem;
+  border-left: 0.25rem solid var(--color-purple);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  background: var(--color-soft);
+}
+
+@media (max-width: 650px) {
+  .legal-hero h1 {
+    font-size: clamp(2.65rem, 13vw, 3.6rem);
+  }
+
+  .legal-breadcrumb {
+    margin-bottom: 2.5rem;
+  }
+}

@@ -70,23 +70,6 @@
   object-position: center 35%;
 }
 
-.service-hero__image > span {
-  position: absolute;
-  right: -1rem;
-  bottom: 1.5rem;
-  display: grid;
-  min-width: 5rem;
-  height: 5rem;
-  place-items: center;
-  padding-inline: 0.8rem;
-  border-radius: 1.2rem;
-  background: #fff;
-  box-shadow: var(--shadow-card);
-  color: var(--service-color);
-  font-family: var(--font-display);
-  font-size: 1.55rem;
-}
-
 .service-page--teal {
   --service-color: var(--color-teal);
   --service-soft: var(--color-teal-soft);
