@@ -7,7 +7,7 @@ tags: ["Blog"]
 draft: false
 ---
 
-**Czas czytania dostosujmy do możliwości koncentracji dzieci**.more Z informacji od rodziców oraz swoich obserwacji podczas prowadzonych w przedszkolu zajęć profilaktyki wad wymowy dzieci, które nie miały wcześniejszych doświadczeń z czytaniem wiem, że początkowo miały kłopot ze skupieniem uwagi dłużej niż przez kilka minut. Niektóre wcale początkowo nie umiały słuchać. Taka sytuacja nie powinna zniechęcać czytających! Ale to normalny etap wychowania do czytania, trwający nawet kilka miesięcy, zanim dzieci przyzwyczają się do słuchania i będą na nie z radością czekać. Nie zmuszajmy dzieci do nieruchomego siedzenia w miejscu. Dzieciom, które miały  potrzebę ruchu,  pozwalam na chodzenie, leżenie lub na cichą zabawę – w tym czasie też będą słuchały. Przecież języka nie uczymy się tylko na siedząco! Pamiętajmy, że czytanie ma być dla dziecka **przyjemnością**, a nie obowiązkiem i udręką.
+**Czas czytania dostosujmy do możliwości koncentracji dzieci**. Z informacji od rodziców oraz swoich obserwacji podczas prowadzonych w przedszkolu zajęć profilaktyki wad wymowy dzieci, które nie miały wcześniejszych doświadczeń z czytaniem wiem, że początkowo miały kłopot ze skupieniem uwagi dłużej niż przez kilka minut. Niektóre wcale początkowo nie umiały słuchać. Taka sytuacja nie powinna zniechęcać czytających! Ale to normalny etap wychowania do czytania, trwający nawet kilka miesięcy, zanim dzieci przyzwyczają się do słuchania i będą na nie z radością czekać. Nie zmuszajmy dzieci do nieruchomego siedzenia w miejscu. Dzieciom, które miały  potrzebę ruchu,  pozwalam na chodzenie, leżenie lub na cichą zabawę – w tym czasie też będą słuchały. Przecież języka nie uczymy się tylko na siedząco! Pamiętajmy, że czytanie ma być dla dziecka **przyjemnością**, a nie obowiązkiem i udręką.
 
 I jeszcze jedno, czytaniu powinno towarzyszyć zajęcia inspirowane lekturą – rozmowy i zabawy językowe, zabawy  ruchowe i muzyczne, zajęcia plastyczne a nawet przygotowywanie przebrań, przedstawień i dekoracji do nich.
 
@@ -15,7 +15,7 @@ Poniżej znajdziecie Państwo tytuły książek, które w moim odczuciu są wyj�
 
 Literatura:
 
-**Trzylatki (i młodsze dzieci) **
+**Trzylatki (i młodsze dzieci)**
 
 1. Piotrowska, J. Papuzińska, J. Porazińska, J. Tuwim – Pierwsza książka mojego dziecka
 
@@ -201,7 +201,7 @@ Katarzyna Patalan – Zaczarowany języczek i pojazdy
 
 Katarzyna Patalan – Zaczarowany języczek na wakacjach
 
-**Pięciolatki **
+**Pięciolatki**
 
 Paul Bright, Brian Sibley, Jeanne Willis, Kate Saunders – Nowe przygody Kubusia Puchatka
 

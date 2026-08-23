@@ -12,7 +12,7 @@ image: "/images/legacy/20944983.jpg"
 
 Dzieciom i młodzieży życzę nieustannej chęci i motywacji w doskonaleniu języka, wspaniałej zabawy podczas ćwiczeń i sukcesów w terapii. Pamiętajcie, że  kluczem do powodzenia jest ciężka praca i wytrwałość w nauce.**Robert Collier pisał:* „sukces to suma niewielkiego wysiłku powtarzanego z dnia na dzień”*
 
-Wszystkim zaś Rodzicom serdecznie dziękuję za współpracę.more
+Wszystkim zaś Rodzicom serdecznie dziękuję za współpracę.
 
 Ja mogę śmiało stwierdzić, że moja praca jest wyjątkowa i daje mi niezwykłe poczucie radości i ogromną satysfakcję. Zdecydowanie mogę powiedzieć, że logopedia obok podróżowania to jedna z fantastycznych przygód mojego życia 😊. W moim wypadku praca równa się pasja!
 
@@ -43,18 +43,10 @@ Zwilż gardło, napij się wody.
 
 ZACZYNAMY!!!!
 
-[
-
 ![](/images/legacy/Język-supeł.jpg)
-
-](http://logopedawarka.pl/jezyk-supel/)
 
 Wyrażenia i zdania na fiszkach wypowiadaj na początku powoli, bardzo dokładnie, wyraźnie, z przesadną artykulacją głosek. Następnie systematycznie zwiększaj tempo, powtarzaj je kilkukrotnie raz za razem zachowując wyrazistość i zrozumienie mowy. Możesz też połączyć przyjemne z pożytecznym 😉 i ćwiczyć dykcję z korkiem od wina. Należy chwycić go zębami i jak najwyraźniej mówić. Czy wiedzieliście, ze korek od wina może usprawnić naszą dykcję? Okazuje się, że po wyjęciu korka mówimy wyraźniej.
 
 Ćwiczenie czyni Mistrza 🙂 Powodzenia!
 
-[
-
 ![](/images/legacy/Łamańce-językowe.jpg)
-
-](http://logopedawarka.pl/lamance-jezykowe/)

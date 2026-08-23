@@ -8,9 +8,9 @@ draft: false
 image: "/images/legacy/Seplenienie-międzyzębowe3.png"
 ---
 
-*Zapraszam do lektury drugiej części artykułu poświęconego seplenieniu międzyzębowemu. Zgodnie z zapowiedzią zajmiemy się w niej diagnostyką różnicową oraz terapią tej wady. *
+*Zapraszam do lektury drugiej części artykułu poświęconego seplenieniu międzyzębowemu. Zgodnie z zapowiedzią zajmiemy się w niej diagnostyką różnicową oraz terapią tej wady.*
 
-*Zapraszam Państwa do lektury.*more
+*Zapraszam Państwa do lektury.*
 
 DIAGNOSTYKA RÓŻNICOWA
 
@@ -67,6 +67,6 @@ Należy też z całym naciskiem podkreślić, że wada nie ma tendencji do samoi
 
 [[1]](#_ftnref1) T. Gałkowski, G. Jastrzębowska (red.): *Logopedia – pytania i odpowiedzi* Uniwersytet Opolski 1999
 
-[[2]](#_ftnref2) D. Pluta-Wojciechowska: *Opis zaburzeń mowy jako pierwszy etap postępowania logopedycznego. *Logopedia Silesiana 1 (2012)
+[[2]](#_ftnref2) D. Pluta-Wojciechowska: *Opis zaburzeń mowy jako pierwszy etap postępowania logopedycznego.* Logopedia Silesiana 1 (2012)
 
-[[3]](#_ftnref3) E. Stecko, M. Hortis-Dzierzbicka: *Seplenienie międzyzębowe – norma wiekowa czy patologia? *Nowa Pediatria 1, 2000
+[[3]](#_ftnref3) E. Stecko, M. Hortis-Dzierzbicka: *Seplenienie międzyzębowe – norma wiekowa czy patologia?* Nowa Pediatria 1, 2000
