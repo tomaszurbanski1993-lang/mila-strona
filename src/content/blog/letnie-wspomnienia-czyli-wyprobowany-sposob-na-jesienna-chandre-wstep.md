@@ -8,7 +8,7 @@ draft: false
 image: "/images/legacy/20190715_163727-1.jpg"
 ---
 
-Nie da się ukryć, że obydwoje jesteśmy ludźmi lata. No, może jeszcze wczesnej jesieni, gdy drzewa w lesie dopiero łapią pierwsze ciepłe barwy, na spacer bierze się sweter „na wszelki wypadek”, ale ciepłe kurtki i futra nadal bronią się przed molami śpiąc w szafie. To słońce nas napędza, śpiew ptaków cieszy i co roku chcielibyśmy żeby jesienno-zimowe klimaty wzięli sobie na stałe Skandynawowie 😉. Niestety dobry Bóg obdarzył nas klimatem zmiennym i jak co roku trzeba było uprzątnąć z podwórka leżaki i parasole przeciwsłoneczne. more
+Nie da się ukryć, że obydwoje jesteśmy ludźmi lata. No, może jeszcze wczesnej jesieni, gdy drzewa w lesie dopiero łapią pierwsze ciepłe barwy, na spacer bierze się sweter „na wszelki wypadek”, ale ciepłe kurtki i futra nadal bronią się przed molami śpiąc w szafie. To słońce nas napędza, śpiew ptaków cieszy i co roku chcielibyśmy żeby jesienno-zimowe klimaty wzięli sobie na stałe Skandynawowie 😉. Niestety dobry Bóg obdarzył nas klimatem zmiennym i jak co roku trzeba było uprzątnąć z podwórka leżaki i parasole przeciwsłoneczne.
 
 Od wielu lat naszym sposobem na podtrzymanie dobrego nastroju jest wspominanie tego, co przeżyliśmy wspólnie w czasie lata. Uwielbiamy przeglądać zdjęcia z naszych małych i dużych wypraw, oglądamy przywiezione pamiątki, w kuchni próbujemy przywołać smaki z miejsc, które odwiedziliśmy. W  tym roku zapewne będzie tak samo, ale postanowiliśmy podzielić się z Wami naszymi wspomnieniami . Będziemy starali się co jakiś czas opowiedzieć trochę o tym, co dobrego (lub mniej dobrego) spotkało nas w te wakacje. Mamy nadzieję, że w naszych wpisach znajdziecie powiew letniego ciepła  i że się do siebie uśmiechniecie.
 

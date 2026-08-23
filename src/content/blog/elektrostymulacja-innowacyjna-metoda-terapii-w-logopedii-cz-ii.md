@@ -7,17 +7,17 @@ tags: ["Blog"]
 draft: false
 ---
 
-**Zgodnie z zapowiedzią z pierwszej części dziś odpowiadam na najczęstsze pytania dotyczące elektrostymulacji.**more
+**Zgodnie z zapowiedzią z pierwszej części dziś odpowiadam na najczęstsze pytania dotyczące elektrostymulacji.**
 
 **Czy elektrostymulacja TENS/EMS jest bezpieczna?**
 
-**Tak. **Zabieg jest całkowicie bezpieczny, bowiem stosuje się impulsy o bardzo niskim natężeniu, które stymulują wyłącznie nerwy czuciowe na powierzchni skóry. Oczywiście, jak przy każdej terapii konieczne jest na początku wykluczenie przeciwskazań u konkretnego pacjenta i ustalenie indywidualnego planu leczenia.
+**Tak.** Zabieg jest całkowicie bezpieczny, bowiem stosuje się impulsy o bardzo niskim natężeniu, które stymulują wyłącznie nerwy czuciowe na powierzchni skóry. Oczywiście, jak przy każdej terapii konieczne jest na początku wykluczenie przeciwskazań u konkretnego pacjenta i ustalenie indywidualnego planu leczenia.
 
 **Czy zabieg jest bolesny lub nieprzyjemny?**
 
-**Nie.******Zabieg jest komfortowy, bo zupełnie bezbolesny. Odczucia osób poddanych elektrostymulacji są różne. Jedni (głownie dzieci) odczuwają wyłącznie lekkie mrowienie na skórze bądź wibracje mięśni wokół elektrod lub nie występują żadne odczucia. Dorośli zaś odczuwają delikatną i jednocześnie głęboką penetrację prądu, w tkankach podskórnych, nerwach oraz mięśniach.
+**Nie.** Zabieg jest komfortowy, bo zupełnie bezbolesny. Odczucia osób poddanych elektrostymulacji są różne. Jedni (głownie dzieci) odczuwają wyłącznie lekkie mrowienie na skórze bądź wibracje mięśni wokół elektrod lub nie występują żadne odczucia. Dorośli zaś odczuwają delikatną i jednocześnie głęboką penetrację prądu, w tkankach podskórnych, nerwach oraz mięśniach.
 
-******Jak mogę sprawdzić, co będzie czuło moje dziecko?**
+**Jak mogę sprawdzić, co będzie czuło moje dziecko?**
 
 Jeśli zabieg dedykowany jest dziecku, w czasie pierwszej wizyty konsultacyjnej rodzice mogą na sobie spróbować zabiegu elektrostymulacji, by doświadczyć co będzie czuło dziecko. Przynosi to najczęściej efekt komfortu psychicznego i spokoju. Dawki dobierane są indywidualnie do odczuć pacjenta (każdy człowiek w tym także dziecko ma inny próg bólu, a więc dawki dostosowywane są personalnie).
 
@@ -91,8 +91,4 @@ Przeciwskazaniami do korzystania z zabiegów elektrostymulacyjnych są:
 
 **Należy pamiętać, że elektrostymulacja w żaden sposób nie zastępuje terapii logopedycznej, jest tylko metodą wspomagającą. Bardzo ważne jest, aby równolegle z przebiegiem sesji elektrostymulacji, rodzice intensywnie wykonywali ćwiczenia narządów artykulacyjnych dziecka wg. wskazań logopedycznych.**
 
-[
-
 ![](/images/legacy/Elektrody.jpg)
-
-](http://logopedawarka.pl/elektrody/)

@@ -7,7 +7,7 @@ tags: ["Blog"]
 draft: false
 ---
 
-Jak już wcześniej pisaliśmy, chcemy by nasz blog był odzwierciedleniem naszych zainteresowań i fascynacji – głównie pozazawodowych. By pokazywał co nam “w duszy gra”. more
+Jak już wcześniej pisaliśmy, chcemy by nasz blog był odzwierciedleniem naszych zainteresowań i fascynacji – głównie pozazawodowych. By pokazywał co nam “w duszy gra”.
 
 Nie unikniemy zapewne odniesień do naszych profesji, choć nie chcemy by teksty stricte profesjonalne dominowały . Jednak nasze dwie główne pasje to: KUCHNIA i PODRÓŻE. Obydwoje uwielbiamy poznawać nowe miejsca i nowych ludzi a szczególnie ich życie zwyczaje i kuchnię, oczywiście. Nie jesteśmy jakimiś wytrawnymi globtroterami, nie zjechaliśmy pół świata (jeszcze!), ale jeśli gdzieś jesteśmy, staramy się poznawać nowe miejsca wszystkimi zmysłami z których smak i zapach nie są wcale najmniej ważne! Stąd tytułowy BIGOS (wszak każdy ma inny skład i inny, niepowtarzalny smak) w WALIZCE, która spakowana czeka na kolejną podróż. Swoją drogą to w czasie dłuższych wypraw w naszych walizkach naprawdę jest niezły bigos :-)))
 

@@ -10,8 +10,6 @@ image: "/images/legacy/20241129_080012.jpg"
 
 Bożonarodzeniową atmosferę można poczuć na długo przed świętami. Od kilku lat kalendarz adwentowy jest nieodłączną częścią oczekiwania na Święta Bożego Narodzenia a wieniec adwentowy towarzyszy nam od pierwszych lat naszego małżeństwa. Te drobiazgi niezwykle umilają świąteczne chwile i tworzą ich wyjątkowy nastrój. Światło świec to ważny element celebracji Bożego Narodzenia. Grudniowe święta to nasz ulubiony czas, na który czekamy przez cały rok. Magia tych świąt sprawia, że każdego roku cieszymy się tak samona nadchodzącą Gwiazdkę.
 
-more
-
 Gdy myślimy o świętach to przychodzi nam na myśl wieczerza wigilijna, wspólne kolędowanie w rodzinnym gronie przy oprawie muzycznej w wykonaniu naszych dzieci, piękna choinka oraz gwiazdkowe prezenty. Nie zapominamy jednak, że te chwile świętowania poprzedza okres intensywnych przygotowań. Wcześnie przemyślane i zaplanowane pozwalają cieszyć się klimatem i magią Świąt Bożego Narodzenia. Dzięki temu możemy usiąść do stołu wypoczęci i celebrować te piękne dni Bożego Narodzenia.
 
 Należę do osób, które lubią planować, bo jak zapiszę to wszystko mi się porządkuje. Dlatego już kolejny rok przygotowuję „tabele z datami – świąteczny kalendarz – planer” aby święta mogły być takie jakie kocham – wspaniałe, rodzinne, spokojne, pełne czasu i uwagi. Mój wyjątkowy i niezwykły kalendarz listopadowy i grudniowy to moje centrum zarządzania .

@@ -10,8 +10,6 @@ image: "/images/legacy/DSC_0128.jpg"
 
 W świecie logopedii zaczynają pojawiać się innowacje, które nie tylko ułatwiają, ale i ubarwiają proces terapeutyczny. Ostatnio mieliśmy przyjemność testować jedną z takich nowości – rozwiązanie [play.air](https://www.play-air.com/) To intrygujący sposób na połączenie zabawy z efektywnym treningiem oddechu.
 
-more
-
 ## [Play.air](https://www.play-air.com/) – Rewolucja w Treningu Oddechu
 
 [Play.air](https://www.play-air.com/)  to system gier mobilnych sterowanych oddechem, które przekształcają tradycyjne ćwiczenia oddechowe – takie jak dmuchanie w piórka czy przenoszenie papierowych elementów za pomocą słomki – w interaktywną, cyfrową rozrywkę. Dzięki temu dzieci mogą ćwiczyć wdechy i wydechy w sposób angażujący i przystępny zarówno w domu, jak i w gabinecie. A jak wszyscy wiemy – oddech jest kluczowy w terapii logopedycznej.
@@ -32,48 +30,24 @@ Dziękujemy całemu zespołowi [play.air](https://www.play-air.com/) za wybran
 
 P.S. Na zdjęciach możecie zobaczyć jak wyglądało to wydarzenie.
 
-[
-
 ![](/images/legacy/DSC_0165.jpg)
-
-](https://logopedawarka.pl/dsc_0165/)[
 
 ![](/images/legacy/DSC_0158-1.jpg)
 
-](https://logopedawarka.pl/dsc_0158-2/)[
-
 ![](/images/legacy/DSC_0193.jpg)
-
-](https://logopedawarka.pl/dsc_0193/)[
 
 ![](/images/legacy/DSC_0146.jpg)
 
-](https://logopedawarka.pl/dsc_0146/)[
-
 ![](/images/legacy/DSC_0145.jpg)
-
-](https://logopedawarka.pl/dsc_0145/)[
 
 ![](/images/legacy/DSC_0139.jpg)
 
-](https://logopedawarka.pl/dsc_0139/)[
-
 ![](/images/legacy/DSC_0137.jpg)
-
-](https://logopedawarka.pl/dsc_0137/)[
 
 ![](/images/legacy/DSC_0133.jpg)
 
-](https://logopedawarka.pl/dsc_0133/)[
-
 ![](/images/legacy/DSC_0127.jpg)
-
-](https://logopedawarka.pl/dsc_0127/)[
 
 ![](/images/legacy/DSC_0123.jpg)
 
-](https://logopedawarka.pl/dsc_0123/)[
-
 ![](/images/legacy/DSC_0122.jpg)
-
-](https://logopedawarka.pl/dsc_0122/)

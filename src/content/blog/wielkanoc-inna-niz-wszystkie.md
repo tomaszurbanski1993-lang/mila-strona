@@ -10,7 +10,7 @@ image: "/images/legacy/Wieniec-wielkanocny.jpg"
 
 Świątecznym (choć niezbyt regularnym 😉 ) zwyczajem Dzieciaków Na Miłej jest dzielenie się z Wami jakimś przepisem. Wszyscy wiemy, że zarówno tegoroczna Wielkanoc, jak i cały ten czas jest inny niż zwykle, wyjątkowy z powodu koszmaru epidemii. Dlatego także dzisiejsza receptura będzie niezwykła. Chcemy bowiem przekazać Wam:
 
-### PRZEPIS NA ZDROWE I BEZPIECZNE ŚWIĘTAmore
+### PRZEPIS NA ZDROWE I BEZPIECZNE ŚWIĘTA
 
 Po pierwsze: **zostańmy w swoich domach**.
 
