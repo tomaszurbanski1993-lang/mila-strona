@@ -14,8 +14,6 @@ image: "/images/legacy/Dmuchanie-przez-nos.jpg"
 
 **Prawidłowe wydmuchiwanie nosa ma wpływ nie tylko na nasze zdrowie ale również na oddychanie. Choć dla wielu rodziców jest to zaskakujące, to ta czynność – inaczej niż oddychanie – nie jest wrodzona, trzeba się jej nauczyć.**
 
-more
-
 Zwykle około 3. roku życia dziecko potrafi samodzielnie wydmuchać nos w chusteczkę. Jeśli jednak pociecha nie nabyła tej umiejętności to, zamiast zamartwiać się, skupmy się na rozwinięciu tej kompetencji. Dobrym momentem na rozpoczęcie treningu smarkania jest czas rozpoczęcia przez dziecko edukacji przedszkolnej. Trzeci rok życia to czas wzmożonej samodzielności i rozumienia bardziej złożonych komunikatów. Należy jednak zauważyć, że dzieci szybko się uczą w tym wieku, ale mają mało podzielną uwagę, łatwo się dekoncentrują i rozpraszają. Dlatego Rodzice powinni uzbroić się w cierpliwość i zapewnić przyjazną atmosferę.
 
 Wrzesień to prawdziwe wyzwanie zarówno dla dzieci jak i ich Rodziców: z jednej strony adaptacja a z drugiej przeziębienia. Samodzielne ubieranie, rozbieranie, jedzenie, wydmuchanie nosa bez pomocy ułatwi dziecku adaptację w przedszkolu i co ważne, buduje poczucie własnej wartości. Pierwsze miesiące pobytu w przedszkolu są szczególnie trudne dla przedszkolaków ze względów adaptacyjnych, kiedy to dzieci po raz pierwszy mają do czynienia z różnymi chorobotwórczymi drobnoustrojami. Większość infekcji przebiega z katarem. Aby skrócić czas choroby i uchronić dziecko przed powikłaniami takimi jak zapalenie ucha i zatok oraz poprawić jego samopoczucie trzeba udrożnić nos. Ponadto stale zatkany nos może doprowadzić do przerostu trzeciego migdałka. Mając zatkany nos maluch wykorzystuje zamiennie nieprawidłowy tor oddychania. Na skutek nieprawidłowego oddychania (przez usta) może dojść do powstania złej pozycji spoczynkowej języka, wad wymowy, zaburzeń rozwoju zgryzu dziecka zaś niedotlenienie układu nerwowego powoduje zaburzenia koncentracji uwagi, szybkie męczenie się dziecka i inne negatywne konsekwencje. Prawidłowe oddychanie to aktywny nos i domknięte wargi. Zarówno w dzień, jak i podczas snu dziecko powinno oddychać nosem.
@@ -61,7 +59,7 @@ Przydatne ćwiczenia:
 1. Zabawa z lusterkiem – zaczynamy od dmuchania buzią a później naprzemiennie raz lewą dziurką raz prawą.
 1. Obrażone zwierzę – „fukanie” na wydechu czyli wypuszczanie powietrz nosem przy zamkniętej buzi.
 
-******Trzeci etap** – dmuchanie nosa w chusteczkę.
+**Trzeci etap** – dmuchanie nosa w chusteczkę.
 
 Dmuchamy tylko jedną dziurką nosa. Drugą dziurkę przyciskamy palcem przez chusteczkę. Zaprzyjaźniamy dziecko z chusteczkami, najlepiej kolorowymi, z ulubionymi postaciami z bajek.
 

@@ -7,7 +7,7 @@ tags: ["Blog"]
 draft: false
 ---
 
-W poprzednich naszych wpisach ([Cz.I](http://logopedawarka.pl/blog/wine-friends-czyli-toskania-w-warce/) i [Cz.II](http://logopedawarka.pl/blog/wine-friends-czyli-rozkosze-podniebienia/)) opisywaliśmy bardzo udaną degustację win toskańskich z [Società Agricola LOSI](http://www.agricolalosi.it/en) zorganizowanej przez [Hotel Sielanka nad Pilicą](https://www.sielanka.pl/). Oprócz fantastycznych doznań kulinarno – sommellierskich obudziła ona w nas wspomnienia sprzed kilku lat. Jeśli jesteście ciekawi jakie – zapraszamy do trzeciej części opowieści.more
+W poprzednich naszych wpisach ([Cz.I](http://logopedawarka.pl/blog/wine-friends-czyli-toskania-w-warce/) i [Cz.II](http://logopedawarka.pl/blog/wine-friends-czyli-rozkosze-podniebienia/)) opisywaliśmy bardzo udaną degustację win toskańskich z [Società Agricola LOSI](http://www.agricolalosi.it/en) zorganizowanej przez [Hotel Sielanka nad Pilicą](https://www.sielanka.pl/). Oprócz fantastycznych doznań kulinarno – sommellierskich obudziła ona w nas wspomnienia sprzed kilku lat. Jeśli jesteście ciekawi jakie – zapraszamy do trzeciej części opowieści.
 
 W 2008 roku wybraliśmy się po raz kolejny na wakacje do Włoch (czy pisaliśmy już, że jesteśmy nieuleczalnymi italofilami?). Wybór padł na Toskanię. Oczywiste były “żelazne” punkty: Florencja, Piza, Siena. Ponieważ jednak miłość do włoskiego jedzenia i wina jest jeszcze większa niż uczucie jakim darzymy zabytki, koniecznie chcieliśmy odwiedzić miejsce, gdzie powstaje kultowe wino z *gallo nero* na etykiecie. Szczęśliwie w tym czasie nasza kuzynka pracowała w jednej z winnic w sercu regionu Chianti – w Castellina in Chianti. Jak pamiętacie z poprzedniego wpisu w  XIV w. trzy miejscowości Toskanii – Castellina, Radda i Gaiole zawiązały Ligę Chianti. Nie przypadkiem więc Castellina od wielu lat jest symbolem wszystkiego tego, co ten piękny region może zaoferować turyście.
 
@@ -15,13 +15,13 @@ W 2008 roku wybraliśmy się po raz kolejny na wakacje do Włoch (czy pisaliśmy
 
 *Photo by Giuseppe Mondì on Unsplash*
 
-Samo miasteczko nie jest duże – ot, kilka ulic na krzyż, średniowieczne mury obronne, restauracje, kilka sklepów i zamknięta dla ruchu główna ulica, by miejscowe damy i ich kawalerowie mogli odbywać *passegiata, *czyli tradycyjny wieczorny rytuał spaceru. A wokół pagórkowaty teren pokryty uprawami winorośli i oliwne gaje.
+Samo miasteczko nie jest duże – ot, kilka ulic na krzyż, średniowieczne mury obronne, restauracje, kilka sklepów i zamknięta dla ruchu główna ulica, by miejscowe damy i ich kawalerowie mogli odbywać *passegiata*, czyli tradycyjny wieczorny rytuał spaceru. A wokół pagórkowaty teren pokryty uprawami winorośli i oliwne gaje.
 
 ![](/images/legacy/Castellina-in-Chianti-1200x1793.jpg)
 
 *Photo by Sven Johanson on Unsplash*
 
-Naszym celem była winnica [Rocca](http://www.agriturismorocca.it) należąca do rodziny Viti od lat `70 XX wieku. Nie bez pewnego trudu znaleźliśmy wąską boczną drogę, która przez pole winorośli zaprowadziła nas do typowego toskańskiego domu zbudowanego z kamienia z przylegającą doń winiarnią w której produkowane jest Chianti w dwóch wersjach: Classico DOCG i Classico Riserva DOCG a także Rosso Toscano IGT oraz Supertuscan I’Vallone IGT.
+Naszym celem była winnica [Rocca](http://www.agriturismorocca.it) należąca do rodziny Viti od lat 70. XX wieku. Nie bez pewnego trudu znaleźliśmy wąską boczną drogę, która przez pole winorośli zaprowadziła nas do typowego toskańskiego domu zbudowanego z kamienia z przylegającą doń winiarnią w której produkowane jest Chianti w dwóch wersjach: Classico DOCG i Classico Riserva DOCG a także Rosso Toscano IGT oraz Supertuscan I’Vallone IGT.
 
 ![](/images/legacy/Francja-Włochy-2008-929-1-1200x900.jpg)
 

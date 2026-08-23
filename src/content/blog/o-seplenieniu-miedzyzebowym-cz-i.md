@@ -16,9 +16,7 @@ image: "/images/legacy/Seplenienie-międzyzębowe.jpg"
 
 *Zapraszam do lektury.*
 
-more
-
-**Sygmatyzm międzyzębowy (sigmatismus interdentalis), inaczej seplenienie międzyzębowe, to wada wymowy, która wielokrotnie została już opisana w literaturze logopedycznej (np.: Cieszyńska, Stecko, Demel, Styczek, Wójtowiczowa, Rodak, Pluta-Wojciechowska) i była analizowana przez wielu logopedów. Jest bardzo częstą wadą a jednocześnie jedną z najtrudniejszych do usunięcia, dlatego chcę przedstawić podstawowe informacje na temat przyczyn, objawów i sposobów terapii na podstawie opisu przypadku dziecka przedszkolnego. Ta nieprawidłowość jest wielkim wyzwaniem zarówno dla logopedy, dziecka jak i rodzica. Często wymagana jest terapia równoległa, skojarzona z leczeniem np.: laryngologicznym, ortodontycznym i fizjoterapeutycznym. Istotny jest fakt, że dziecko z tego seplenienia nie wyrośnie, wada sama się nie cofnie!
+**Sygmatyzm międzyzębowy (sigmatismus interdentalis), inaczej seplenienie międzyzębowe, to wada wymowy, która wielokrotnie została już opisana w literaturze logopedycznej (np.: Cieszyńska, Stecko, Demel, Styczek, Wójtowiczowa, Rodak, Pluta-Wojciechowska) i była analizowana przez wielu logopedów. Jest bardzo częstą wadą a jednocześnie jedną z najtrudniejszych do usunięcia, dlatego chcę przedstawić podstawowe informacje na temat przyczyn, objawów i sposobów terapii na podstawie opisu przypadku dziecka przedszkolnego. Ta nieprawidłowość jest wielkim wyzwaniem zarówno dla logopedy, dziecka jak i rodzica. Często wymagana jest terapia równoległa, skojarzona z leczeniem np.: laryngologicznym, ortodontycznym i fizjoterapeutycznym. Istotny jest fakt, że dziecko z tego seplenienia nie wyrośnie, wada sama się nie cofnie!**
 
 OPIS PRZYPADKU
 

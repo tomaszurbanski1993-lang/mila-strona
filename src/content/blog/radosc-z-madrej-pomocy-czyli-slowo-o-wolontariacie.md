@@ -7,7 +7,7 @@ tags: ["Blog"]
 draft: false
 ---
 
-Dzięki uprzejmości Krystiana, ucznia VIII klasy Szkoły Podstawowej nr 2 w Warce, udostępniam Wam, Drodzy Czytelnicy, treść wywiadu, jakiego udzieliłam dzieląc się swoim doświadczeniem jako wolontariuszka akcji Szlachetna Paczka.more
+Dzięki uprzejmości Krystiana, ucznia VIII klasy Szkoły Podstawowej nr 2 w Warce, udostępniam Wam, Drodzy Czytelnicy, treść wywiadu, jakiego udzieliłam dzieląc się swoim doświadczeniem jako wolontariuszka akcji Szlachetna Paczka.
 
 Wywiad jest częścią projektu szkolnego, którego celem jest ukazanie wolontariatu oczami wolontariuszy, przybliżenie tematu i zachęcenie do zostania wolontariuszem. Szlachetny cel.
 

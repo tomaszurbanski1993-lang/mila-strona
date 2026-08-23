@@ -14,7 +14,7 @@ po długiej przerwie wracamy powoli do naszych spotkań. Nie ukrywam, że bardzo
 
 ## LETNIĄ SZKOŁĘ LOGOPEDII
 
-– oczywiście u Dzieciaków na Miłej 😊 more
+– oczywiście u Dzieciaków na Miłej 😊
 
 Z oczywistych względów priorytetem jest bezpieczeństwo i przestrzeganie wymogów sanitarnych, dlatego musimy umówić się na zaakceptowanie pewnych zasad. Oparłam się na wytycznych Ministerstwa Zdrowia i rekomendacjach Polskiego Towarzystwa Logopedycznego. Oto nasze zasady:
 

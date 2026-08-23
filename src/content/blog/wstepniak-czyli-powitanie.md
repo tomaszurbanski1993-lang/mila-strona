@@ -7,7 +7,7 @@ tags: ["Blog"]
 draft: false
 ---
 
-Pierwszy wpis na własnym blogu to pewnego rodzaju przeżycie. Nawet w czasach powszechnego używania portali społecznościowych napisanie czegoś, co będą mogli przeczytać **wszyscy **jest jakąś nowością, dlatego postanowiliśmy, że będzie to nasz wspólny tekst. more
+Pierwszy wpis na własnym blogu to pewnego rodzaju przeżycie. Nawet w czasach powszechnego używania portali społecznościowych napisanie czegoś, co będą mogli przeczytać **wszyscy** jest jakąś nowością, dlatego postanowiliśmy, że będzie to nasz wspólny tekst.
 
 Dlaczego w ogóle decydujemy się na prowadzenie bloga? Okazją jest oczywiście założenie naszej strony internetowej, ale chcemy obydwoje pokazać Wam kawałek nas mniej oficjalnych, prywatnych. Chcemy czasem (zapewne niezbyt systematycznie, niestety) podzielić się naszymi pasjami, emocjami czy fascynacjami. Być może uda nam się niekiedy przekazać jakieś rady – zarówno z naszych zawodowych dziedzin, jak i innych, które wydadzą nam się ważne.
 

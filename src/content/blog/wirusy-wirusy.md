@@ -10,9 +10,7 @@ image: "/images/legacy/wirusy.jpg"
 
 Trudno nie zauważyć, że infekcje wirusowe z grypą na czele stały się dominującym tematem zarówno w mediach, jak i w rozmowach prywatnych. Dorzucę i ja swoje trzy grosze prezentując część wywiadu, jakiego udzieliłem kilka dni temu dziennikarce Polskiej Agencji Prasowej.
 
-more
-
-*„W naszym szpitalu obserwujemy dynamiczny wzrost zakażeń wirusowych. Głównie hospitalizowane są u nas dzieci z grypą oraz z RSV. Mamy niewiele przypadków zakażeń koronawiusem. Ponadto odnotowujemy także dzieci z zakażeniem układu oddechowego spowodowane innymi wirusami” – powiedział lek. Paweł Strus, **kierownik Oddziału Pediatrycznego Mazowieckiego Szpitala Specjalistycznego w Radomiu.*******
+*„W naszym szpitalu obserwujemy dynamiczny wzrost zakażeń wirusowych. Głównie hospitalizowane są u nas dzieci z grypą oraz z RSV. Mamy niewiele przypadków zakażeń koronawiusem. Ponadto odnotowujemy także dzieci z zakażeniem układu oddechowego spowodowane innymi wirusami” – powiedział lek. Paweł Strus, **kierownik Oddziału Pediatrycznego Mazowieckiego Szpitala Specjalistycznego w Radomiu.***
 
 *Jak wskazał, przebieg zakażenia wirusem RSV u dzieci może być różny. Niekiedy w czasie choroby dochodzi do zaostrzenia objawów. Pediatra zaznaczył, że zapalenie oskrzelików może być u bardzo małego dziecka szczególnie niebezpieczne. ”Dzieci mają małe rezerwy oddechowe, więc kiedy rozwija się u nich infekcją atakująca układ oddechowy, mogą wystąpić u nich trudności z samodzielnym oddychaniem. Konieczne jest wówczas wspomaganie tlenowe” – powiedział specjalista.*
 

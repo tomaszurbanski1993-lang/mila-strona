@@ -7,7 +7,7 @@ tags: ["Blog"]
 draft: false
 ---
 
-Zgodnie z obietnicą z wczorajszego wpisu przedstawiam kilka przepisów na potrawy wigilijne. Wszystkie (oprócz piernika staropolskiego, który będzie w tym roku debiutował w mojej kuchni) wielokrotnie wypróbowałam i nieskromnie polecam!more
+Zgodnie z obietnicą z wczorajszego wpisu przedstawiam kilka przepisów na potrawy wigilijne. Wszystkie (oprócz piernika staropolskiego, który będzie w tym roku debiutował w mojej kuchni) wielokrotnie wypróbowałam i nieskromnie polecam!
 
 ### Barszcz wigilijny
 

@@ -9,7 +9,7 @@ draft: false
 
 Rozwój mowy dziecka to skomplikowany i **złożony proces**, na który ma wpływ wiele czynników. Wszystkie dzieci przechodzą te same fazy rozwoju w identycznej kolejności, inne jest tylko tempo rozwoju, które zależy od funkcjonowania układu nerwowego, budowy narządów mowy, słuchu, wzroku oraz warunków środowiskowych i wychowawczych.
 
-moreIstotnym a często bagatelizowanym czynnikiem mającym wpływ na rozwój umiejętności mówienia jest otoczenie (rodzina, przedszkole), w którym dziecko się wychowuje. **Stymulacja otoczenia jest dopełnieniem prawidłowego rozwoju dziecka.**
+Istotnym a często bagatelizowanym czynnikiem mającym wpływ na rozwój umiejętności mówienia jest otoczenie (rodzina, przedszkole), w którym dziecko się wychowuje. **Stymulacja otoczenia jest dopełnieniem prawidłowego rozwoju dziecka.**
 
 Co zatem możemy zrobić aby wspomagać rozwój mowy i udoskonalać kompetencje komunikacyjne?
 

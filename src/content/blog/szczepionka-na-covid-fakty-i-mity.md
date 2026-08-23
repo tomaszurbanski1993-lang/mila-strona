@@ -12,7 +12,7 @@ image: "/images/legacy/infodemic-square-1.jpg"
 
 Parę dni temu napisała do mnie mama – Anna Strus – i powiedziała:
 
-„Jak to jest z tą Astrą? Widziałam badania, że jest mniej skuteczna, niż ta Twoja z Pfizera, koleżanki się wahają i do tego zaczyna być nerwowa atmosfera w gronie nauczycieli”.more
+„Jak to jest z tą Astrą? Widziałam badania, że jest mniej skuteczna, niż ta Twoja z Pfizera, koleżanki się wahają i do tego zaczyna być nerwowa atmosfera w gronie nauczycieli”.
 
 Z medycyną jestem związany zarówno hobbystycznie, jak i (za pół roku) zawodowo. Temat szczepień jest mi bliski, stąd odpisałem mamie, jaka jest obecna wiedza o różnicach w szczepionkach. Uznała, że to dobry pomysł na wpis na bloga. Temat jest obszerny i skomplikowany. Co chwile pojawiają się kolejne statystyki, badania, artykuły. Materiału jest prawie tyle ile w scenariuszu do odcinków mody na sukces. Do tego dochodzą opinie, wywiady, posty na Facebook’u, które często pisane są przez co prawda znane medialnie osoby, ale zupełnie niekompetentne w tym zagadnieniu. W chaosie i szumie informacyjnym trudno dokopać się do faktów.
 
@@ -46,7 +46,7 @@ Parę faktów:
 
 > Nie odnotowano hospitalizacji lub poważnych przypadków COVID-19 w grupie szczepionych Astrą. Świadczy to o tym, że ta szczepionka niezwykle skutecznie chroni przed ciężkim przebiegiem choroby.
 
-*Przykład: w jednym z badań, na 12.174 osoby, które dostały szczepionkę firmy AstraZeneca było 0 hospitalizacji z powodu COVID-19. **Na 11.879 osób w grupie kontrolnej, było 10 hospitalizacji z powodu COVID-19, w tym dwóch pacjentów w stanie zagrożenia życia.*
+*Przykład: w jednym z badań, na 12.174 osoby, które dostały szczepionkę firmy AstraZeneca było 0 hospitalizacji z powodu COVID-19. Na 11.879 osób w grupie kontrolnej, było 10 hospitalizacji z powodu COVID-19, w tym dwóch pacjentów w stanie zagrożenia życia.*
 
 > Niektóre szczepionki, podawane co roku w Polsce, cechuje znacznie niższa skuteczność, niż szczepionek na COVID-19. Przykładem może być szczepionka na gruźlicę, która jest w 50% skuteczna w zakresie ochrony przed gruźlicą.
 
@@ -135,11 +135,7 @@ Im szybciej zaszczepimy jak największy procent populacji, tym szybciej opanujem
 
 Po przeczytaniu powyższych punktów już wiemy, że to nieprawda. Astra została dokładnie przebadana na ogromnej populacji, która cały czas się powiększa. Na szczęście Pan Sławomir Broniarz dość szybko poprawił swoje stanowisko i napisał:
 
-[
-
 ![](/images/legacy/image.png)
-
-](http://logopedawarka.pl/image/)
 
 To świadczy o zasadności kwestionowania zdolności Pana Prezesa do poprawnego analizowania badań naukowych. Niestety ziarno niepewności i obawy zostało zasiane, a wytłumaczenie nie w każdym źródle, opisującym wypowiedź Pana Prezesa, zostało dodane.
 

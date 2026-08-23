@@ -7,25 +7,17 @@ tags: ["Blog"]
 draft: false
 ---
 
-[
-
 ![](/images/legacy/20211013_145259.jpg)
-
-](http://logopedawarka.pl/20211013_145259/)[
 
 ![](/images/legacy/Elektrostymulacja-zdjęcie.jpg)
 
-](http://logopedawarka.pl/elektrostymulacja-zdjecie/)
-
 **Elektrostymulacja w logopedii**
 
-Elektrostymulacja jest innowacyjną, nowoczesną metodą w terapii logopedycznej. Stymulacja nerwowo-mięśniowa od dawna znalazła szerokie zastosowanie w fizjoterapii różnorodnych schorzeń, zaś obecnie stosowana jest z powodzeniem w leczeniu wielu zaburzeń mowy dzieci i dorosłych, gdyż efektywnie przyspiesza i wzmacnia wyniki terapii logopedycznej. Elektrostymulacja zmusza mięśnie znajdujące się w aparacie artykulacyjnym do intensywnego treningu, a tym samym zdecydowanie usprawnia realizację poszczególnych głosek. Przychodzi ona z pomocą w sytuacji gdy terapia z różnych przyczyn nie daje oczekiwanych postępów i pomimo licznych ćwiczeń pacjenci nie są wstanie wypracować samodzielnie pełnej sprawności narządów artykulacyjnych. Elektrostymulacja oddziałuje na cały aparat artykulacyjny człowieka przez co wspomaga jego działanie. Jest dziedziną intensywnie rozwijającą się, o ogromnym potencjale.more
+Elektrostymulacja jest innowacyjną, nowoczesną metodą w terapii logopedycznej. Stymulacja nerwowo-mięśniowa od dawna znalazła szerokie zastosowanie w fizjoterapii różnorodnych schorzeń, zaś obecnie stosowana jest z powodzeniem w leczeniu wielu zaburzeń mowy dzieci i dorosłych, gdyż efektywnie przyspiesza i wzmacnia wyniki terapii logopedycznej. Elektrostymulacja zmusza mięśnie znajdujące się w aparacie artykulacyjnym do intensywnego treningu, a tym samym zdecydowanie usprawnia realizację poszczególnych głosek. Przychodzi ona z pomocą w sytuacji gdy terapia z różnych przyczyn nie daje oczekiwanych postępów i pomimo licznych ćwiczeń pacjenci nie są wstanie wypracować samodzielnie pełnej sprawności narządów artykulacyjnych. Elektrostymulacja oddziałuje na cały aparat artykulacyjny człowieka przez co wspomaga jego działanie. Jest dziedziną intensywnie rozwijającą się, o ogromnym potencjale.
 
 Należy jednak pamiętać, że elektrostymulacja  nie jest zamiennikiem terapii logopedycznej, lecz jej uzupełnieniem, co oznacza, że proces terapeutyczny nie powinien ograniczać się wyłącznie do zabiegów elektrostymulacji.
 
 Ze względu na fakt, że jest to stosunkowo młoda technika w logopedii i wymaga zakupu specjalistycznego sprzętu oraz uzyskania odpowiedniego certyfikatu potwierdzającego posiadane umiejętności i kwalifikacje jest ona realizowana tylko w nielicznych gabinetach. Tym bardziej jest mi miło poinformować, że takie zabiegi będą dostępne już w grudniu w Gabinecie Terapii Mowy – Dzieciaki na Miłej.
-
-****
 
 **Elektrostymulacja, co to takiego?**
 
