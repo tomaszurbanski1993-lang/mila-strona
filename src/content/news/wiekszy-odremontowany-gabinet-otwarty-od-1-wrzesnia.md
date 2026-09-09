@@ -3,6 +3,8 @@ title: "Większy, odremontowany gabinet otwarty od 1 września"
 description: "Z przyczyn technicznych otwarcie gabinetu logopedycznego po wakacyjnej przerwie odbędzie się nieco później niż planowaliśmy – startujemy 1 września 2025. W tym…"
 date: "2025-08-13"
 author: anna-i-pawel
+image: "/images/site/anna-pawel-hero.jpg"
+imageAlt: "Anna i Paweł Strusowie, specjaliści Dzieciaków na Miłej"
 tags: ["Aktualności"]
 draft: false
 ---

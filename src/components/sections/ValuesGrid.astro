@@ -22,7 +22,7 @@ import Container from "../ui/Container.astro";
       {
         values.map((value) => (
           <article class:list={["value-card", `value-card--${value.tone}`]}>
-            <span class="value-card__mark" aria-hidden="true">{value.mark}</span>
+            <span class="value-card__mark" aria-hidden="true"></span>
             <h3>{value.title}</h3>
             <p>{value.description}</p>
           </article>

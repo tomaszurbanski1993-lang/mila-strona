@@ -7,6 +7,8 @@ const baseSchema = z.object({
   date: z.coerce.date(),
   author: z.enum(authorIds).optional(),
   image: z.string().optional(),
+  imageAlt: z.string().optional(),
+  imageFit: z.enum(["cover", "contain"]).optional(),
   tags: z.array(z.string()).optional(),
   draft: z.boolean().optional(),
 });

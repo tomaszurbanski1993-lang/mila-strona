@@ -23,30 +23,42 @@
 
 .home-hero h1 {
   max-width: 16ch;
-  font-size: clamp(2.8rem, 5.2vw, 5rem);
+  font-size: clamp(2.35rem, 4.8vw, 4.15rem);
 }
 
-.home-hero h1 em {
-  position: relative;
-  color: var(--color-purple);
-  font-weight: inherit;
+.home-hero__values {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem 1.15rem;
+  margin: 1.5rem 0 0;
+  color: var(--color-purple-dark);
+  font-size: clamp(0.78rem, 1.4vw, 0.92rem);
+  font-weight: 850;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
-.home-hero h1 em::after {
-  position: absolute;
-  right: 0.15em;
-  bottom: 0.02em;
-  left: 0.05em;
-  z-index: -1;
-  height: 0.15em;
-  border-radius: 99px;
-  background: var(--color-yellow);
+.home-hero__values span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.home-hero__values span::before {
+  width: 0.62rem;
+  height: 0.62rem;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: var(--color-pink);
   content: "";
-  transform: rotate(-1.5deg);
 }
 
-.hero-keep {
-  white-space: nowrap;
+.home-hero__values span:nth-child(2)::before {
+  background: var(--color-teal);
+}
+
+.home-hero__values span:nth-child(3)::before {
+  background: var(--color-yellow);
 }
 
 .home-hero__lead {
@@ -243,9 +255,6 @@
   place-items: center;
   margin-bottom: 2rem;
   border-radius: 0.9rem;
-  color: #fff;
-  font-size: 0.75rem;
-  font-weight: 900;
 }
 
 .value-card--pink .value-card__mark {

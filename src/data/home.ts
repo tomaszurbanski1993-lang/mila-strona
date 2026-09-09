@@ -27,19 +27,16 @@ export const practices = [
 
 export const values = [
   {
-    mark: "01",
     title: "Uważność",
     description: "Patrzymy na potrzeby konkretnego dziecka i jego rodziny, nie tylko na pojedynczy objaw.",
     tone: "pink",
   },
   {
-    mark: "02",
     title: "Doświadczenie",
     description: "Łączymy wieloletnią praktykę z aktualną wiedzą i metodami dobranymi do realnej sytuacji.",
     tone: "teal",
   },
   {
-    mark: "03",
     title: "Jasna komunikacja",
     description: "Wyjaśniamy rozpoznanie, zalecenia i kolejne kroki spokojnym, zrozumiałym językiem.",
     tone: "purple",
@@ -48,24 +45,24 @@ export const values = [
 
 export const featuredBlog = {
   type: "Z bloga",
-  title: "Jak przygotować święta i nie być zmęczonym, a szczęśliwym?",
+  title: "Zasady bezpieczeństwa dla dzieciaków na Miłej",
   description:
-    "O rodzinnych przygotowaniach, małych tradycjach i sposobach na to, by w ważnym czasie zostało miejsce na bliskość.",
-  date: "20 grudnia 2024",
-  href: "/blog/jak-przygotowac-swieta-i-nie-byc-zmeczonym-a-szczesliwym",
+    "Sześć prostych zasad, które pomagają dzieciom czuć się bezpiecznie podczas wizyty w obu gabinetach.",
+  date: "10 sierpnia 2026",
+  href: "/blog/zasady-bezpieczenstwa-dla-dzieciakow-na-milej",
 } as const;
 
 export const latestNews = [
+  {
+    title: "Nowe metody terapii w gabinecie logopedycznym",
+    description: "Od września terapia będzie mogła uwzględniać także masaż i terapię manualną, mioterapię, ocenę funkcjonalną słuchu oraz terapię ręki.",
+    date: "23 stycznia 2026",
+    href: "/aktualnosci/nowe-metody-terapii-w-gabinecie-logopedycznym",
+  },
   {
     title: "Większy, odremontowany gabinet",
     description: "Krótka informacja organizacyjna dotycząca gabinetu logopedycznego.",
     date: "13 sierpnia 2025",
     href: "/aktualnosci/wiekszy-odremontowany-gabinet-otwarty-od-1-wrzesnia",
-  },
-  {
-    title: "Magnetyczne chwile w poczekalni",
-    description: "Nowa tablica magnetyczna pomaga najmłodszym przyjemniej spędzić czas przed wizytą.",
-    date: "5 listopada 2024",
-    href: "/aktualnosci/magnetyczne-chwile-w-poczekalni",
   },
 ] as const;

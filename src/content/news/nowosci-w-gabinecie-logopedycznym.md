@@ -3,6 +3,8 @@ title: "Nowości w gabinecie logopedycznym"
 description: "Od września 2023 r. rozszerzamy ofertę gabinetu logopedycznego. Szczegóły w zakładce “Logopeda“"
 date: "2023-07-27"
 author: admin
+image: "/images/site/elektrostymulacja-detail.jpg"
+imageAlt: "Akcesoria wykorzystywane podczas terapii logopedycznej"
 tags: ["Aktualności"]
 draft: false
 ---

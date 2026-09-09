@@ -30,6 +30,16 @@ collections:
             - { label: Anna i Paweł, value: anna-i-pawel }
             - { label: Administrator, value: admin }
       - { label: Obraz, name: image, widget: public-image, required: false }
+      - { label: Opis obrazu, name: imageAlt, widget: string, required: false }
+      -
+          label: Dopasowanie obrazu
+          name: imageFit
+          widget: select
+          required: false
+          default: cover
+          options:
+            - { label: Kadruj, value: cover }
+            - { label: Pokaż w całości, value: contain }
       - { label: Tagi, name: tags, widget: list, required: false }
       - {
           label: Wersja robocza,
@@ -61,6 +71,16 @@ collections:
             - { label: Anna i Paweł, value: anna-i-pawel }
             - { label: Administrator, value: admin }
       - { label: Obraz, name: image, widget: public-image, required: false }
+      - { label: Opis obrazu, name: imageAlt, widget: string, required: false }
+      -
+          label: Dopasowanie obrazu
+          name: imageFit
+          widget: select
+          required: false
+          default: cover
+          options:
+            - { label: Kadruj, value: cover }
+            - { label: Pokaż w całości, value: contain }
       - { label: Tagi, name: tags, widget: list, required: false }
       - {
           label: Wersja robocza,

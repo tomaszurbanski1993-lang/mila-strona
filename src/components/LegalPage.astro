@@ -8,9 +8,18 @@ interface Props {
   description: string;
   eyebrow: string;
   activePath: string;
+  breadcrumbLabel?: string;
+  contentLabel?: string;
 }
 
-const { title, description, eyebrow, activePath } = Astro.props;
+const {
+  title,
+  description,
+  eyebrow,
+  activePath,
+  breadcrumbLabel = "RODO",
+  contentLabel = "Treść klauzuli informacyjnej",
+} = Astro.props;
 ---
 
 <BaseLayout title={`${title} — Dzieciaki na Miłej`} description={description} activePath={activePath}>
@@ -18,7 +27,7 @@ const { title, description, eyebrow, activePath } = Astro.props;
     <section class="legal-hero" aria-labelledby="legal-title">
       <Container>
         <nav class="legal-breadcrumb" aria-label="Okruszki">
-          <a href="/">Strona główna</a><span aria-hidden="true">/</span><span>RODO</span>
+          <a href="/">Strona główna</a><span aria-hidden="true">/</span><span>{breadcrumbLabel}</span>
         </nav>
         <p class="eyebrow">{eyebrow}</p>
         <h1 id="legal-title">{title}</h1>
@@ -26,7 +35,7 @@ const { title, description, eyebrow, activePath } = Astro.props;
       </Container>
     </section>
 
-    <section class="section legal-content" aria-label="Treść klauzuli informacyjnej">
+    <section class="section legal-content" aria-label={contentLabel}>
       <Container>
         <article class="legal-prose">
           <slot />

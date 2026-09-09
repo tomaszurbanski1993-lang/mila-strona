@@ -284,6 +284,356 @@ export const speechServiceDetails = [
       },
     ],
   },
+  {
+    slug: "masaz-logopedyczny-i-terapia-manualna",
+    tone: "pink",
+    eyebrow: "Holistyczne wsparcie logopedyczne",
+    title: "Masaż logopedyczny i terapia manualna",
+    shortTitle: "Masaż i terapia manualna",
+    description:
+      "Masaż logopedyczny, techniki terapii manualnej i wybrane elementy osteopatii jako uzupełnienie terapii mowy, połykania i oddychania.",
+    intro:
+      "Łączę pracę lokalną w obrębie aparatu mowy z oddziaływaniem na struktury, które mogą wpływać na mowę, połykanie i oddychanie.",
+    image: "/images/site/anna-strus.jpg",
+    imageAlt: "Anna Strus, logopeda prowadząca terapię manualną",
+    imageWidth: 933,
+    imageHeight: 1400,
+    badge: "MT",
+    facts: [
+      { label: "Zakres", value: "twarz, jama ustna i szyja" },
+      { label: "Podejście", value: "lokalne i całościowe" },
+      { label: "Plan", value: "dobierany indywidualnie" },
+    ],
+    overviewTitle: "Praca z napięciem, ruchem i czuciem",
+    overview: [
+      "W mojej pracy łączę masaż logopedyczny, techniki terapii manualnej oraz wybrane elementy osteopatii. Pozwala to działać zarówno lokalnie na aparat mowy, jak i na struktury, które mogą wpływać na mowę, połykanie i oddychanie.",
+      "Masaż logopedyczny przygotowuje i usprawnia mięśnie twarzy, języka, warg oraz żuchwy. Służy poprawie napięcia, ruchomości i czucia tkanek, a także ułatwia wykonywanie ćwiczeń artykulacyjnych i oddechowych.",
+      "Terapia manualna obejmuje również obszary oddziałujące na aparat mowy pośrednio, między innymi stawy skroniowo-żuchwowe, mięśnie szyi i obręcz barkową. Celem jest zmniejszenie napięć i tworzenie lepszych warunków biomechanicznych do mówienia, połykania oraz oddychania.",
+    ],
+    signalsTitle: "Terapia może obejmować pracę nad",
+    signalsLead:
+      "Zakres i kolejność technik wynikają z badania funkcjonalnego oraz aktualnych potrzeb pacjenta.",
+    signals: [
+      "napięciem i ruchomością mięśni twarzy, języka, warg i żuchwy",
+      "czuciem tkanek w obrębie aparatu mowy",
+      "stawami skroniowo-żuchwowymi",
+      "mięśniami szyi i obręczą barkową",
+      "koordynacją oddechu, połykania i artykulacji",
+      "przygotowaniem do ćwiczeń logopedycznych",
+    ],
+    processTitle: "Jak wygląda proces terapii?",
+    processLead:
+      "Poszczególne elementy łączę w jednej terapii tylko wtedy, gdy wynikają z oceny i wspierają ustalony cel logopedyczny.",
+    process: [
+      {
+        number: "01",
+        title: "Ocena funkcjonalna",
+        description:
+          "Oceniam napięcie i ustawienie struktur — od twarzy po szyję i obręcz barkową.",
+      },
+      {
+        number: "02",
+        title: "Terapia manualna",
+        description:
+          "Dobieram pracę manualną do rozpoznanych napięć i ograniczeń ruchomości.",
+      },
+      {
+        number: "03",
+        title: "Masaż logopedyczny",
+        description:
+          "Przygotowuję mięśnie aparatu mowy do wykonywania zaplanowanych funkcji i ćwiczeń.",
+      },
+      {
+        number: "04",
+        title: "Ćwiczenia logopedyczne",
+        description:
+          "Utrwalamy uzyskane efekty w funkcji mowy, połykania i oddychania.",
+      },
+    ],
+    noteTitle: "Rola elementów osteopatii",
+    note:
+      "W Polsce osteopatia nie jest formalnie uznana za metodę medyczną. W gabinecie wykorzystuję wyłącznie wybrane techniki oparte na pracy manualnej oraz wiedzy z anatomii, fizjologii i biomechaniki — jako wsparcie procesu logopedycznego, a nie jako leczenie chorób.",
+    faq: [
+      {
+        question: "Czy masaż logopedyczny jest osobną terapią?",
+        answer:
+          "Może być jednym z elementów planu. Najczęściej łączę go z ćwiczeniami logopedycznymi, aby wykorzystać poprawę ruchomości, czucia i napięcia w konkretnej funkcji.",
+      },
+      {
+        question: "Jakich obszarów może dotyczyć terapia manualna?",
+        answer:
+          "W zależności od potrzeb praca może obejmować twarz, jamę ustną, stawy skroniowo-żuchwowe, mięśnie szyi oraz obręcz barkową.",
+      },
+      {
+        question: "Czy każda wizyta przebiega tak samo?",
+        answer:
+          "Nie. Techniki, ich kolejność i intensywność dobieram do aktualnego badania, celu terapii oraz tolerancji pacjenta.",
+      },
+    ],
+  },
+  {
+    slug: "audiologia-w-logopedii",
+    tone: "teal",
+    eyebrow: "Słuch i rozwój mowy",
+    title: "Audiologia w logopedii",
+    shortTitle: "Audiologia w logopedii",
+    description:
+      "Ocena funkcjonalna słuchu i uwzględnienie mechanizmów słuchowych w diagnozie oraz planowaniu terapii logopedycznej.",
+    intro:
+      "Prawidłowa ocena słuchu pomaga lepiej rozumieć trudności z mową, artykulacją i odbiorem języka oraz świadomie zaplanować dalszą terapię.",
+    image: "/images/site/anna-neuroflow.jpg",
+    imageAlt: "Anna Strus podczas pracy z materiałem wykorzystywanym w treningu słuchowym",
+    imageWidth: 1200,
+    imageHeight: 1800,
+    badge: "AUD",
+    facts: [
+      { label: "Obszar", value: "słuch i rozumienie mowy" },
+      { label: "Narzędzia", value: "ocena i trening" },
+      { label: "Współpraca", value: "laryngolog i audiolog" },
+    ],
+    overviewTitle: "Słuch jest podstawą rozwoju mowy",
+    overview: [
+      "Audiologia to nauka o słuchu i jego mechanizmach, a także o zmyśle równowagi. Słuch i równowaga są związane z działaniem ucha wewnętrznego.",
+      "W codziennej pracy logopedy wiedza audiologiczna jest ważna, ponieważ diagnoza i terapia logopedyczna w dużej mierze zależą od prawidłowej oceny słuchu oraz rozumienia mechanizmów słuchowych.",
+      "Uwzględnienie oceny słuchu pomaga interpretować wyniki badań dodatkowych, takich jak audiometria tonalna, tympanometria, otoemisja czy ABR, a w razie potrzeby kierować pacjenta na konsultację laryngologiczną lub audiologiczną.",
+    ],
+    signalsTitle: "Ocena słuchu pomaga, gdy pacjent",
+    signalsLead:
+      "Logopeda może jako pierwszy zauważyć sygnały, które wymagają dalszej diagnostyki słuchu.",
+    signals: [
+      "ma trudności z rozwojem mowy lub rozumieniem języka",
+      "nie reaguje na ciche dźwięki",
+      "popełnia błędy artykulacyjne mogące wiązać się z niedosłuchem",
+      "potrzebuje dopasowania terapii do wyników badań słuchu",
+      "wymaga ćwiczeń rozwijających percepcję słuchową",
+      "doświadcza pogorszenia słyszenia lub nawracających problemów z uszami",
+    ],
+    processTitle: "Jak wykorzystuję audiologię w terapii?",
+    processLead:
+      "Ocena funkcjonalna nie zastępuje pełnej diagnostyki medycznej, ale pomaga właściwie ukierunkować pracę i współpracę ze specjalistami.",
+    process: [
+      {
+        number: "01",
+        title: "Wywiad i obserwacja",
+        description:
+          "Zbieram informacje o rozwoju mowy, reakcjach na dźwięki i dotychczasowych trudnościach.",
+      },
+      {
+        number: "02",
+        title: "Analiza badań",
+        description:
+          "Uwzględniam aktualne wyniki badań słuchu i wskazania innych specjalistów.",
+      },
+      {
+        number: "03",
+        title: "Dostosowanie warunków",
+        description:
+          "W razie potrzeby modyfikuję sposób komunikacji, miejsce pracy i wykorzystywane wsparcie słuchowe.",
+      },
+      {
+        number: "04",
+        title: "Trening słuchowy",
+        description:
+          "Dobieram ćwiczenia rozwijające percepcję słuchową i wspomagające rozwój mowy.",
+      },
+    ],
+    noteTitle: "Kiedy potrzebna jest konsultacja specjalistyczna?",
+    note:
+      "Podejrzenie ubytku słuchu, nawracające wysiękowe zapalenia ucha lub niepokojące wyniki obserwacji wymagają diagnostyki u lekarza laryngologa albo audiologa. Ocena logopedyczna nie zastępuje badania słuchu.",
+    faq: [
+      {
+        question: "Dlaczego słuch ma znaczenie dla artykulacji?",
+        answer:
+          "Dziecko uczy się mowy między innymi poprzez odbieranie i różnicowanie dźwięków. Nieprawidłowe słyszenie może utrudniać rozwój wymowy i rozumienie języka.",
+      },
+      {
+        question: "Czy logopeda może rozpoznać niedosłuch?",
+        answer:
+          "Logopeda może zauważyć niepokojące objawy i zasugerować dalsze badania, ale diagnozę słuchu przeprowadza właściwy specjalista.",
+      },
+      {
+        question: "Jak zmienia się terapia przy problemach ze słuchem?",
+        answer:
+          "Plan może obejmować trening słuchowy, ćwiczenia percepcji oraz dostosowanie warunków pracy, na przykład bliższe siedzenie, wyraźniejszą mowę lub odpowiednie systemy wspomagające.",
+      },
+    ],
+  },
+  {
+    slug: "terapia-miofunkcjonalna",
+    tone: "yellow",
+    eyebrow: "Mioterapia w logopedii",
+    title: "Terapia miofunkcjonalna",
+    shortTitle: "Terapia miofunkcjonalna",
+    description:
+      "Ćwiczenia mięśni ustno-twarzowych oraz funkcji oddychania, połykania i żucia jako element terapii logopedycznej.",
+    intro:
+      "Mioterapia służy usprawnianiu mięśni i funkcji układu oralnego, które są ważne dla wymowy, połykania, oddychania i zgryzu.",
+    image: "/images/site/anna-karmienie.jpg",
+    imageAlt: "Anna Strus podczas pracy z pomocami wykorzystywanymi w terapii funkcji oralnych",
+    imageWidth: 1400,
+    imageHeight: 933,
+    badge: "MIO",
+    facts: [
+      { label: "Obszar", value: "mięśnie ustno-twarzowe" },
+      { label: "Funkcje", value: "oddech, żucie i połykanie" },
+      { label: "Współpraca", value: "opieka interdyscyplinarna" },
+    ],
+    overviewTitle: "Terapia mięśni i funkcji oralnych",
+    overview: [
+      "Mioterapia jest formą oddziaływania terapeutycznego służącą usprawnianiu mięśni mimicznych oraz przeciwdziałaniu zaburzeniom układu oralnego lub ograniczaniu ich skutków.",
+      "Terapia miofunkcjonalna stanowi część terapii logopedycznej. Ma szczególne znaczenie przy trudnościach związanych z mową, połykaniem, oddychaniem i zgryzem.",
+      "Praca może obejmować mięśnie warg, języka, policzków, żuchwy i podniebienia, regulację napięcia mięśniowego oraz kształtowanie prawidłowych wzorców oddychania, połykania i żucia.",
+    ],
+    signalsTitle: "Terapia może być pomocna dla",
+    signalsLead:
+      "O zakresie pracy decyduje indywidualna ocena funkcji ustno-twarzowych i potrzeb pacjenta.",
+    signals: [
+      "dzieci z wadami wymowy lub opóźnionym rozwojem mowy",
+      "osób z trudnościami w połykaniu",
+      "pacjentów z wadami zgryzu",
+      "osób oddychających nawykowo przez usta",
+      "dzieci z nieprawidłowym napięciem w strefie ustno-twarzowej",
+      "pacjentów przygotowujących się do leczenia ortodontycznego",
+      "osób przed i po zabiegu podcięcia wędzidełka",
+    ],
+    processTitle: "Na czym polega mioterapia?",
+    processLead:
+      "Ćwiczenia są dobierane do rozpoznanej funkcji i mogą zmieniać się wraz z postępami terapii.",
+    process: [
+      {
+        number: "01",
+        title: "Ocena funkcji",
+        description:
+          "Sprawdzam sposób oddychania, połykania i żucia oraz pracę mięśni ustno-twarzowych.",
+      },
+      {
+        number: "02",
+        title: "Ćwiczenia mięśniowe",
+        description:
+          "Wzmacniamy i koordynujemy pracę warg, języka, policzków, żuchwy i podniebienia.",
+      },
+      {
+        number: "03",
+        title: "Regulacja napięcia",
+        description:
+          "Pracujemy nad napięciem mięśniowym potrzebnym do prawidłowej wymowy, połykania i oddychania.",
+      },
+      {
+        number: "04",
+        title: "Utrwalenie wzorców",
+        description:
+          "Ćwiczymy prawidłowe wzorce oddychania, połykania i żucia w codziennych funkcjach.",
+      },
+    ],
+    noteTitle: "Współpraca z innymi specjalistami",
+    note:
+      "W przypadku wad zgryzu, trudności z oddychaniem lub innych złożonych problemów terapia może wymagać ścisłej współpracy z ortodontą, fizjoterapeutą, laryngologiem albo innym specjalistą.",
+    faq: [
+      {
+        question: "Czy mioterapia dotyczy wyłącznie wymowy?",
+        answer:
+          "Nie. Obejmuje również funkcje ważne dla mowy i zgryzu, takie jak oddychanie, połykanie, żucie oraz pozycja spoczynkowa języka i warg.",
+      },
+      {
+        question: "Czy terapia może wspierać leczenie ortodontyczne?",
+        answer:
+          "Tak, jeśli ocena wykaże nieprawidłowe funkcje jamy ustnej. Plan warto wtedy uzgodnić z ortodontą prowadzącym leczenie.",
+      },
+      {
+        question: "Czy pracuje się także przed i po podcięciu wędzidełka?",
+        answer:
+          "Może to być część przygotowania i opieki po zabiegu, ale zakres ćwiczeń ustala się indywidualnie, z uwzględnieniem zaleceń osoby wykonującej zabieg.",
+      },
+    ],
+  },
+  {
+    slug: "terapia-reki-i-stopy",
+    tone: "teal",
+    eyebrow: "Baza ruchowa rozwoju mowy",
+    title: "Terapia ręki i stopy w logopedii",
+    shortTitle: "Terapia ręki i stopy",
+    description:
+      "Ćwiczenia stóp, postawy, motoryki małej i integracji sensorycznej jako wsparcie rozwoju mowy oraz artykulacji.",
+    intro:
+      "Rozwój mowy ściśle wiąże się z rozwojem motorycznym. Sprawność stóp i dłoni pomaga budować bazę posturalno-ruchową potrzebną do oddychania, fonacji i artykulacji.",
+    image: "/images/site/anna-strus.jpg",
+    imageAlt: "Anna Strus, logopeda wykorzystująca ćwiczenia ruchowe w terapii",
+    imageWidth: 933,
+    imageHeight: 1400,
+    badge: "R+S",
+    facts: [
+      { label: "Baza", value: "postawa i stabilizacja" },
+      { label: "Precyzja", value: "motoryka dłoni" },
+      { label: "Integracja", value: "ruch i czucie" },
+    ],
+    overviewTitle: "Od stabilnej postawy do precyzyjnej mowy",
+    overview: [
+      "Rozwój mowy nie jest procesem izolowanym — ściśle wiąże się z ogólnym rozwojem motorycznym dziecka. Zarówno sprawność stóp, jak i rąk mają znaczenie dla tworzenia bazy posturalno-ruchowej, na której opierają się artykulacja, oddech i fonacja.",
+      "Prawidłowa praca stóp wspiera równowagę, stabilność oraz ustawienie miednicy, kręgosłupa i głowy. Stabilne podparcie pomaga też w swobodnej pracy przepony i klatki piersiowej potrzebnej do wydobywania głosu.",
+      "Ćwiczenia precyzyjnych ruchów dłoni rozwijają planowanie sekwencji ruchowych. Zadania z różnymi fakturami, temperaturami i kształtami dostarczają również bodźców sensorycznych, które można wykorzystywać w szerszym planie terapii.",
+    ],
+    signalsTitle: "Praca może rozwijać",
+    signalsLead:
+      "Ćwiczenia ruchowe są dobierane do możliwości dziecka i łączone z konkretnym celem logopedycznym.",
+    signals: [
+      "równowagę, stabilizację i prawidłową postawę",
+      "świadomość ciała i czucie głębokie",
+      "koordynację oddechu, fonacji i artykulacji",
+      "precyzję ruchów dłoni",
+      "planowanie i wykonywanie sekwencji ruchowych",
+      "integrację bodźców dotykowych i sensorycznych",
+      "płynność oraz jakość mowy",
+    ],
+    processTitle: "Jak łączymy pracę ręki, stopy i mowy?",
+    processLead:
+      "Dziecko rozwija się od ruchów całego ciała do coraz bardziej precyzyjnych działań, dlatego ćwiczenia można układać w naturalnej kolejności.",
+    process: [
+      {
+        number: "01",
+        title: "Stabilna baza",
+        description:
+          "Ćwiczenia stóp i postawy wspierają równowagę oraz swobodne ustawienie całego ciała.",
+      },
+      {
+        number: "02",
+        title: "Ruch i czucie",
+        description:
+          "Aktywności ruchowe angażują czucie dotykowe, głębokie i układ przedsionkowy.",
+      },
+      {
+        number: "03",
+        title: "Precyzja dłoni",
+        description:
+          "Nawlekanie, wycinanie i podobne zadania uczą dokładności oraz planowania sekwencji.",
+      },
+      {
+        number: "04",
+        title: "Integracja z mową",
+        description:
+          "Łączymy ruch z ćwiczeniami oddechu, fonacji, artykulacji i płynności mowy.",
+      },
+    ],
+    noteTitle: "Rozwój od ogółu do szczegółu",
+    note:
+      "W naturalnym rozwoju najpierw doskonali się motoryka duża, a później motoryka mała. Mowa jest bardzo precyzyjną formą aktywności ruchowej, dlatego może korzystać z solidnej bazy ruchowej i sensorycznej.",
+    faq: [
+      {
+        question: "Jaki związek ma stopa z rozwojem mowy?",
+        answer:
+          "Stopa wspiera stabilizację, równowagę i ustawienie ciała. Taka baza ułatwia swobodną pracę oddechową oraz precyzyjne ustawienie głowy i narządów mowy.",
+      },
+      {
+        question: "Dlaczego ćwiczenia dłoni pojawiają się w terapii logopedycznej?",
+        answer:
+          "Zadania manualne rozwijają precyzję i planowanie kolejnych ruchów. Te umiejętności można następnie łączyć z sekwencjami dźwięków i sylab.",
+      },
+      {
+        question: "Czy ręka i stopa są ćwiczone jednocześnie?",
+        answer:
+          "Mogą być. Zadania angażujące ręce i stopy równocześnie pozwalają łączyć równowagę, planowanie ruchu, czucie oraz kontrolę oddechu w jednym ćwiczeniu.",
+      },
+    ],
+  },
 ] as const satisfies readonly SpeechServiceDetail[];
 
 export const getSpeechService = (slug: string) =>

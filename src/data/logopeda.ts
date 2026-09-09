@@ -47,6 +47,30 @@ export const speechTherapyServices = [
     description: "Praca nad funkcjami jamy ustnej przed leczeniem i w jego trakcie.",
     href: null,
   },
+  {
+    number: "09",
+    title: "Masaż logopedyczny",
+    description: "Masaż, terapia manualna i wybrane elementy osteopatii wspierające mowę, połykanie oraz oddychanie.",
+    href: "/logopeda/masaz-logopedyczny-i-terapia-manualna",
+  },
+  {
+    number: "10",
+    title: "Audiologia w logopedii",
+    description: "Ocena funkcjonalna słuchu i świadome uwzględnienie mechanizmów słuchowych w planowaniu terapii mowy.",
+    href: "/logopeda/audiologia-w-logopedii",
+  },
+  {
+    number: "11",
+    title: "Terapia miofunkcjonalna",
+    description: "Ćwiczenia mięśni ustno-twarzowych wspierające prawidłowe oddychanie, połykanie, żucie i artykulację.",
+    href: "/logopeda/terapia-miofunkcjonalna",
+  },
+  {
+    number: "12",
+    title: "Terapia ręki i stopy w logopedii",
+    description: "Praca nad bazą ruchową, równowagą i precyzją dłoni jako wsparcie rozwoju mowy.",
+    href: "/logopeda/terapia-reki-i-stopy",
+  },
 ] as const;
 
 export const firstVisitSteps = [

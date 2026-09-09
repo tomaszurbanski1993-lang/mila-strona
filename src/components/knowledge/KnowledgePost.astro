@@ -7,6 +7,8 @@ interface Props {
   description: string;
   date: Date;
   image?: string;
+  imageAlt?: string;
+  imageFit?: "cover" | "contain";
   tags?: string[];
   author?: string;
   eyebrow: string;
@@ -14,7 +16,7 @@ interface Props {
   backLabel: string;
 }
 
-const { title, description, date, image, tags = [], author, eyebrow, backHref, backLabel } = Astro.props;
+const { title, description, date, image, imageAlt = "", imageFit = "cover", tags = [], author, eyebrow, backHref, backLabel } = Astro.props;
 const normalizedImage = image?.replace(/^\/public(?=\/)/, "");
 const formattedDate = date.toLocaleDateString("pl-PL", {
   day: "numeric",
@@ -43,8 +45,8 @@ const formattedDate = date.toLocaleDateString("pl-PL", {
     </header>
 
     {normalizedImage && (
-      <Container class="post-cover">
-        <PublicImage src={normalizedImage} alt="" loading="lazy" />
+      <Container class:list={["post-cover", { "post-cover--contain": imageFit === "contain" }]}>
+        <PublicImage src={normalizedImage} alt={imageAlt} loading="lazy" />
       </Container>
     )}
 

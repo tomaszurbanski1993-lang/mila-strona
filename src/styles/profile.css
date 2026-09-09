@@ -72,6 +72,7 @@
 
 .profile-hero__copy h1 {
   max-width: 10ch;
+  color: var(--color-purple);
 }
 
 .profile-role {
