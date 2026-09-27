@@ -4,7 +4,7 @@ export const site = {
   name: "Dzieciaki na Miłej",
   shortDescription: "Logopedia i pediatria w Warce",
   address: contact.address,
-  mapUrl: "https://www.google.com/maps/search/?api=1&query=Dzieciaki%20na%20Mi%C5%82ej%20Warka",
+  mapUrl: "https://www.google.com/maps/search/?api=1&query=Mi%C5%82a%2012%2C%2005-660%20Warka",
   social: contact.social,
   practices: {
     logopeda: {

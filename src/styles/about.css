@@ -101,17 +101,20 @@
   background: var(--color-soft);
 }
 
-.about-emotions__grid article > span {
-  display: grid;
-  width: 2.75rem;
-  height: 2.75rem;
-  place-items: center;
-  margin-bottom: 1.5rem;
-  border-radius: 50%;
-  background: var(--color-purple-soft);
+.about-emotions__icon {
+  display: block;
+  margin-bottom: 1rem;
+  color: var(--color-pink);
+  font-size: 1.65rem;
+  line-height: 1;
+}
+
+.about-emotions__grid article:nth-child(2) .about-emotions__icon {
+  color: var(--color-teal);
+}
+
+.about-emotions__grid article:nth-child(3) .about-emotions__icon {
   color: var(--color-purple);
-  font-size: 0.72rem;
-  font-weight: 850;
 }
 
 .about-emotions__grid h3 {
@@ -124,40 +127,6 @@
   color: var(--color-muted);
   font-size: 0.94rem;
   line-height: 1.75;
-}
-
-.about-hero__image p {
-  position: absolute;
-  right: 1.2rem;
-  bottom: 1.2rem;
-  display: grid;
-  min-width: 9rem;
-  margin: 0;
-  padding: 0.9rem 1.1rem;
-  border: 0.0625rem solid rgba(255, 255, 255, 0.7);
-  border-radius: 1rem;
-  background: rgba(255, 255, 255, 0.92);
-  box-shadow: var(--shadow-card);
-  backdrop-filter: blur(0.75rem);
-}
-
-.about-hero__image p span {
-  color: var(--color-teal);
-  font-size: 0.7rem;
-  font-weight: 900;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.about-hero__image p strong {
-  color: var(--color-purple);
-  font-family: var(--font-display);
-  font-size: 1.35rem;
-  font-weight: 500;
-}
-
-.about-hero__image p small {
-  color: var(--color-muted);
 }
 
 .about-story {
