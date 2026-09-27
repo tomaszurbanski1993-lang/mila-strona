@@ -7,6 +7,7 @@ interface Props {
   class?: string;
   loading?: "eager" | "lazy";
   fetchpriority?: "high" | "low" | "auto";
+  sizes?: string;
 }
 
 const {
@@ -15,17 +16,59 @@ const {
   class: className,
   loading,
   fetchpriority,
+  sizes = "100vw",
 } = Astro.props;
 const metadata = await getPublicImageMetadata(src);
+const responsivePrefix = src.endsWith("-1200.webp")
+  ? src.slice(0, -"-1200.webp".length)
+  : undefined;
+const smallWebp = responsivePrefix ? `${responsivePrefix}-768.webp` : undefined;
+const smallAvif = responsivePrefix ? `${responsivePrefix}-768.avif` : undefined;
+const largeAvif = responsivePrefix ? `${responsivePrefix}-1200.avif` : undefined;
+const hasResponsiveVariants = Boolean(
+  smallWebp &&
+  smallAvif &&
+  largeAvif &&
+  (await getPublicImageMetadata(smallWebp)) &&
+  (await getPublicImageMetadata(smallAvif)) &&
+  (await getPublicImageMetadata(largeAvif))
+);
 ---
 
-<img
-  src={src}
-  alt={alt}
-  class={className}
-  width={metadata?.width}
-  height={metadata?.height}
-  loading={loading}
-  fetchpriority={fetchpriority}
-  decoding="async"
-/>
+{
+  hasResponsiveVariants ? (
+    <picture>
+      <source
+        type="image/avif"
+        srcset={`${smallAvif} 768w, ${largeAvif} 1200w`}
+        sizes={sizes}
+      />
+      <source
+        type="image/webp"
+        srcset={`${smallWebp} 768w, ${src} 1200w`}
+        sizes={sizes}
+      />
+      <img
+        src={src}
+        alt={alt}
+        class={className}
+        width={metadata?.width}
+        height={metadata?.height}
+        loading={loading}
+        fetchpriority={fetchpriority}
+        decoding="async"
+      />
+    </picture>
+  ) : (
+    <img
+      src={src}
+      alt={alt}
+      class={className}
+      width={metadata?.width}
+      height={metadata?.height}
+      loading={loading}
+      fetchpriority={fetchpriority}
+      decoding="async"
+    />
+  )
+}

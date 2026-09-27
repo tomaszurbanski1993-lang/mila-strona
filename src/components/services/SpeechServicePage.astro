@@ -13,7 +13,10 @@ const { service } = Astro.props;
 const relatedServices = speechServiceDetails.filter(({ slug }) => slug !== service.slug);
 ---
 
-<main id="main-content" class:list={["service-page", `service-page--${service.tone}`]}>
+<main
+  id="main-content"
+  class:list={["service-page", `service-page--${service.tone}`, `service-page--${service.slug}`]}
+>
   <Container class="service-breadcrumb">
     <a href="/">Strona główna</a><span aria-hidden="true">/</span><a href="/logopeda/">Logopeda</a><span aria-hidden="true">/</span><span>{service.shortTitle}</span>
   </Container>

@@ -45,11 +45,11 @@ export const values = [
 
 export const featuredBlog = {
   type: "Z bloga",
-  title: "Zasady bezpieczeństwa dla dzieciaków na Miłej",
+  title: "Jak i z czego powinno pić dziecko?",
   description:
-    "Sześć prostych zasad, które pomagają dzieciom czuć się bezpiecznie podczas wizyty w obu gabinetach.",
-  date: "10 sierpnia 2026",
-  href: "/blog/zasady-bezpieczenstwa-dla-dzieciakow-na-milej",
+    "Otwarty kubek, niekapek czy słomka? Wyjaśniamy, jak sposób picia wpływa na aparat mowy, zgryz i zdrowie jamy ustnej.",
+  date: "27 września 2026",
+  href: "/blog/jak-i-z-czego-powinno-pic-dziecko",
 } as const;
 
 export const latestNews = [

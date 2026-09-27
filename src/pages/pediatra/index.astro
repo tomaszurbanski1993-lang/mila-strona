@@ -2,6 +2,7 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Container from "../../components/ui/Container.astro";
 import Button from "../../components/ui/Button.astro";
+import SafeguardingSection from "../../components/sections/SafeguardingSection.astro";
 import { site, phoneHref, smsHref } from "../../data/site";
 import {
   pediatricBookingSteps,
@@ -177,6 +178,8 @@ const pageDescription =
         </div>
       </Container>
     </section>
+
+    <SafeguardingSection />
 
     <section class="section profile-contact" id="kontakt-pediatra" aria-labelledby="profile-contact-title">
       <span class="profile-contact__shape" aria-hidden="true"></span>

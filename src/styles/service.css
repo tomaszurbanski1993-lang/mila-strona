@@ -37,6 +37,13 @@
 
 .service-hero__copy h1 {
   max-width: 12ch;
+  color: var(--color-purple);
+}
+
+.service-page--elektrostymulacja .service-hero__copy h1 {
+  max-width: none;
+  font-size: clamp(2.1rem, 4.5vw, 3.4rem);
+  overflow-wrap: anywhere;
 }
 
 .service-hero__copy .button-row {
@@ -83,6 +90,13 @@
 .service-page--yellow {
   --service-color: #a56a00;
   --service-soft: #fff1c9;
+}
+
+.service-overview__copy h2,
+.service-process .section-heading h2,
+.service-faq h2,
+.related-services .section-heading h2 {
+  color: var(--color-purple);
 }
 
 .service-facts {

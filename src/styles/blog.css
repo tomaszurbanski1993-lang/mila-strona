@@ -21,6 +21,7 @@
 
 .knowledge-hero h1 {
   max-width: 13ch;
+  color: var(--color-purple);
 }
 
 .knowledge-hero__bottom {
@@ -298,6 +299,7 @@
 .post-header h1 {
   max-width: 16ch;
   margin-inline: auto;
+  color: var(--color-purple);
   font-size: clamp(2.75rem, 6vw, 5.3rem);
 }
 
@@ -383,6 +385,7 @@
 
 .post-prose :is(h2, h3) {
   margin-top: 2em;
+  color: var(--color-purple);
 }
 
 .post-prose h2 {

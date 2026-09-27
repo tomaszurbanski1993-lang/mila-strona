@@ -15,29 +15,97 @@ const pageDescription =
   <main id="main-content">
     <section class="about-hero" aria-labelledby="about-page-title">
       <span class="about-hero__shape" aria-hidden="true"></span>
-      <Container class="about-hero__grid">
-        <div class="about-hero__copy">
-          <p class="eyebrow">O nas</p>
-          <h1 id="about-page-title">Dwoje specjalistów. Jedno wspólne miejsce.</h1>
-          <p class="lead">
-            Pod nazwą Dzieciaki na Miłej prowadzimy w Warce dwa niezależne gabinety:
-            logopedyczny Anny Strus i pediatryczny Pawła Strusa.
-          </p>
-          <div class="button-row">
-            <Button href="#poznaj-nas">Poznaj nas bliżej <span aria-hidden="true">↓</span></Button>
-            <Button href="/kontakt" variant="secondary">Kontakt i dojazd</Button>
+      <Container class="about-hero__inner">
+        <div class="about-hero__header">
+          <div class="about-hero__copy">
+            <p class="eyebrow">O nas</p>
+            <h1 id="about-page-title">Dwoje specjalistów. Jedno wspólne miejsce.</h1>
+          </div>
+
+          <div class="about-hero__intro">
+            <p class="lead">
+              Pod nazwą Dzieciaki na Miłej prowadzimy w Warce dwa niezależne gabinety:
+              logopedyczny Anny Strus i pediatryczny Pawła Strusa.
+            </p>
+            <div class="button-row">
+              <Button href="#poznaj-nas">Poznaj nas bliżej <span aria-hidden="true">↓</span></Button>
+              <Button href="/kontakt" variant="secondary">Kontakt i dojazd</Button>
+            </div>
           </div>
         </div>
 
         <div class="about-hero__image">
-          <img
-            src="/images/site/anna-pawel-hero.jpg"
-            alt="Anna i Paweł Strusowie, logopeda i pediatra"
-            width="2000"
-            height="1333"
-            fetchpriority="high"
-          />
+          <picture>
+            <source
+              type="image/avif"
+              srcset="/images/site/about-team-306a6630-960.avif 960w, /images/site/about-team-306a6630-1920.avif 1920w"
+              sizes="(max-width: 1280px) 92vw, 1200px"
+            />
+            <source
+              type="image/webp"
+              srcset="/images/site/about-team-306a6630-960.webp 960w, /images/site/about-team-306a6630-1920.webp 1920w"
+              sizes="(max-width: 1280px) 92vw, 1200px"
+            />
+            <img
+              src="/images/site/about-team-306a6630-1920.webp"
+              alt="Anna i Paweł Strusowie, logopeda i pediatra"
+              width="1920"
+              height="1280"
+              fetchpriority="high"
+              decoding="async"
+            />
+          </picture>
           <p><span>Dzieciaki</span><strong>na Miłej</strong><small>Warka</small></p>
+        </div>
+      </Container>
+    </section>
+
+    <section class="section about-emotions" aria-labelledby="emotions-title">
+      <Container>
+        <header class="about-emotions__intro">
+          <p class="eyebrow">Nasze podejście</p>
+          <h2 id="emotions-title">Dlaczego Dzieciaki na Miłej?</h2>
+          <p class="lead">
+            W naszych gabinetach — logopedycznym i pediatrycznym — stawiamy emocje
+            dziecka na pierwszym miejscu. Wierzymy, że skuteczne leczenie i wspieranie
+            rozwoju mowy są możliwe tylko tam, gdzie mieszka poczucie bezpieczeństwa.
+          </p>
+        </header>
+
+        <div class="about-emotions__grid">
+          <article>
+            <span aria-hidden="true">01</span>
+            <h3>Bezpieczeństwo to klucz do współpracy</h3>
+            <p>
+              Kiedy dziecko czuje się u nas bezpiecznie, chętniej się otwiera. Łatwiej
+              nawiązuje kontakt wzrokowy, bawi się, słucha i naśladuje. Dzięki temu wizyta
+              u logopedy staje się przyjemnością, a badanie lekarskie u pediatry — na
+              przykład zaglądanie do ucha — przebiega bez lęku i stresu.
+            </p>
+          </article>
+
+          <article>
+            <span aria-hidden="true">02</span>
+            <h3>Rozumiemy dziecięcy świat</h3>
+            <p>
+              Silne emocje to naturalna część dorastania. Maluchy często nie potrafią
+              powiedzieć, co czują lub czego się boją, dlatego reagują płaczem, krzykiem
+              bądź gestem. Nie walczymy z tymi zachowaniami — pomagamy dziecku nazwać jego
+              stany emocjonalne. Dzięki temu uczymy je rozumieć trudne sytuacje i jasno
+              wyrażać potrzeby.
+            </p>
+          </article>
+
+          <article>
+            <span aria-hidden="true">03</span>
+            <h3>Patrzymy na dziecko całościowo</h3>
+            <p>
+              Nasz zespół pediatryczno-logopedyczny nie szufladkuje małych pacjentów.
+              Analizujemy nie tylko rozwój mowy czy zdrowie fizyczne. Patrzymy szerzej:
+              jak dziecko wchodzi w relacje, jak komunikuje się z otoczeniem i jak radzi
+              sobie w codziennych wyzwaniach.
+            </p>
+          </article>
         </div>
       </Container>
     </section>

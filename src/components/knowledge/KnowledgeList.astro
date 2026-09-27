@@ -70,7 +70,12 @@ const featuredImage = normalizeImage(featured?.data.image);
           <article class="featured-entry">
             <a class:list={["featured-entry__media", { "featured-entry__media--empty": !featured.data.image, "featured-entry__media--contain": featured.data.imageFit === "contain" }]} href={`${basePath}/${toSlug(featured.id)}/`} tabindex="-1" aria-hidden="true">
               {featuredImage ? (
-                <PublicImage src={featuredImage} alt="" fetchpriority="high" />
+                <PublicImage
+                  src={featuredImage}
+                  alt=""
+                  fetchpriority="high"
+                  sizes="(max-width: 800px) 92vw, 55vw"
+                />
               ) : (
                 <span>{basePath === "/blog" ? "B" : "A"}</span>
               )}
@@ -96,7 +101,12 @@ const featuredImage = normalizeImage(featured?.data.image);
                   <article class="entry-card">
                     <a class:list={["entry-card__media", { "entry-card__media--empty": !item.data.image, "entry-card__media--contain": item.data.imageFit === "contain" }]} href={`${basePath}/${toSlug(item.id)}/`} tabindex="-1" aria-hidden="true">
                       {itemImage ? (
-                        <PublicImage src={itemImage} alt="" loading="lazy" />
+                        <PublicImage
+                          src={itemImage}
+                          alt=""
+                          loading="lazy"
+                          sizes="(max-width: 800px) 92vw, (max-width: 1100px) 50vw, 33vw"
+                        />
                       ) : (
                         <span>{basePath === "/blog" ? "B" : "A"}</span>
                       )}

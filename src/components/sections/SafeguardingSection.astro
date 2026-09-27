@@ -1,0 +1,60 @@
+---
+import Container from "../ui/Container.astro";
+import Button from "../ui/Button.astro";
+---
+
+<section
+  class="section safeguarding-section"
+  id="standardy-ochrony-maloletnich"
+  aria-labelledby="safeguarding-title"
+>
+  <Container class="safeguarding-grid">
+    <div class="safeguarding-copy">
+      <p class="eyebrow">Bezpieczeństwo dzieci</p>
+      <h2 id="safeguarding-title">Standardy Ochrony Małoletnich</h2>
+      <p class="lead">
+        Dobro, bezpieczeństwo i prywatność dzieci są podstawą pracy obu gabinetów.
+        Pełny dokument opisuje zasady bezpiecznych relacji, ochrony wizerunku,
+        monitoringu oraz reagowania w sytuacjach zagrożenia.
+      </p>
+      <div class="button-row">
+        <Button href="/documents/standardy-ochrony-maloletnich-dzieciaki-na-milej.pdf">
+          Otwórz pełny dokument <span aria-hidden="true">↗</span>
+        </Button>
+        <Button href="/images/site/standardy-ochrony-maloletnich-1200.webp" variant="secondary">
+          Otwórz infografikę <span aria-hidden="true">↗</span>
+        </Button>
+      </div>
+      <p class="safeguarding-meta">Dokument PDF · 3 strony</p>
+    </div>
+
+    <figure class="safeguarding-poster">
+      <a
+        href="/images/site/standardy-ochrony-maloletnich-1200.webp"
+        aria-label="Otwórz infografikę Zasady bezpieczeństwa dla dzieciaków na Miłej"
+      >
+        <picture>
+          <source
+            type="image/avif"
+            srcset="/images/site/standardy-ochrony-maloletnich-768.avif 768w, /images/site/standardy-ochrony-maloletnich-1200.avif 1200w"
+            sizes="(max-width: 960px) 92vw, 560px"
+          />
+          <source
+            type="image/webp"
+            srcset="/images/site/standardy-ochrony-maloletnich-768.webp 768w, /images/site/standardy-ochrony-maloletnich-1200.webp 1200w"
+            sizes="(max-width: 960px) 92vw, 560px"
+          />
+          <img
+            src="/images/site/standardy-ochrony-maloletnich-1200.webp"
+            alt="Infografika z sześcioma zasadami bezpieczeństwa dla dzieci w gabinecie pediatrycznym i logopedycznym"
+            width="1200"
+            height="2150"
+            loading="lazy"
+            decoding="async"
+          />
+        </picture>
+      </a>
+      <figcaption>Skrócona wersja standardów przygotowana z myślą o dzieciach.</figcaption>
+    </figure>
+  </Container>
+</section>

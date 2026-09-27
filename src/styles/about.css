@@ -14,24 +14,34 @@
   border-radius: 50%;
 }
 
-.about-hero__grid {
+.about-hero__inner {
   position: relative;
+}
+
+.about-hero__header {
   display: grid;
-  grid-template-columns: minmax(0, 0.85fr) minmax(28rem, 1.15fr);
-  align-items: center;
-  gap: clamp(3rem, 7vw, 6.5rem);
+  grid-template-columns: minmax(0, 1.08fr) minmax(24rem, 0.72fr);
+  align-items: end;
+  gap: clamp(2.5rem, 8vw, 7rem);
 }
 
 .about-hero__copy h1 {
-  max-width: 11ch;
+  max-width: 14ch;
+  color: var(--color-purple);
 }
 
-.about-hero__copy .button-row {
+.about-hero__intro .lead {
+  margin-top: 0;
+}
+
+.about-hero__intro .button-row {
   margin-top: 2rem;
 }
 
 .about-hero__image {
   position: relative;
+  aspect-ratio: 16 / 9;
+  margin-top: clamp(3rem, 7vw, 5.5rem);
 }
 
 .about-hero__image::before {
@@ -44,13 +54,76 @@
   transform: rotate(2deg);
 }
 
-.about-hero__image img {
+.about-hero__image picture {
+  display: block;
   width: 100%;
-  min-height: 30rem;
+  height: 100%;
+}
+
+.about-hero__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-soft);
   object-fit: cover;
-  object-position: center;
+  object-position: center top;
+}
+
+.about-emotions {
+  background: #fff;
+}
+
+.about-emotions__intro {
+  max-width: 62rem;
+}
+
+.about-emotions__intro h2 {
+  max-width: 16ch;
+  color: var(--color-purple);
+}
+
+.about-emotions__intro .lead {
+  max-width: 56rem;
+}
+
+.about-emotions__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: clamp(2.5rem, 6vw, 4rem);
+}
+
+.about-emotions__grid article {
+  padding: clamp(1.5rem, 3vw, 2rem);
+  border: 0.0625rem solid var(--color-line);
+  border-radius: var(--radius-md);
+  background: var(--color-soft);
+}
+
+.about-emotions__grid article > span {
+  display: grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  place-items: center;
+  margin-bottom: 1.5rem;
+  border-radius: 50%;
+  background: var(--color-purple-soft);
+  color: var(--color-purple);
+  font-size: 0.72rem;
+  font-weight: 850;
+}
+
+.about-emotions__grid h3 {
+  color: var(--color-purple);
+  font-size: clamp(1.25rem, 2vw, 1.55rem);
+}
+
+.about-emotions__grid p {
+  margin: 0.85rem 0 0;
+  color: var(--color-muted);
+  font-size: 0.94rem;
+  line-height: 1.75;
 }
 
 .about-hero__image p {
@@ -100,6 +173,7 @@
 
 .about-story h2 {
   max-width: 12ch;
+  color: var(--color-purple);
 }
 
 .about-story__prose {
@@ -125,6 +199,7 @@
 
 .about-profiles__intro h2 {
   max-width: 17ch;
+  color: var(--color-purple);
 }
 
 .about-profiles__intro .lead {
@@ -194,7 +269,7 @@
 }
 
 .about-profile__visual p strong {
-  color: var(--color-heading);
+  color: var(--color-purple);
   font-family: var(--font-display);
   font-size: 1.55rem;
 }
@@ -206,6 +281,7 @@
 .about-profile__content h2 {
   max-width: 15ch;
   margin-bottom: 1.6rem;
+  color: var(--color-purple);
 }
 
 .about-profile__opening {
@@ -252,15 +328,18 @@
 }
 
 @media (max-width: 960px) {
-  .about-hero__grid,
+  .about-hero__header,
   .about-story__grid,
   .about-profile {
     grid-template-columns: 1fr;
   }
 
+  .about-emotions__grid {
+    grid-template-columns: 1fr;
+  }
+
   .about-hero__image {
-    width: min(100%, 44rem);
-    margin-inline: auto;
+    aspect-ratio: 3 / 2;
   }
 
   .about-profile__visual {
@@ -276,7 +355,6 @@
 
 @media (max-width: 650px) {
   .about-hero__image img {
-    min-height: 24rem;
     border-radius: 2rem;
   }
 

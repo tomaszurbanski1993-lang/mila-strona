@@ -132,6 +132,14 @@
   max-width: 15ch;
 }
 
+.profile-intro__copy h2,
+.services-section .section-heading h2,
+.experience-section .section-heading h2,
+.first-visit__copy h2,
+.safeguarding-copy h2 {
+  color: var(--color-purple);
+}
+
 .profile-prose {
   display: grid;
   max-width: 47rem;

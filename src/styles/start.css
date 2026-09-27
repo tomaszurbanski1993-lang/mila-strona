@@ -23,6 +23,7 @@
 
 .home-hero h1 {
   max-width: 16ch;
+  color: var(--color-purple);
   font-size: clamp(2.35rem, 4.8vw, 4.15rem);
 }
 
@@ -169,6 +170,7 @@
 }
 
 .practice-card__content h3 {
+  color: var(--color-purple);
   font-family: var(--font-display);
   font-size: clamp(1.8rem, 3vw, 2.35rem);
   font-weight: 600;
@@ -222,6 +224,7 @@
 
 .values-intro h2 {
   max-width: none;
+  color: var(--color-purple);
   font-size: clamp(2.35rem, 4vw, 3.5rem);
 }
 
@@ -281,6 +284,12 @@
 
 .blog-home-section {
   background: var(--color-soft);
+}
+
+.practices-section .section-heading h2,
+.knowledge-section .section-heading h2,
+.blog-home-section .section-heading h2 {
+  color: var(--color-purple);
 }
 
 .knowledge-grid {
@@ -575,6 +584,10 @@
   margin: 1.7rem 0;
   padding-left: 1rem;
   border-left: 0.25rem solid var(--color-pink);
+}
+
+.location-copy h2 {
+  color: var(--color-purple);
 }
 
 .location-copy address span {

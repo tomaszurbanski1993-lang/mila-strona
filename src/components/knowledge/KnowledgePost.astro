@@ -46,7 +46,12 @@ const formattedDate = date.toLocaleDateString("pl-PL", {
 
     {normalizedImage && (
       <Container class:list={["post-cover", { "post-cover--contain": imageFit === "contain" }]}>
-        <PublicImage src={normalizedImage} alt={imageAlt} loading="lazy" />
+        <PublicImage
+          src={normalizedImage}
+          alt={imageAlt}
+          loading="lazy"
+          sizes="(max-width: 960px) 92vw, 1180px"
+        />
       </Container>
     )}
 
