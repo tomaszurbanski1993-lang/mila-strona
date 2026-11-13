@@ -4,6 +4,7 @@ import { speechServiceDetails } from "../../data/logopeda-services";
 import { site, phoneHref, smsHref } from "../../data/site";
 import Container from "../ui/Container.astro";
 import Button from "../ui/Button.astro";
+import CardIcon from "../ui/CardIcon.astro";
 
 interface Props {
   service: SpeechServiceDetail;
@@ -29,7 +30,7 @@ const relatedServices = speechServiceDetails.filter(({ slug }) => slug !== servi
         <h1 id="service-title">{service.title}</h1>
         <p class="lead">{service.intro}</p>
         <div class="button-row">
-          <Button href="#przebieg">Jak wygląda praca? <span aria-hidden="true">↓</span></Button>
+          <Button href="#przebieg">Jak wygląda praca?</Button>
           <Button href="#kontakt-usluga" variant="secondary">Zapytaj o konsultację</Button>
         </div>
       </div>
@@ -83,15 +84,14 @@ const relatedServices = speechServiceDetails.filter(({ slug }) => slug !== servi
         <p class="lead">{service.processLead}</p>
       </div>
 
-      <ol class="service-process__list">
+      <ul class="service-process__list" role="list">
         {service.process.map((step) => (
           <li>
-            <span aria-hidden="true">{step.number}</span>
             <h3>{step.title}</h3>
             <p>{step.description}</p>
           </li>
         ))}
-      </ol>
+      </ul>
 
       <aside class="service-note">
         <span aria-hidden="true">i</span>
@@ -145,15 +145,13 @@ const relatedServices = speechServiceDetails.filter(({ slug }) => slug !== servi
       <div class="related-services__grid">
         {relatedServices.map((related) => (
           <a href={`/logopeda/${related.slug}/`}>
-            <span aria-hidden="true">{related.badge}</span>
+            <CardIcon name={related.icon} size="small" />
             <div><small>{related.eyebrow}</small><h3>{related.shortTitle}</h3></div>
-            <b aria-hidden="true">→</b>
           </a>
         ))}
         <a href="/logopeda/#oferta">
-          <span aria-hidden="true">+</span>
+          <CardIcon name="practice" size="small" />
           <div><small>Pełny zakres wsparcia</small><h3>Wszystkie usługi</h3></div>
-          <b aria-hidden="true">→</b>
         </a>
       </div>
     </Container>

@@ -2,6 +2,7 @@
 import { site } from "../../data/site";
 import Container from "../ui/Container.astro";
 import Button from "../ui/Button.astro";
+import CardIcon from "../ui/CardIcon.astro";
 ---
 
 <section class="section location-section" aria-labelledby="location-title">
@@ -9,15 +10,11 @@ import Button from "../ui/Button.astro";
     <div class="location-copy">
       <p class="eyebrow">Dojazd</p>
       <h2 id="location-title">Jak nas znaleźć</h2>
-      <p class="lead">
-        Gabinety „Dzieciaki na Miłej” mieszczą się przy ul. Miłej 12 w Warce.
-        W aplikacjach typu Google Maps wystarczy wpisać „Dzieciaki na Miłej Warka”.
-      </p>
       <address>
-        <span>Dzieciaki na Miłej</span>
+        <CardIcon name="location" tone="pink" size="small" />
         <strong>{site.address}</strong>
       </address>
-      <Button href={site.mapUrl} variant="secondary">Otwórz trasę w Mapach Google <span aria-hidden="true">↗</span></Button>
+      <Button href={site.mapUrl} variant="secondary">Otwórz trasę w Mapach Google</Button>
     </div>
 
     <div class="location-map">

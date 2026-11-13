@@ -1,24 +1,24 @@
 export const pediatricVisitPrinciples = [
   {
-    number: "01",
+    icon: "conversation",
     title: "Uważna rozmowa",
     description:
       "Zaczynamy od objawów, przebiegu choroby i pytań rodzica — bez pośpiechu i skrótów myślowych.",
   },
   {
-    number: "02",
+    icon: "stethoscope",
     title: "Badanie dziecka",
     description:
       "Badanie odbywa się spokojnie, z wyjaśnianiem kolejnych kroków dziecku i opiekunowi.",
   },
   {
-    number: "03",
+    icon: "recommendations",
     title: "Jasne zalecenia",
     description:
       "Po wizycie rodzic wie, co robić dalej, na co zwracać uwagę i kiedy ponownie skontaktować się z lekarzem.",
   },
   {
-    number: "04",
+    icon: "calendar",
     title: "Dalsze postępowanie",
     description:
       "Jeśli sytuacja tego wymaga, omawiamy kolejne kroki i potrzebę konsultacji u innego specjalisty.",

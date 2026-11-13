@@ -2,6 +2,8 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Container from "../../components/ui/Container.astro";
 import Button from "../../components/ui/Button.astro";
+import CardIcon from "../../components/ui/CardIcon.astro";
+import PublicImage from "../../components/PublicImage.astro";
 import SafeguardingSection from "../../components/sections/SafeguardingSection.astro";
 import { site, phoneHref, smsHref } from "../../data/site";
 import { firstVisitSteps, speechTherapyServices } from "../../data/logopeda";
@@ -41,12 +43,15 @@ const pageDescription =
           </p>
 
           <div class="booking-note">
-            <span class="booking-note__mark" aria-hidden="true">↗</span>
-            <p><strong>Jak umówić konsultację?</strong>Zadzwoń lub wyślij SMS. Termin ustalimy bezpośrednio.</p>
+            <CardIcon name="phone" tone="pink" size="list" />
+            <p>
+              <strong>Jak umówić konsultację?</strong>
+              <span>Zadzwoń lub wyślij SMS. Termin ustalimy bezpośrednio.</span>
+            </p>
           </div>
 
           <div class="button-row">
-            <Button href="#oferta">Zobacz zakres wsparcia <span aria-hidden="true">↓</span></Button>
+            <Button href="#oferta">Zobacz zakres wsparcia</Button>
             <Button href="#kontakt-logopeda" variant="secondary">Kontakt i zapisy</Button>
           </div>
         </div>
@@ -79,12 +84,12 @@ const pageDescription =
         <aside class="profile-aside">
           <p class="eyebrow">W gabinecie</p>
           <h3>Możesz liczyć na</h3>
-          <ul>
-            <li>spokojną diagnozę i rozmowę</li>
-            <li>indywidualny plan postępowania</li>
-            <li>wskazówki dla rodzica lub opiekuna</li>
-            <li>jasne omówienie kolejnych kroków</li>
-            <li>współpracę z innymi specjalistami</li>
+          <ul role="list">
+            <li><CardIcon name="diagnosis" tone="teal" size="list" /><span>spokojną diagnozę i rozmowę</span></li>
+            <li><CardIcon name="calendar" tone="teal" size="list" /><span>indywidualny plan postępowania</span></li>
+            <li><CardIcon name="recommendations" tone="teal" size="list" /><span>wskazówki dla rodzica lub opiekuna</span></li>
+            <li><CardIcon name="conversation" tone="teal" size="list" /><span>jasne omówienie kolejnych kroków</span></li>
+            <li><CardIcon name="team" tone="teal" size="list" /><span>współpracę z innymi specjalistami</span></li>
           </ul>
         </aside>
       </Container>
@@ -107,10 +112,10 @@ const pageDescription =
           {
             speechTherapyServices.map((service) => (
               <article class="speech-service-card">
-                <span aria-hidden="true"></span>
+                <CardIcon name={service.icon} />
                 <h3>{service.title}</h3>
                 <p>{service.description}</p>
-                {service.href && <a href={service.href}>Dowiedz się więcej <span aria-hidden="true">→</span></a>}
+                {service.href && <a href={service.href}>Dowiedz się więcej</a>}
               </article>
             ))
           }
@@ -124,10 +129,13 @@ const pageDescription =
 
     <section class="section first-visit" aria-labelledby="visit-title">
       <Container class="first-visit__grid">
-        <div class="first-visit__visual" aria-hidden="true">
-          <span class="first-visit__letter">O</span>
-          <span class="first-visit__ring"></span>
-          <p>Spokojnie i krok po kroku</p>
+        <div class="first-visit__visual first-visit__visual--photo first-visit__visual--heart">
+          <PublicImage
+            src="/images/site/serce-w-dloniach-1200.webp"
+            alt="Dłonie dziecka i dorosłego trzymają czerwone serce"
+            loading="lazy"
+            sizes="(max-width: 960px) 92vw, 40vw"
+          />
         </div>
 
         <div class="first-visit__copy">
@@ -138,16 +146,15 @@ const pageDescription =
             bez niepotrzebnej presji.
           </p>
 
-          <ol class="visit-steps">
+          <ul class="visit-steps" role="list">
             {
               firstVisitSteps.map((step) => (
                 <li>
-                  <span aria-hidden="true">{step.number}</span>
                   <div><h3>{step.title}</h3><p>{step.description}</p></div>
                 </li>
               ))
             }
-          </ol>
+          </ul>
         </div>
       </Container>
     </section>

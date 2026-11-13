@@ -1,6 +1,7 @@
 ---
 import { values } from "../../data/home";
 import Container from "../ui/Container.astro";
+import CardIcon from "../ui/CardIcon.astro";
 ---
 
 <section class="section values-section" aria-labelledby="values-title">
@@ -21,8 +22,8 @@ import Container from "../ui/Container.astro";
     <div class="values-grid">
       {
         values.map((value) => (
-          <article class:list={["value-card", `value-card--${value.tone}`]}>
-            <span class="value-card__mark" aria-hidden="true"></span>
+          <article class="value-card">
+            <CardIcon name={value.icon} tone={value.tone} />
             <h3>{value.title}</h3>
             <p>{value.description}</p>
           </article>

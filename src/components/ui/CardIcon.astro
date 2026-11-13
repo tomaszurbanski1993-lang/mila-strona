@@ -1,0 +1,58 @@
+---
+import { cardIcons, type CardIconName } from "../../data/card-icons";
+
+interface Props {
+  name: CardIconName;
+  tone?: "purple" | "teal" | "pink";
+  size?: "regular" | "small" | "list";
+}
+
+const { name, tone = "purple", size = "regular" } = Astro.props;
+---
+
+<svg
+  class:list={["card-icon", `card-icon--${tone}`, `card-icon--${size}`]}
+  viewBox="0 0 32 32"
+  width="44"
+  height="44"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.65"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  aria-hidden="true"
+  focusable="false"
+>
+  <g set:html={cardIcons[name]} />
+</svg>
+
+<style>
+  .card-icon {
+    display: block;
+    width: 2.75rem;
+    height: 2.75rem;
+    flex: 0 0 auto;
+    margin-bottom: 1.25rem;
+    color: var(--color-purple);
+  }
+
+  .card-icon--teal {
+    color: var(--color-teal);
+  }
+
+  .card-icon--pink {
+    color: var(--color-pink);
+  }
+
+  .card-icon--small {
+    width: 2.25rem;
+    height: 2.25rem;
+    margin-bottom: 0;
+  }
+
+  .card-icon--list {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-bottom: 0;
+  }
+</style>

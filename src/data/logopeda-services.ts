@@ -1,3 +1,5 @@
+import type { CardIconName } from "./card-icons";
+
 export interface SpeechServiceDetail {
   slug: string;
   tone: "teal" | "pink" | "yellow";
@@ -10,7 +12,7 @@ export interface SpeechServiceDetail {
   imageAlt: string;
   imageWidth: number;
   imageHeight: number;
-  badge: string;
+  icon: CardIconName;
   facts: readonly { label: string; value: string }[];
   overviewTitle: string;
   overview: readonly string[];
@@ -40,7 +42,7 @@ export const speechServiceDetails = [
     imageAlt: "Anna Strus podczas ćwiczenia z materiałem logopedycznym",
     imageWidth: 1200,
     imageHeight: 1800,
-    badge: "ATS",
+    icon: "headphones",
     facts: [
       { label: "Forma", value: "ocena i trening" },
       { label: "Udział", value: "dziecko i rodzic" },
@@ -126,7 +128,7 @@ export const speechServiceDetails = [
     imageAlt: "Anna Strus podczas pracy z pomocami wykorzystywanymi w gabinecie",
     imageWidth: 1400,
     imageHeight: 933,
-    badge: "PFD",
+    icon: "feeding",
     facts: [
       { label: "Podejście", value: "dziecko i rodzina" },
       { label: "Początek", value: "wywiad i obserwacja" },
@@ -212,7 +214,7 @@ export const speechServiceDetails = [
     imageAlt: "Elektrody i akcesoria wykorzystywane podczas elektrostymulacji",
     imageWidth: 1400,
     imageHeight: 933,
-    badge: "TENS",
+    icon: "pulse",
     facts: [
       { label: "Rola", value: "uzupełnienie terapii" },
       { label: "Kwalifikacja", value: "po badaniu" },
@@ -298,7 +300,7 @@ export const speechServiceDetails = [
     imageAlt: "Anna Strus, logopeda prowadząca terapię manualną",
     imageWidth: 933,
     imageHeight: 1400,
-    badge: "MT",
+    icon: "hands",
     facts: [
       { label: "Zakres", value: "twarz, jama ustna i szyja" },
       { label: "Podejście", value: "lokalne i całościowe" },
@@ -385,7 +387,7 @@ export const speechServiceDetails = [
     imageAlt: "Anna Strus podczas pracy z materiałem wykorzystywanym w treningu słuchowym",
     imageWidth: 1200,
     imageHeight: 1800,
-    badge: "AUD",
+    icon: "ear",
     facts: [
       { label: "Obszar", value: "słuch i rozumienie mowy" },
       { label: "Narzędzia", value: "ocena i trening" },
@@ -472,7 +474,7 @@ export const speechServiceDetails = [
     imageAlt: "Anna Strus podczas pracy z pomocami wykorzystywanymi w terapii funkcji oralnych",
     imageWidth: 1400,
     imageHeight: 933,
-    badge: "MIO",
+    icon: "mouth",
     facts: [
       { label: "Obszar", value: "mięśnie ustno-twarzowe" },
       { label: "Funkcje", value: "oddech, żucie i połykanie" },
@@ -560,7 +562,7 @@ export const speechServiceDetails = [
     imageAlt: "Anna Strus, logopeda wykorzystująca ćwiczenia ruchowe w terapii",
     imageWidth: 933,
     imageHeight: 1400,
-    badge: "R+S",
+    icon: "movement",
     facts: [
       { label: "Baza", value: "postawa i stabilizacja" },
       { label: "Precyzja", value: "motoryka dłoni" },

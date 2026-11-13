@@ -16,6 +16,6 @@ Film jest opatrzony naszym komentarzem audio, w którym oprócz tremy usłyszyci
 
 Zapraszamy!
 
-[Obejrzyj film →](https://youtu.be/4k7Q1q57nYQ)
+[Obejrzyj film](https://youtu.be/4k7Q1q57nYQ)
 
 *) – tak, to była kiepsko ukryta zachęta do szczepień… 😊

@@ -1,7 +1,21 @@
 ---
-import { featuredBlog, latestNews } from "../../data/home";
+import { getCollection } from "astro:content";
+import { sortBlogPosts } from "../../data/blog-pagination";
 import Container from "../ui/Container.astro";
 import Button from "../ui/Button.astro";
+import PublicImage from "../PublicImage.astro";
+
+const [blogEntries, newsEntries] = await Promise.all([
+  getCollection("blog", ({ data }) => data.draft !== true),
+  getCollection("news", ({ data }) => data.draft !== true),
+]);
+const featuredBlog = sortBlogPosts(blogEntries)[0];
+const latestNews = newsEntries
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0, 2);
+const featuredImage = featuredBlog?.data.image?.replace(/^\/public(?=\/)/, "");
+const formatDate = (date: Date) =>
+  date.toLocaleDateString("pl-PL", { day: "numeric", month: "long", year: "numeric" });
 ---
 
 <section class="section knowledge-section" aria-labelledby="news-title">
@@ -21,10 +35,10 @@ import Button from "../ui/Button.astro";
       {
         latestNews.map((item) => (
           <article class="news-card">
-            <p class="news-card__meta">Aktualność · {item.date}</p>
-            <h3><a href={item.href}>{item.title}</a></h3>
-            <p>{item.description}</p>
-            <a class="text-link" href={item.href}>Czytaj dalej <span aria-hidden="true">→</span></a>
+            <p class="news-card__meta">Aktualność · <time datetime={item.data.date.toISOString()}>{formatDate(item.data.date)}</time></p>
+            <h3><a href={`/aktualnosci/${item.slug}/`}>{item.data.title}</a></h3>
+            <p>{item.data.description}</p>
+            <a class="text-link" href={`/aktualnosci/${item.slug}/`}>Czytaj dalej</a>
           </article>
         ))
       }
@@ -46,18 +60,34 @@ import Button from "../ui/Button.astro";
       </p>
     </div>
 
-    <article class="featured-article">
-      <div class="featured-article__content">
-        <p class="eyebrow">{featuredBlog.type}</p>
-        <h3>{featuredBlog.title}</h3>
-        <p>{featuredBlog.description}</p>
-        <time>{featuredBlog.date}</time>
-        <div class="button-row">
-          <Button href={featuredBlog.href} variant="light">Przeczytaj artykuł <span aria-hidden="true">→</span></Button>
-          <Button href="/blog" variant="secondary">Wszystkie artykuły</Button>
+    {featuredBlog && (
+      <article class:list={["featured-article", { "featured-article--without-image": !featuredImage }]}>
+        {featuredImage && (
+          <a
+            class:list={["featured-article__media", { "featured-article__media--contain": featuredBlog.data.imageFit === "contain" }]}
+            href={`/blog/${featuredBlog.slug}/`}
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            <PublicImage
+              src={featuredImage}
+              alt=""
+              loading="lazy"
+              sizes="(max-width: 960px) 92vw, 50vw"
+            />
+          </a>
+        )}
+        <div class="featured-article__content">
+          <p class="eyebrow">Z bloga</p>
+          <h3><a href={`/blog/${featuredBlog.slug}/`}>{featuredBlog.data.title}</a></h3>
+          <p>{featuredBlog.data.description}</p>
+          <time datetime={featuredBlog.data.date.toISOString()}>{formatDate(featuredBlog.data.date)}</time>
+          <div class="button-row">
+            <Button href={`/blog/${featuredBlog.slug}/`}>Przeczytaj artykuł</Button>
+            <Button href="/blog" variant="secondary">Wszystkie artykuły</Button>
+          </div>
         </div>
-      </div>
-      <span class="featured-article__shape" aria-hidden="true">Aa</span>
-    </article>
+      </article>
+    )}
   </Container>
 </section>

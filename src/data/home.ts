@@ -9,7 +9,11 @@ export const practices = [
     imageAlt: "Anna Strus, logopeda i glottodydaktyk",
     href: "/logopeda",
     linkLabel: "Poznaj Annę i zakres wsparcia",
-    highlights: ["diagnoza i terapia mowy", "karmienie i funkcje oralne", "Neuroflow ATS®"],
+    highlights: [
+      { label: "diagnoza i terapia mowy", icon: "diagnosis" },
+      { label: "karmienie i funkcje oralne", icon: "feeding" },
+      { label: "Neuroflow ATS®", icon: "headphones" },
+    ],
   },
   {
     eyebrow: "Gabinet pediatryczny",
@@ -21,48 +25,31 @@ export const practices = [
     imageAlt: "Paweł Strus, lekarz pediatra",
     href: "/pediatra",
     linkLabel: "Poznaj Pawła i gabinet pediatryczny",
-    highlights: ["konsultacje pediatryczne", "opieka nad dziećmi i młodzieżą", "leczenie wg aktualnej wiedzy"],
+    highlights: [
+      { label: "konsultacje pediatryczne", icon: "conversation" },
+      { label: "opieka nad dziećmi i młodzieżą", icon: "care" },
+      { label: "leczenie wg aktualnej wiedzy", icon: "experience" },
+    ],
   },
 ] as const;
 
 export const values = [
   {
     title: "Uważność",
-    description: "Patrzymy na potrzeby konkretnego dziecka i jego rodziny, nie tylko na pojedynczy objaw.",
+    icon: "attention",
     tone: "pink",
+    description: "Patrzymy na potrzeby konkretnego dziecka i jego rodziny, nie tylko na pojedynczy objaw.",
   },
   {
     title: "Doświadczenie",
-    description: "Łączymy wieloletnią praktykę z aktualną wiedzą i metodami dobranymi do realnej sytuacji.",
+    icon: "experience",
     tone: "teal",
+    description: "Łączymy wieloletnią praktykę z aktualną wiedzą i metodami dobranymi do realnej sytuacji.",
   },
   {
     title: "Jasna komunikacja",
-    description: "Wyjaśniamy rozpoznanie, zalecenia i kolejne kroki spokojnym, zrozumiałym językiem.",
+    icon: "conversation",
     tone: "purple",
-  },
-] as const;
-
-export const featuredBlog = {
-  type: "Z bloga",
-  title: "Jak i z czego powinno pić dziecko?",
-  description:
-    "Otwarty kubek, niekapek czy słomka? Wyjaśniamy, jak sposób picia wpływa na aparat mowy, zgryz i zdrowie jamy ustnej.",
-  date: "27 września 2026",
-  href: "/blog/jak-i-z-czego-powinno-pic-dziecko",
-} as const;
-
-export const latestNews = [
-  {
-    title: "Nowe metody terapii w gabinecie logopedycznym",
-    description: "Od września terapia będzie mogła uwzględniać także masaż i terapię manualną, mioterapię, ocenę funkcjonalną słuchu oraz terapię ręki.",
-    date: "23 stycznia 2026",
-    href: "/aktualnosci/nowe-metody-terapii-w-gabinecie-logopedycznym",
-  },
-  {
-    title: "Większy, odremontowany gabinet",
-    description: "Krótka informacja organizacyjna dotycząca gabinetu logopedycznego.",
-    date: "13 sierpnia 2025",
-    href: "/aktualnosci/wiekszy-odremontowany-gabinet-otwarty-od-1-wrzesnia",
+    description: "Wyjaśniamy rozpoznanie, zalecenia i kolejne kroki spokojnym, zrozumiałym językiem.",
   },
 ] as const;

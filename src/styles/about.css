@@ -20,14 +20,19 @@
 
 .about-hero__header {
   display: grid;
-  grid-template-columns: minmax(0, 1.08fr) minmax(24rem, 0.72fr);
-  align-items: end;
-  gap: clamp(2.5rem, 8vw, 7rem);
+  gap: clamp(1.75rem, 3vw, 2.5rem);
 }
 
 .about-hero__copy h1 {
-  max-width: 14ch;
   color: var(--color-purple);
+  text-wrap: balance;
+}
+
+.about-hero__intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: clamp(2rem, 4vw, 3rem);
 }
 
 .about-hero__intro .lead {
@@ -35,7 +40,7 @@
 }
 
 .about-hero__intro .button-row {
-  margin-top: 2rem;
+  margin-top: 0;
 }
 
 .about-hero__image {
@@ -298,6 +303,7 @@
 
 @media (max-width: 960px) {
   .about-hero__header,
+  .about-hero__intro,
   .about-story__grid,
   .about-profile {
     grid-template-columns: 1fr;

@@ -2,6 +2,7 @@
 import { practices } from "../../data/home";
 import Container from "../ui/Container.astro";
 import Button from "../ui/Button.astro";
+import CardIcon from "../ui/CardIcon.astro";
 ---
 
 <section class="section practices-section" aria-labelledby="practices-title">
@@ -29,11 +30,13 @@ import Button from "../ui/Button.astro";
               <h3>{practice.name}</h3>
               <p class="practice-card__role">{practice.role}</p>
               <p>{practice.description}</p>
-              <ul class="practice-card__highlights">
-                {practice.highlights.map((item) => <li>{item}</li>)}
+              <ul class="practice-card__highlights" role="list">
+                {practice.highlights.map((item) => (
+                  <li><CardIcon name={item.icon} tone="teal" size="list" /><span>{item.label}</span></li>
+                ))}
               </ul>
               <Button href={practice.href} variant="text">
-                {practice.linkLabel} <span aria-hidden="true">→</span>
+                {practice.linkLabel}
               </Button>
             </div>
           </article>

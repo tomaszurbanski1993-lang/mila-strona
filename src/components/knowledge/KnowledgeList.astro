@@ -55,7 +55,7 @@ const featuredImage = normalizeImage(featured?.data.image);
     <h1 id="knowledge-title">{title}</h1>
     <div class="knowledge-hero__bottom">
       <p class="lead">{description}</p>
-      <a class="knowledge-switch" href={alternateHref}>{alternateLabel} <span aria-hidden="true">→</span></a>
+      <a class="knowledge-switch" href={alternateHref}>{alternateLabel}</a>
     </div>
   </Container>
 </section>
@@ -88,7 +88,7 @@ const featuredImage = normalizeImage(featured?.data.image);
               </p>
               <h2><a href={`${basePath}/${toSlug(featured.id)}/`}>{featured.data.title}</a></h2>
               <p>{featured.data.description}</p>
-              <a class="entry-link" href={`${basePath}/${toSlug(featured.id)}/`}>Czytaj dalej <span aria-hidden="true">→</span></a>
+              <a class="entry-link" href={`${basePath}/${toSlug(featured.id)}/`}>Czytaj dalej</a>
             </div>
           </article>
 
@@ -118,7 +118,7 @@ const featuredImage = normalizeImage(featured?.data.image);
                       </p>
                       <h2><a href={`${basePath}/${toSlug(item.id)}/`}>{item.data.title}</a></h2>
                       <p>{item.data.description}</p>
-                      <a class="entry-link" href={`${basePath}/${toSlug(item.id)}/`}>Czytaj <span aria-hidden="true">→</span></a>
+                      <a class="entry-link" href={`${basePath}/${toSlug(item.id)}/`}>Czytaj</a>
                     </div>
                   </article>
                 );
